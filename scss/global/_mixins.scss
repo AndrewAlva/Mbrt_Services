@@ -7,12 +7,12 @@
 	*display: inline; /* Fix for IE7 */
 }
 
-@mixin transitions($class, $timing, $ease){
-	-webkit-transition: $class $timing $ease;
-	   -moz-transition: $class $timing $ease;
-	    -ms-transition: $class $timing $ease;
-	     -o-transition: $class $timing $ease;
-	        transition: $class $timing $ease;
+@mixin transitions($timing){
+	-webkit-transition: all $timing ease-in-out;
+	   -moz-transition: all $timing ease-in-out;
+	    -ms-transition: all $timing ease-in-out;
+	     -o-transition: all $timing ease-in-out;
+	        transition: all $timing ease-in-out;
 }
 
 @mixin opacity($val){

@@ -1,0 +1,61 @@
+@import 'global/mixins';
+@import 'global/vars';
+
+// GENERAL
+	#fullWrapper{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+		#mbrtWrapper{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			overflow: scroll;
+		}
+
+		.mainSection{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			float: left;
+		}
+	}
+
+	.testSquare{
+		position: fixed;
+		width: 74px;
+		height: 74px;
+		margin: auto;
+		left: 0; right: 0; top: 0; bottom: 0;
+		border: 1px solid red;
+	}
+// END GENERAL
+
+
+// INDEX SECTION
+	#indexWrapper{
+
+		#mainLogo{
+			position: absolute;
+			width: 507px;
+			height: 74px;
+			margin: auto;
+			top: 0; bottom: 0; left: 434px; right: 0;
+
+			img{
+				position: absolute;
+				width: 100%;
+			}
+		}
+	}
+// END INDEX SECTION
+
+// WELCOME SECTION
+	#welcomeWrapper{
+		background-color: aqua;
+	}
+// END WELCOME SECTION
