@@ -50,13 +50,13 @@
             <div id="mbrtWrapper">
                 <!-- <div class="testSquare"></div> -->
 
-
+                <!-- SECTION ID = 0 -->
                 <section id="indexWrapper" class="mainSection">
                     <div id="mainLogo">
-                        <img src="img/brand/main_logo.png" alt="Mandelbrot Brands Studio" title="Mandelbrot Brands Studio">
                     </div>
                 </section>
 
+                <!-- SECTION ID = 1 -->
                 <section id="welcomeWrapper" class="mainSection introSection">
                     <div id="receiverLetter" class="introLetter">
                         <h1 class="introTitle">Hello there IA Interactive!</h1>
@@ -76,6 +76,7 @@
                     </div>
                 </section>
 
+                <!-- SECTION ID = 2 -->
                 <section id="servicesWrapper" class="mainSection introSection">
                     <div id="servicesLetter" class="introLetter">
                         <h1 class="introTitle">What We Do</h1>
@@ -161,10 +162,49 @@
                     </div>
                 </section>
 
+                <!-- SECTION ID = 3 -->
                 <section id="corporateIdentity" class="mainSection coverSection">
                     <h1 class="nameSection"> Corporate Identity</h1>
-                    <div class="footLogo">
-                        <img src="img/brand/foot_logo.png" alt="Mandebrot Brands Studio" title="Mandebrot Brands Studio">
+                </section>
+
+                <!-- SECTION ID = 4 -->
+                <section id="logosCarousel" class="mainSection carouselSection">
+                    <div class="innerCarousel">
+                        <h3 class="carouselTitle">Logos</h3>
+
+
+                        <div class="carouselImages">
+
+                            <div class="projectsWrapper">
+                                <div id="logo-5" class="projectPhoto previousPhoto">
+                                    <img src="https://placehold.it/1187X637" alt="Lorem Image">
+                                </div>
+                                <div id="logo-1" class="projectPhoto currentPhoto">
+                                    <img src="https://placehold.it/1187X637" alt="Lorem Image">
+                                </div>
+                                <div id="logo-2" class="projectPhoto nextPhoto">
+                                    <img src="https://placehold.it/1187X637" alt="Lorem Image">
+                                </div>
+                            </div>
+
+
+                            <nav class="carouselArrows">
+                                <div class="arrow leftArrow">
+                                    <a href="#">
+                                        <i class="sprite sprite-leftArrow"></i>
+                                    </a> 
+                                </div>
+
+                                <div class="arrow rightArrow">
+                                    <a href="#">
+                                        <i class="sprite sprite-rightArrow"></i>
+                                    </a> 
+                                </div>
+                            </nav>
+                        </div>
+
+
+                        <nav class="carouselNav"></nav>
                     </div>
                 </section>
             </div>
@@ -172,6 +212,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.mousewheel.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

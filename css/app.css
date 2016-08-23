@@ -1,11 +1,10 @@
 .testSquare {
   position: fixed;
-  width: 175px;
-  height: 14px;
+  width: 100%;
+  height: 96px;
   margin: auto;
+  bottom: 398px;
   left: 0;
-  right: 0;
-  bottom: 54px;
   border: 1px solid red;
   box-sizing: border-box; }
 
@@ -20,81 +19,210 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: scroll;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
-  #fullWrapper .mainSection {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    float: left; }
-  #fullWrapper .introSection .introLetter {
-    position: absolute;
-    width: 1296px;
-    height: 680px;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
-    #fullWrapper .introSection .introLetter h1, #fullWrapper .introSection .introLetter h2, #fullWrapper .introSection .introLetter p {
-      position: relative;
-      float: left;
-      display: inline-block;
-      vertical-align: top;
-      zoom: 1;
-      /* Fix for IE7 */
-      *display: inline;
-      /* Fix for IE7 */
-      box-sizing: border-box;
-      margin: 0; }
-    #fullWrapper .introSection .introLetter h1 {
-      margin-bottom: 30px; }
-    #fullWrapper .introSection .introLetter h2, #fullWrapper .introSection .introLetter p {
-      margin-bottom: 50px; }
-    #fullWrapper .introSection .introLetter .introTitle {
-      height: 75px;
-      line-height: 75px;
+    #fullWrapper #mbrtWrapper .mainSection {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
+      -moz-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
+      -ms-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
+      -o-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
+      transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1); }
+    #fullWrapper #mbrtWrapper .introSection .introLetter {
+      position: absolute;
+      width: 1296px;
+      height: 680px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter h1, #fullWrapper #mbrtWrapper .introSection .introLetter h2, #fullWrapper #mbrtWrapper .introSection .introLetter p {
+        position: relative;
+        float: left;
+        display: inline-block;
+        vertical-align: top;
+        zoom: 1;
+        /* Fix for IE7 */
+        *display: inline;
+        /* Fix for IE7 */
+        box-sizing: border-box;
+        margin: 0; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter h1 {
+        margin-bottom: 30px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter h2, #fullWrapper #mbrtWrapper .introSection .introLetter p {
+        margin-bottom: 50px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
+        height: 75px;
+        line-height: 75px;
+        font-size: 52pt;
+        border-right: 4pt solid #9a999e;
+        padding-right: 25px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph {
+        font-size: 19pt;
+        line-height: 23pt;
+        color: #9a999e; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
+        font-size: 28pt;
+        height: 28px;
+        line-height: 28px; }
+    #fullWrapper #mbrtWrapper .coverSection .nameSection {
+      position: absolute;
+      width: 100%;
+      height: 110px;
       font-size: 52pt;
-      border-right: 4pt solid #9a999e;
-      padding-right: 25px; }
-    #fullWrapper .introSection .introLetter .introParagraph {
-      font-size: 19pt;
-      line-height: 23pt;
-      color: #9a999e; }
-    #fullWrapper .introSection .introLetter .introQuotes {
-      font-size: 28pt;
-      height: 28px;
-      line-height: 28px; }
-  #fullWrapper .coverSection .nameSection {
-    position: absolute;
-    width: 100%;
-    height: 110px;
-    font-size: 52pt;
-    text-align: center;
-    margin: auto;
-    top: 0;
-    bottom: 0; }
-  #fullWrapper .coverSection .footLogo {
-    position: absolute;
-    width: 176px;
-    height: 32px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 45px; }
+      text-align: center;
+      margin: auto;
+      top: 0;
+      bottom: 0; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
+      position: absolute;
+      width: 100%;
+      height: 838px;
+      margin: auto;
+      top: 0;
+      bottom: 0; }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
+        position: relative;
+        width: 122px;
+        height: 28px;
+        line-height: 28px;
+        margin: auto;
+        margin-bottom: 47px;
+        left: 0;
+        right: 0;
+        font-size: 28pt; }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages {
+        position: relative;
+        width: 100%;
+        height: 647px; }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .carouselArrows {
+          position: absolute;
+          width: 1397px;
+          height: 100%;
+          margin: auto;
+          left: 0;
+          right: 0; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .carouselArrows .arrow {
+            position: absolute;
+            width: 100px;
+            height: 100%;
+            background-color: #fff; }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .carouselArrows .arrow a {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              display: block;
+              -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
+              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .carouselArrows .arrow a:hover {
+                opacity: 0.6;
+                filter: alpha(opacity=60);
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+                -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .carouselArrows .arrow a i {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .carouselArrows .leftArrow {
+            left: 0; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .carouselArrows .rightArrow {
+            right: 0; }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper {
+          position: absolute;
+          width: 100%;
+          height: 100%; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto {
+            position: absolute;
+            width: 1197px;
+            height: 100%;
+            box-sizing: border-box;
+            margin: auto;
+            left: 0;
+            right: 0;
+            -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+            -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+            -ms-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+            -o-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+            transition: all 1s cubic-bezier(0.65, 0, 0.25, 1); }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto:first-child {
+              background-color: red;
+              -webkit-transform: translate(-1297px, 0);
+              -moz-transform: translate(-1297px, 0);
+              -ms-transform: translate(-1297px, 0);
+              -o-transform: translate(-1297px, 0);
+              transform: translate(-1297px, 0); }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto:nth-child(2) {
+              background-color: blue; }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto:last-child {
+              background-color: green;
+              -webkit-transform: translate(1297px, 0);
+              -moz-transform: translate(1297px, 0);
+              -ms-transform: translate(1297px, 0);
+              -o-transform: translate(1297px, 0);
+              transform: translate(1297px, 0); }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto img {
+              position: absolute;
+              margin: auto;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0; }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselNav {
+        position: relative;
+        width: 573px;
+        height: 0;
+        border-bottom: 1px solid red;
+        margin: auto;
+        margin-top: 96px;
+        left: 0;
+        right: 0; }
+    #fullWrapper #mbrtWrapper .coming-up {
+      top: 100%; }
+    #fullWrapper #mbrtWrapper .is-active {
+      top: 0; }
+    #fullWrapper #mbrtWrapper .passed-up {
+      top: -100%; }
+    #fullWrapper #mbrtWrapper .sprite {
+      background-image: url(../img/icons/sprite_nav.png);
+      background-repeat: no-repeat;
+      display: block; }
+    #fullWrapper #mbrtWrapper .sprite-leftArrow {
+      width: 20px;
+      height: 35px;
+      background-position: -5px -5px; }
+    #fullWrapper #mbrtWrapper .sprite-rightArrow {
+      width: 20px;
+      height: 35px;
+      background-position: -30px -5px; }
+    #fullWrapper #mbrtWrapper .sprite-downArrow {
+      width: 30px;
+      height: 50px;
+      background-position: -5px -45px; }
+    #fullWrapper #mbrtWrapper .sprite-upArrow {
+      width: 30px;
+      height: 50px;
+      background-position: -40px -45px; }
 
 #indexWrapper #mainLogo {
   position: absolute;
-  width: 507px;
-  height: 74px;
+  width: 662px;
+  height: 384px;
   margin: auto;
   top: 0;
   bottom: 0;
-  left: 434px;
-  right: 0; }
+  right: 0;
+  left: 232px; }
   #indexWrapper #mainLogo img {
     position: absolute;
     width: 100%; }
