@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 	}
 
 	// INTRO GIF ANIMATION
-	$('#mainLogo').append('<img id="mbrtGIF" src="img/brand/main_logo.gif?' + Math.random() + '" alt="Mandelbrot Brands Studio">');
+	$('#mbrtGIF').attr('src', 'img/brand/main_logo.gif?' + Math.random() + ' alt="Mandelbrot Brands Studio">');
 
 
 	// HELPER FUNCTIONS

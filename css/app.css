@@ -1,10 +1,36 @@
+@-webkit-keyframes writingBar {
+  0% {
+    border-right: 4px solid #97979b; }
+  100% {
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
+@-moz-keyframes writingBar {
+  0% {
+    border-right: 4px solid #97979b; }
+  100% {
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
+@-ms-keyframes writingBar {
+  0% {
+    border-right: 4px solid #97979b; }
+  100% {
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
+@-o-keyframes writingBar {
+  0% {
+    border-right: 4px solid #97979b; }
+  100% {
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
+@keyframes writingBar {
+  0% {
+    border-right: 4px solid #97979b; }
+  100% {
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
 .testSquare {
   position: fixed;
-  width: 459px;
-  height: 234px;
+  width: 100%;
+  height: 16px;
   margin: auto;
-  top: 140px;
-  left: 110px;
+  top: 653px;
+  left: 0;
+  right: 0;
   border: 1px solid red;
   box-sizing: border-box;
   z-index: 1000; }
@@ -24,7 +50,7 @@
     font-weight: 400;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-    color: #06111a; }
+    color: #9a999e; }
     #fullWrapper #mbrtWrapper .mainSection {
       position: absolute;
       width: 100%;
@@ -33,11 +59,12 @@
       -moz-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
       -ms-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
       -o-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
-      transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1); }
+      transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
+      will-change: transform; }
     #fullWrapper #mbrtWrapper .introSection .introLetter {
       position: absolute;
       width: 1296px;
-      height: 680px;
+      height: 690px;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -53,34 +80,52 @@
         *display: inline;
         /* Fix for IE7 */
         box-sizing: border-box;
-        margin: 0; }
-      #fullWrapper #mbrtWrapper .introSection .introLetter h1 {
-        margin-bottom: 30px; }
-      #fullWrapper #mbrtWrapper .introSection .introLetter h2, #fullWrapper #mbrtWrapper .introSection .introLetter p {
-        margin-bottom: 50px; }
+        margin-top: 0; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
         height: 75px;
-        line-height: 75px;
-        font-size: 52pt;
-        border-right: 4pt solid #9a999e;
-        padding-right: 25px; }
-      #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph {
+        line-height: 75px; }
+        #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+          font-size: 52pt;
+          -webkit-animation: writingBar 0.8s ease infinite alternate;
+          -moz-animation: writingBar 0.8s ease infinite alternate;
+          -ms-animation: writingBar 0.8s ease infinite alternate;
+          -o-animation: writingBar 0.8s ease infinite alternate;
+          animation: writingBar 0.8s ease infinite alternate;
+          padding-right: 25px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
         font-size: 19pt;
-        line-height: 23pt;
-        color: #9a999e; }
-      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
-        font-size: 28pt;
-        height: 28px;
-        line-height: 28px; }
+        line-height: 23pt; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
+        font-size: 28pt; }
     #fullWrapper #mbrtWrapper .coverSection .nameSection {
       position: absolute;
-      width: 100%;
+      width: 325px;
       height: 110px;
-      font-size: 52pt;
-      text-align: center;
+      line-height: 110px;
       margin: auto;
       top: 0;
-      bottom: 0; }
+      bottom: 0;
+      left: 0;
+      right: 0; }
+      #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
+        position: relative;
+        float: left;
+        display: inline-block;
+        vertical-align: top;
+        zoom: 1;
+        /* Fix for IE7 */
+        *display: inline;
+        /* Fix for IE7 */
+        margin: 0;
+        padding-right: 25px;
+        box-sizing: border-box;
+        font-size: 52pt;
+        text-align: center;
+        -webkit-animation: writingBar 0.8s ease infinite alternate;
+        -moz-animation: writingBar 0.8s ease infinite alternate;
+        -ms-animation: writingBar 0.8s ease infinite alternate;
+        -o-animation: writingBar 0.8s ease infinite alternate;
+        animation: writingBar 0.8s ease infinite alternate; }
     #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
       position: absolute;
       width: 100%;
@@ -102,6 +147,116 @@
         position: relative;
         width: 100%;
         height: 650px; }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper {
+          position: absolute;
+          width: 1200px;
+          height: 100%;
+          margin: auto;
+          left: 0;
+          right: 0;
+          overflow: hidden; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto {
+            position: absolute;
+            width: 1200px;
+            height: 100%;
+            box-sizing: border-box;
+            margin: auto;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            -webkit-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1);
+            -moz-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1);
+            -ms-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1);
+            -o-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1);
+            transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1);
+            will-change: transform; }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto img {
+              position: absolute;
+              margin: auto;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0; }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(255, 255, 255, 0.9);
+              -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+              opacity: 0;
+              filter: alpha(opacity=0);
+              filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+              -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData:hover {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+                -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
+                position: absolute;
+                width: 315px;
+                height: 200px;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: left; }
+                #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox h5 {
+                  position: relative;
+                  width: 100%;
+                  height: 20px;
+                  line-height: 20px;
+                  font-size: 18.5pt;
+                  margin: 0;
+                  margin-bottom: 7px;
+                  color: #06111a; }
+                #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox p {
+                  position: relative;
+                  width: 100%;
+                  height: 16px;
+                  line-height: 16px;
+                  font-size: 15pt;
+                  margin: 0;
+                  margin-bottom: 34px; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingBackPhoto {
+            -webkit-transform: translate(-2400px, 0);
+            -moz-transform: translate(-2400px, 0);
+            -ms-transform: translate(-2400px, 0);
+            -o-transform: translate(-2400px, 0);
+            transform: translate(-2400px, 0); }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .previousPhoto {
+            -webkit-transform: translate(-1200px, 0);
+            -moz-transform: translate(-1200px, 0);
+            -ms-transform: translate(-1200px, 0);
+            -o-transform: translate(-1200px, 0);
+            transform: translate(-1200px, 0); }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .currentPhoto {
+            z-index: 1;
+            -webkit-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            -moz-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            -ms-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            -o-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .nextPhoto {
+            -webkit-transform: translate(1200px, 0);
+            -moz-transform: translate(1200px, 0);
+            -ms-transform: translate(1200px, 0);
+            -o-transform: translate(1200px, 0);
+            transform: translate(1200px, 0); }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingFrontPhoto {
+            -webkit-transform: translate(2400px, 0);
+            -moz-transform: translate(2400px, 0);
+            -ms-transform: translate(2400px, 0);
+            -o-transform: translate(2400px, 0);
+            transform: translate(2400px, 0); }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .justInsertedPhoto {
+            z-index: -1;
+            display: none; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .arrow {
           position: absolute;
           width: 100px;
@@ -146,115 +301,101 @@
           filter: alpha(opacity=0);
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
           -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
-        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper {
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars {
+        position: relative;
+        width: 570px;
+        height: 4px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-top: 90px; }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul {
           position: absolute;
           width: 100%;
-          height: 100%; }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto {
-            position: absolute;
-            width: 1200px;
+          height: 100%;
+          margin: 0;
+          padding: 0; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar {
             height: 100%;
-            box-sizing: border-box;
-            margin: auto;
-            left: 0;
-            right: 0;
-            -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
-            -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
-            -ms-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
-            -o-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
-            transition: all 1s cubic-bezier(0.65, 0, 0.25, 1); }
-            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData {
+            position: relative;
+            float: left;
+            display: inline-block;
+            vertical-align: top;
+            zoom: 1;
+            /* Fix for IE7 */
+            *display: inline;
+            /* Fix for IE7 */
+            list-style-type: none;
+            margin-left: 7.5px;
+            margin-right: 7.5px;
+            background-color: #ececee;
+            cursor: pointer;
+            -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            overflow: hidden; }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar:hover {
+              opacity: 0.4;
+              filter: alpha(opacity=40);
+              filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+              -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .coverBar {
               position: absolute;
               width: 100%;
               height: 100%;
-              background-color: rgba(255, 255, 255, 0.9);
-              -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-              -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-              -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-              -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-              transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-              opacity: 0;
-              filter: alpha(opacity=0);
-              filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-              -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData:hover {
-                opacity: 1;
-                filter: alpha(opacity=100);
-                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-                -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
-                position: absolute;
-                width: 315px;
-                height: 200px;
-                margin: auto;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                text-align: left; }
-                #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox h5 {
-                  position: relative;
-                  width: 100%;
-                  height: 20px;
-                  line-height: 20px;
-                  font-size: 18.5pt;
-                  margin: 0;
-                  margin-bottom: 7px; }
-                #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox p {
-                  position: relative;
-                  width: 100%;
-                  height: 16px;
-                  line-height: 16px;
-                  font-size: 15pt;
-                  margin: 0;
-                  margin-bottom: 34px;
-                  color: #9a999e; }
-            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto img {
-              position: absolute;
-              margin: auto;
-              top: 0;
-              bottom: 0;
-              left: 0;
-              right: 0; }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingBackPhoto {
-            background-color: aqua;
-            -webkit-transform: translate(-2600px, 0);
-            -moz-transform: translate(-2600px, 0);
-            -ms-transform: translate(-2600px, 0);
-            -o-transform: translate(-2600px, 0);
-            transform: translate(-2600px, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .previousPhoto {
-            background-color: red;
-            -webkit-transform: translate(-1300px, 0);
-            -moz-transform: translate(-1300px, 0);
-            -ms-transform: translate(-1300px, 0);
-            -o-transform: translate(-1300px, 0);
-            transform: translate(-1300px, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .currentPhoto {
-            background-color: blue; }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .nextPhoto {
-            background-color: green;
-            -webkit-transform: translate(1300px, 0);
-            -moz-transform: translate(1300px, 0);
-            -ms-transform: translate(1300px, 0);
-            -o-transform: translate(1300px, 0);
-            transform: translate(1300px, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingFrontPhoto {
-            background-color: purple;
-            -webkit-transform: translate(2600px, 0);
-            -moz-transform: translate(2600px, 0);
-            -ms-transform: translate(2600px, 0);
-            -o-transform: translate(2600px, 0);
-            transform: translate(2600px, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .justInsertedPhoto {
-            z-index: -1;
-            display: none; }
+              background-color: #06111a;
+              -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+              -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+              -ms-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+              -o-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+              transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
+              -webkit-transform-origin: left;
+              transform-origin: left; }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .currentBar {
+              -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              -ms-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              -o-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              -webkit-transform: none;
+              -moz-transform: none;
+              -ms-transform: none;
+              -o-transform: none;
+              transform: none; }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .nextBar {
+              -webkit-transform: translateX(-102%);
+              -moz-transform: translateX(-102%);
+              -ms-transform: translateX(-102%);
+              -o-transform: translateX(-102%);
+              transform: translateX(-102%); }
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .previousBar {
+              -webkit-transform: translateX(102%);
+              -moz-transform: translateX(102%);
+              -ms-transform: translateX(102%);
+              -o-transform: translateX(102%);
+              transform: translateX(102%); }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList li {
+          width: calc(20% - 15px); }
     #fullWrapper #mbrtWrapper .coming-up {
-      top: 100%; }
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      transform: translateY(100%); }
     #fullWrapper #mbrtWrapper .is-active {
-      top: 0; }
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none; }
     #fullWrapper #mbrtWrapper .passed-up {
-      top: -100%; }
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      transform: translateY(-100%); }
     #fullWrapper #mbrtWrapper .sprite {
       background-image: url(../img/icons/sprite_nav.png);
       background-repeat: no-repeat;
@@ -268,13 +409,9 @@
       height: 35px;
       background-position: -30px -5px; }
     #fullWrapper #mbrtWrapper .sprite-downArrow {
-      width: 30px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       background-position: -5px -45px; }
-    #fullWrapper #mbrtWrapper .sprite-upArrow {
-      width: 30px;
-      height: 50px;
-      background-position: -40px -45px; }
 
 #indexWrapper #mainLogo {
   position: absolute;
@@ -288,11 +425,59 @@
   #indexWrapper #mainLogo img {
     position: absolute;
     width: 100%; }
+#indexWrapper #startExploring {
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
+  #indexWrapper #startExploring:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+  #indexWrapper #startExploring .startText {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 11.5pt;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 17px; }
+  #indexWrapper #startExploring .startGo {
+    position: relative;
+    width: 100%;
+    height: 40px; }
+    #indexWrapper #startExploring .startGo i {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; }
 
-#servicesWrapper #servicesLetter .introParagraph {
-  margin-bottom: 124px; }
-#servicesWrapper #servicesLetter .introQuotes {
-  margin-bottom: 57px; }
+#welcomeWrapper #receiverLetter .introTitle h1 {
+  margin-bottom: 30px; }
+#welcomeWrapper #receiverLetter .introParagraph p {
+  margin-bottom: 40px; }
+#welcomeWrapper #receiverLetter .introQuotes h2 {
+  margin-bottom: 40px; }
+
+#servicesWrapper #servicesLetter .introTitle h1 {
+  margin-bottom: 32px; }
+#servicesWrapper #servicesLetter .introParagraph p {
+  margin-bottom: 86px; }
+#servicesWrapper #servicesLetter .introQuotes h2 {
+  margin-bottom: 42px; }
 #servicesWrapper #servicesLetter #servicesList {
   position: relative;
   width: 100%; }
@@ -310,7 +495,6 @@
     text-align: left;
     font-size: 20pt;
     line-height: 25pt;
-    font-family: serif;
     font-weight: bolder; }
   #servicesWrapper #servicesLetter #servicesList td {
     font-size: 9pt;
