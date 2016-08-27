@@ -11,8 +11,19 @@ jQuery(document).ready(function($) {
 			$('#logosCarousel').on('click', '.rightArrow a', function(event) {
 				event.preventDefault();
 
+				// Check if there are next projects to show
 				if (currentDisplayLogo < totalLogos) {
 					showMeTheNextLogo(currentDisplayLogo);
+
+				} 
+				// If there aren't, scroll to next section
+				else if (currentDisplayLogo == totalLogos) {
+					// HELPER FUNCTIONS FROM SCROLL_LISTENER.JS
+					delayBetweenSections();
+					scrollNextSection();
+					currentSectionId = 5;
+		 			window.history.pushState("object or string", "section", "?section=stationery");
+		 			
 				};
 			});
 
@@ -20,7 +31,9 @@ jQuery(document).ready(function($) {
 			$('#logosCarousel').on('click', '.leftArrow a', function(event) {
 				event.preventDefault();
 
-				showMeThePreviousLogo(currentDisplayLogo);
+				if (currentDisplayLogo > 1){
+					showMeThePreviousLogo(currentDisplayLogo);
+				}
 			});
 
 
@@ -68,12 +81,21 @@ jQuery(document).ready(function($) {
 		// INTERACTION BY KEYBOARD
 			$(document).keyup(function(event) {
 
-				// TRIGGER THE KEY INTERACTION FUNCTIONS ONLY IF WE ARE AT THE LOGOS CAROUSEL SECTION, AND IF THERE ARE STILL PROJECTS TO LOAD
+				// TRIGGER THE KEY INTERACTION FUNCTIONS ONLY IF WE ARE AT THE LOGOS CAROUSEL SECTION
 				// RIGHT ARROW INTERACTION (KEYCODE = 39)
-				if (event.keyCode == 39 && currentSectionId == 4 && currentDisplayLogo < totalLogos){
+				if (event.keyCode == 39 && currentSectionId == 4){
 					event.preventDefault();
+
 					
-					showMeTheNextLogo(currentDisplayLogo);
+					if (currentDisplayLogo < totalLogos) {
+						showMeTheNextLogo(currentDisplayLogo);
+
+					} else if (currentDisplayLogo == totalLogos){
+						delayBetweenSections();
+						scrollNextSection();
+						currentSectionId = 5;
+			 			window.history.pushState("object or string", "section", "?section=stationery");
+					};
 				}
 
 				// LEFT ARROW INTERACTION (KEYCODE = 37)
@@ -92,20 +114,29 @@ jQuery(document).ready(function($) {
 			// CONTROL TRIGGERING
 			// Change section only if the current section has been fully loaded
 			if(canScroll && event.deltaX != 0 && currentSectionId == 4){
-				canScroll = false;
-		    	setTimeout(function(){
-		    		canScroll = true;
-		    	},transitionsTiming + pauseToLoadSection);
+				
+				delayBetweenSections();
 
 		    	// CHECK IF JS IS DETECTING MOUSEWHEEL
 				console.log('Scroll started.');
 		  		console.log(event.deltaX, event.deltaY, event.deltaFactor);
 
 		  		// Detect if user is scrolling right
-	    		if (event.deltaX > 0 && currentDisplayLogo < totalLogos){
-	    			showMeTheNextLogo(currentDisplayLogo);
+	    		if (event.deltaX > 0){
+
+	    			if (currentDisplayLogo < totalLogos) {
+	    				showMeTheNextLogo(currentDisplayLogo);
+
+	    			} else if (currentDisplayLogo == totalLogos){
+	    				delayBetweenSections();
+						scrollNextSection();
+						currentSectionId = 5;
+			 			window.history.pushState("object or string", "section", "?section=stationery");
+
+	    			};
+
 	    		} 
-	    		// Detect if user is scrolling left
+	    		// Detect if user is scrolling left and if there are previous projects to show
 	    		else if (event.deltaX < 0 && currentDisplayLogo > 1){
 	    			showMeThePreviousLogo(currentDisplayLogo);
 	    		}
