@@ -17,8 +17,8 @@ var currentSectionId = 0;
 	    	},transitionsTiming + pauseToLoadSection);
 
 	    	// CHECK IF JS IS DETECTING MOUSEWHEEL
-			console.log('Scroll started.');
-	  		console.log(event.deltaX, event.deltaY, event.deltaFactor);
+			// console.log('Scroll started.');
+	  // 		console.log(event.deltaX, event.deltaY, event.deltaFactor);
 
 
 			// Detect if user is scrolling down
@@ -38,18 +38,22 @@ var currentSectionId = 0;
 		    		 	navigateNextSection($('#welcomeWrapper'), $('#servicesWrapper'));
 		    		 	window.history.pushState("object or string", "section", "?section=services");
 		    		 	break;
+
+	    		 	// From Services to Branding cover Section
 	    		 	case 2:
 	    		 		currentSectionId = 3;
 	    		 		navigateNextSection($('#servicesWrapper'), $('#brandingCover'));
 	    		 		window.history.pushState("object or string", "section", "?section=branding");
 			 			break;
 
+		 			// From Branding cover to Logos carousel Section
 		 			case 3:
 		 				currentSectionId = 4;
 		 				navigateNextSection($('#brandingCover'), $('#logosCarousel'));
 		 				window.history.pushState("object or string", "section", "?section=logos");
 		 				break;
 
+	 				// From Logos carousel to Stationery carousel Section
 		 			case 4:
 		 				currentSectionId = 5;
 		 				navigateNextSection($('#logosCarousel'), $('#stationeryCarousel'));
@@ -66,30 +70,35 @@ var currentSectionId = 0;
 	    				console.log("You can't scroll higher");
 			    		break;
 
+		    		// From Welcome to Index Section
 		    		case 1:
 		    			currentSectionId = 0;
 		    			navigatePrevSection($('#welcomeWrapper'), $('#indexWrapper'));
 		    			window.history.pushState("object or string", "section", "?section=index");
 		    			break;
 
+	    			// From Services to Welcome Section
 		    		case 2:
 		    			currentSectionId = 1;
 		    			navigatePrevSection($('#servicesWrapper'), $('#welcomeWrapper'));
 		    			window.history.pushState("object or string", "section", "?section=welcome");
 		    			break;
 
+	    			// From Branding cover to Services Section
 	    			case 3:
 	    				currentSectionId = 2;
 	    				navigatePrevSection($('#brandingCover'), $('#servicesWrapper'));
 	    				window.history.pushState("object or string", "section", "?section=services");
 	    				break;
 
+    				// From Logos carousel to Branding cover Section
 					case 4:
 						currentSectionId = 3;
 						navigatePrevSection($('#logosCarousel'), $('#brandingCover'));
 						window.history.pushState("object or string", "section", "?section=branding");
 						break;
 
+					// From Stationery carousel to Logos carousel Section
 					case 5:
 						currentSectionId = 4;
 						navigatePrevSection($('#stationeryCarousel'), $('#logosCarousel'));
@@ -104,7 +113,7 @@ var currentSectionId = 0;
 			event.preventDefault();
 
 			// NOTICE YOU HAVE TO WAIT TO SCROLL AGAIN
-			console.log("You can't scroll yet, canScroll: " + canScroll);
+			// console.log("You can't scroll yet, canScroll: " + canScroll);
 		}
 	});
 
