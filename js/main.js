@@ -34,6 +34,11 @@ jQuery(document).ready(function($) {
 			$('#brandingCover').addClass('coming-up');
 			$('#logosCarousel').addClass('coming-up');
 			$('#stationeryCarousel').addClass('coming-up');
+			$('#communicationCover').addClass('coming-up');
+			$('#packagingCarousel').addClass('coming-up');
+			$('#uniformsCarousel').addClass('coming-up');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
 
 		} else if (section == 'welcome') {
 			currentSectionId = 1;
@@ -43,6 +48,11 @@ jQuery(document).ready(function($) {
 			$('#brandingCover').addClass('coming-up');
 			$('#logosCarousel').addClass('coming-up');
 			$('#stationeryCarousel').addClass('coming-up');
+			$('#communicationCover').addClass('coming-up');
+			$('#packagingCarousel').addClass('coming-up');
+			$('#uniformsCarousel').addClass('coming-up');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
 			
 		} else if (section == 'services') {
 			currentSectionId = 2;
@@ -52,6 +62,11 @@ jQuery(document).ready(function($) {
 			$('#brandingCover').addClass('coming-up');
 			$('#logosCarousel').addClass('coming-up');
 			$('#stationeryCarousel').addClass('coming-up');
+			$('#communicationCover').addClass('coming-up');
+			$('#packagingCarousel').addClass('coming-up');
+			$('#uniformsCarousel').addClass('coming-up');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
 			
 		} else if (section == 'branding') {
 			currentSectionId = 3;
@@ -61,6 +76,11 @@ jQuery(document).ready(function($) {
 			$('#brandingCover').addClass('is-active');
 			$('#logosCarousel').addClass('coming-up');
 			$('#stationeryCarousel').addClass('coming-up');
+			$('#communicationCover').addClass('coming-up');
+			$('#packagingCarousel').addClass('coming-up');
+			$('#uniformsCarousel').addClass('coming-up');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
 			
 		} else if (section == 'logos') {
 			currentSectionId = 4;
@@ -70,6 +90,11 @@ jQuery(document).ready(function($) {
 			$('#brandingCover').addClass('passed-up');
 			$('#logosCarousel').addClass('is-active');
 			$('#stationeryCarousel').addClass('coming-up');
+			$('#communicationCover').addClass('coming-up');
+			$('#packagingCarousel').addClass('coming-up');
+			$('#uniformsCarousel').addClass('coming-up');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
 
 		} else if (section == 'stationery') {
 			currentSectionId = 5;
@@ -79,6 +104,81 @@ jQuery(document).ready(function($) {
 			$('#brandingCover').addClass('passed-up');
 			$('#logosCarousel').addClass('passed-up');
 			$('#stationeryCarousel').addClass('is-active');
+			$('#communicationCover').addClass('coming-up');
+			$('#packagingCarousel').addClass('coming-up');
+			$('#uniformsCarousel').addClass('coming-up');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
+
+		} else if (section == 'communication') {
+			currentSectionId = 6;
+			$('#indexWrapper').addClass('passed-up');
+			$('#welcomeWrapper').addClass('passed-up');
+			$('#servicesWrapper').addClass('passed-up');
+			$('#brandingCover').addClass('passed-up');
+			$('#logosCarousel').addClass('passed-up');
+			$('#stationeryCarousel').addClass('passed-up');
+			$('#communicationCover').addClass('is-active');
+			$('#packagingCarousel').addClass('coming-up');
+			$('#uniformsCarousel').addClass('coming-up');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
+
+		} else if (section == 'packaging') {
+			currentSectionId = 7;
+			$('#indexWrapper').addClass('passed-up');
+			$('#welcomeWrapper').addClass('passed-up');
+			$('#servicesWrapper').addClass('passed-up');
+			$('#brandingCover').addClass('passed-up');
+			$('#logosCarousel').addClass('passed-up');
+			$('#stationeryCarousel').addClass('passed-up');
+			$('#communicationCover').addClass('passed-up');
+			$('#packagingCarousel').addClass('is-active');
+			$('#uniformsCarousel').addClass('coming-up');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
+
+		} else if (section == 'uniforms') {
+			currentSectionId = 8;
+			$('#indexWrapper').addClass('passed-up');
+			$('#welcomeWrapper').addClass('passed-up');
+			$('#servicesWrapper').addClass('passed-up');
+			$('#brandingCover').addClass('passed-up');
+			$('#logosCarousel').addClass('passed-up');
+			$('#stationeryCarousel').addClass('passed-up');
+			$('#communicationCover').addClass('passed-up');
+			$('#packagingCarousel').addClass('passed-up');
+			$('#uniformsCarousel').addClass('is-active');
+			$('#POSCarousel').addClass('coming-up');
+			$('#interiorismCarousel').addClass('coming-up');
+
+		} else if (section == 'pos') {
+			currentSectionId = 9;
+			$('#indexWrapper').addClass('passed-up');
+			$('#welcomeWrapper').addClass('passed-up');
+			$('#servicesWrapper').addClass('passed-up');
+			$('#brandingCover').addClass('passed-up');
+			$('#logosCarousel').addClass('passed-up');
+			$('#stationeryCarousel').addClass('passed-up');
+			$('#communicationCover').addClass('passed-up');
+			$('#packagingCarousel').addClass('passed-up');
+			$('#uniformsCarousel').addClass('passed-up');
+			$('#POSCarousel').addClass('is-active');
+			$('#interiorismCarousel').addClass('coming-up');
+
+		} else if (section == 'interiorism') {
+			currentSectionId = 10;
+			$('#indexWrapper').addClass('passed-up');
+			$('#welcomeWrapper').addClass('passed-up');
+			$('#servicesWrapper').addClass('passed-up');
+			$('#brandingCover').addClass('passed-up');
+			$('#logosCarousel').addClass('passed-up');
+			$('#stationeryCarousel').addClass('passed-up');
+			$('#communicationCover').addClass('passed-up');
+			$('#packagingCarousel').addClass('passed-up');
+			$('#uniformsCarousel').addClass('passed-up');
+			$('#POSCarousel').addClass('passed-up');
+			$('#interiorismCarousel').addClass('is-active');
 
 		}
 	}

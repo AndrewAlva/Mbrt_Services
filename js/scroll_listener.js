@@ -1,8 +1,9 @@
 // VARS SCROLL LISTENER
 var canScroll = true;
 var transitionsTiming = 900;
-var pauseToLoadSection = 1000;
+var pauseToLoadSection = 500;
 var currentSectionId = 0;
+var lastSectionId = 10;
 
 
 	// SCROLL LISTENER
@@ -20,7 +21,7 @@ var currentSectionId = 0;
 
 
 			// Detect if user is scrolling down
-	    	if (event.deltaY < 0 && currentSectionId < 6) {
+	    	if (event.deltaY < 0 && currentSectionId < lastSectionId) {
 
 	    		// CHANGE TO NEXT SECTION
 		    	scrollNextSection();
@@ -62,6 +63,30 @@ var currentSectionId = 0;
 		 			case 5:
 		 				currentSectionId = 6;
 		 				window.history.pushState("object or string", "section", "?section=communication");
+		 				break;
+
+	 				// From Brand Communication cover to Packaging Carousel Section
+		 			case 6:
+		 				currentSectionId = 7;
+		 				window.history.pushState("object or string", "section", "?section=packaging");
+		 				break;
+
+	 				// From Packaging Carousel to Uniforms Carousel Section
+		 			case 7:
+		 				currentSectionId = 8;
+		 				window.history.pushState("object or string", "section", "?section=uniforms");
+		 				break;
+
+	 				// From Uniforms Carousel to POS Carousel Section
+		 			case 8:
+		 				currentSectionId = 9;
+		 				window.history.pushState("object or string", "section", "?section=pos");
+		 				break;
+
+	 				// From POS Carousel to Interiorism Carousel Section
+		 			case 9:
+		 				currentSectionId = 10;
+		 				window.history.pushState("object or string", "section", "?section=interiorism");
 		 				break;
 		    	}
 	    	}
@@ -108,6 +133,30 @@ var currentSectionId = 0;
 					case 6:
 						currentSectionId = 5;
 						window.history.pushState("object or string", "section", "?section=stationery");
+						break;
+
+					// From Packaging Carousel to Brand Communications cover Section
+					case 7:
+						currentSectionId = 6;
+						window.history.pushState("object or string", "section", "?section=communication");
+						break;
+
+					// From Uniforms Carousel to Packaging Carousel Section
+					case 8:
+						currentSectionId = 7;
+						window.history.pushState("object or string", "section", "?section=packaging");
+						break;
+
+					// From POS Carousel to Uniforms Carousel Section
+					case 9:
+						currentSectionId = 8;
+						window.history.pushState("object or string", "section", "?section=uniforms");
+						break;
+
+					// From Interiorism Carousel POS Carousel Section
+					case 10:
+						currentSectionId = 9;
+						window.history.pushState("object or string", "section", "?section=pos");
 						break;
 		    	}
 			}

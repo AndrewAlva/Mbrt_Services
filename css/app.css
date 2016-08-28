@@ -458,6 +458,18 @@
           width: 11.98vw; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList li {
             width: calc(50% - 0.78vw); }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .sixBarsList {
+          width: 35.93vw; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .sixBarsList li {
+            width: calc(16.66% - 0.78vw); }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .threeBarsList {
+          width: 17.97vw; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .threeBarsList li {
+            width: calc(33.33% - 0.78vw); }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .eightBarsList {
+          width: 47.92vw; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .eightBarsList li {
+            width: calc(12.5% - 0.78vw); }
     #fullWrapper #mbrtWrapper .coming-up {
       -webkit-transform: translateY(100%);
       -moz-transform: translateY(100%);
@@ -593,5 +605,17 @@
 
 #stationeryCarousel .innerCarousel .carouselTitle {
   width: 10.3vw; }
+
+#communicationCover .nameSection {
+  width: 41.95vw; }
+
+#packagingCarousel .innerCarousel .carouselTitle {
+  width: 28.5vw; }
+
+#POSCarousel .innerCarousel .carouselTitle {
+  width: 12vw; }
+
+#interiorismCarousel .innerCarousel .carouselTitle {
+  width: 11vw; }
 
 /*# sourceMappingURL=app.css.map */

@@ -450,6 +450,30 @@
 								width: calc(50% - 0.78vw);
 							}
 						}
+
+						.sixBarsList{
+							width: 35.93vw;
+
+							li{
+								width: calc(16.66% - 0.78vw);
+							}
+						}
+
+						.threeBarsList{
+							width: 17.97vw;
+
+							li{
+								width: calc(33.33% - 0.78vw);
+							}
+						}
+
+						.eightBarsList{
+							width: 47.92vw;
+
+							li{
+								width: calc(12.5% - 0.78vw);
+							}
+						}
 					}
 				}
 			}
@@ -678,7 +702,43 @@
 	}
 // END STATIONERY CAROUSEL
 
+// BRAND COMMUNICATIONS COVER SECTION
+	#communicationCover{
+		.nameSection{
+			width: 41.95vw;
+		}
+	}
+// END BRAND COMMUNICATIONS COVER
 
+// PACKAGING & PRODUCT CAROUSEL SECTION
+	#packagingCarousel{
+		.innerCarousel{
+			.carouselTitle{
+				width: 28.5vw;
+			}
+		}
+	}
+// END PACKAGING & PRODUCT CAROUSEL
+
+// POINT OF SALE DESIGN CAROUSEL SECTION
+	#POSCarousel{
+		.innerCarousel{
+			.carouselTitle{
+				width: 12vw;
+			}
+		}
+	}
+// END POINT OF SALE DESIGN CAROUSEL
+
+// INTERIORISM CAROUSEL SECTION
+	#interiorismCarousel{
+		.innerCarousel{
+			.carouselTitle{
+				width: 11vw;
+			}
+		}
+	}
+// END INTERIORISM CAROUSEL
 
 
 
