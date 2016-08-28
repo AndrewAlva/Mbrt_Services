@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 		var totalLogos = 5;
 		var currentDisplayLogo = 1;
 
-		// INTERACTION BY ARROWS CLICK (PENDING KEYBOARD INTERACTION)
+		// INTERACTION BY ARROWS CLICK
 			// Next Project Interaction | Arrows Nav Click
 			$('#logosCarousel').on('click', '.rightArrow a', function(event) {
 				event.preventDefault();
@@ -272,6 +272,7 @@ jQuery(document).ready(function($) {
 				currentDisplayLogo = currentShowingLogoId + 1 ;
 		}
 
+		// GO PREVIOUS PROJECT, ONE BY ONE
 		function showMeThePreviousLogo(currentShowingLogoId){
 
 			// CHECK IF IT'S MOVING TO THE FIRST PROJECT

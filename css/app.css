@@ -86,7 +86,7 @@
           /* Fix for IE7 */
           *display: inline;
           /* Fix for IE7 */
-          height: 0.1vw;
+          height: 2px;
           margin-bottom: 1.41vw;
           cursor: pointer;
           -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);

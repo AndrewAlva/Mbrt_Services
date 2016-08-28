@@ -20,7 +20,7 @@ var currentSectionId = 0;
 
 
 			// Detect if user is scrolling down
-	    	if (event.deltaY < 0 && currentSectionId < 5) {
+	    	if (event.deltaY < 0 && currentSectionId < 6) {
 
 	    		// CHANGE TO NEXT SECTION
 		    	scrollNextSection();
@@ -56,6 +56,12 @@ var currentSectionId = 0;
 		 			case 4:
 		 				currentSectionId = 5;
 		 				window.history.pushState("object or string", "section", "?section=stationery");
+		 				break;
+
+	 				// From Stationery carousel to Brand Communication cover Section
+		 			case 5:
+		 				currentSectionId = 6;
+		 				window.history.pushState("object or string", "section", "?section=communication");
 		 				break;
 		    	}
 	    	}
@@ -96,6 +102,12 @@ var currentSectionId = 0;
 					case 5:
 						currentSectionId = 4;
 						window.history.pushState("object or string", "section", "?section=logos");
+						break;
+
+					// From Brand Communications cover to Stationery carousel Section
+					case 6:
+						currentSectionId = 5;
+						window.history.pushState("object or string", "section", "?section=stationery");
 						break;
 		    	}
 			}
