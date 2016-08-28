@@ -1,42 +1,137 @@
 
 	// STATIONERY CAROUSEL INTERACTION
+	// Section ID = 5
 
 		// GLOBAL VARS
 		var totalStationery = 2;
 		var currentDisplayStationery = 1;
 
 		// INTERACTION BY ARROWS CLICK
-			// Next Project Interaction | Arrows Nav Click
-			$('#stationeryCarousel').on('click', '.rightArrow a', function(event) {
+		// Next Project Interaction | Arrows Nav Click
+		$('#stationeryCarousel').on('click', '.rightArrow a', function(event) {
+			event.preventDefault();
+			rightMovementNavigation(currentDisplayStationery, totalStationery, $('#stationeryCarousel'), currentSectionId + 1, 'communication');
+
+			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
+			// Update the 'current loaded project' var
+			if (currentDisplayStationery < totalStationery){
+				currentDisplayStationery = currentDisplayStationery + 1 ;
+			}
+		});
+
+		// Previous Project Interaction | Arrows Nav Click
+		$('#stationeryCarousel').on('click', '.leftArrow a', function(event) {
+			event.preventDefault();
+			leftMovementNavigation(currentDisplayStationery, $('#stationeryCarousel'));
+
+			// THE LAST MOVE
+			// Update the 'current loaded project' var
+			if (currentDisplayStationery > 1){
+				currentDisplayStationery = currentDisplayStationery - 1 ;
+			}
+		});
+
+
+		// INTERACTION BY BOTTOM NAV BARS
+		$('#stationeryCarousel').on('click', '.singleBar', function(event) {
+			event.preventDefault();
+			projectToLoad = $(this).data("loadprojectid");
+			projectsToSkip = Math.abs(projectToLoad - currentDisplayStationery);
+			
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayStationery, $('#stationeryCarousel'), totalStationery);
+
+			// THE LAST MOVE
+			// Update the 'current loaded stationery id' var
+			if (projectToLoad > currentDisplayStationery) {
+				currentDisplayStationery = currentDisplayStationery + 1 ;
+			} else if (projectToLoad < currentDisplayStationery) {
+				currentDisplayStationery = currentDisplayStationery - 1 ;
+			};
+		});
+
+
+		// INTERACTION BY KEYBOARD ARROWS
+		$(document).keyup(function(event) {
+
+			// TRIGGER THE KEY INTERACTION FUNCTIONS OF THE CURRENT CAROUSEL SECTION
+			// RIGHT ARROW INTERACTION (KEYCODE = 39)
+			if (event.keyCode == 39 ){
 				event.preventDefault();
-				rightArrowNavClick(currentDisplayStationery, totalStationery, $('#stationeryCarousel'), currentSectionId + 1, 'communication');
 
-				// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
-				// Update the 'current loaded project' var
-				if (currentDisplayStationery < totalStationery){
-					currentDisplayStationery = currentDisplayStationery + 1 ;
-				}
-				console.log('New current showing project id value: ' + currentDisplayStationery);
-			});
+				// Trigger the functions of the Stationery Carousel
+				if (currentSectionId == 5) {
+					rightMovementNavigation(currentDisplayStationery, totalStationery, $('#stationeryCarousel'), currentSectionId + 1, 'communication');
 
-			// Previous Project Interaction | Arrows Nav Click
-			$('#stationeryCarousel').on('click', '.leftArrow a', function(event) {
+					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
+					// Update the 'current loaded project' var
+					if (currentDisplayStationery < totalStationery){
+						currentDisplayStationery = currentDisplayStationery + 1 ;
+					}
+				};
+			}
+
+			// LEFT ARROW INTERACTION (KEYCODE = 37)
+			if (event.keyCode == 37){
 				event.preventDefault();
-				leftArrowNavClick(currentDisplayStationery, $('#stationeryCarousel'));
 
-				// THE LAST MOVE
-				// Update the 'current loaded project' var
-				if (currentDisplayStationery > 1){
-					currentDisplayStationery = currentDisplayStationery - 1 ;
-				}
-				console.log('New current showing project id value: ' + currentDisplayStationery);
-			});
+				// Trigger the functions of the Stationery Carousel
+				if (currentSectionId == 5 && currentDisplayStationery > 1) {
+					leftMovementNavigation(currentDisplayStationery, $('#stationeryCarousel'));
+
+					// THE LAST MOVE
+					// Update the 'current loaded project' var
+					if (currentDisplayStationery > 1){
+						currentDisplayStationery = currentDisplayStationery - 1 ;
+					}
+				};
+			}
+		});
+
+
+		// INTERACTION BY HORIZONTAL SCROLLING
+		$('#mbrtWrapper').on('mousewheel', function(event) {
+			// CONTROL TRIGGERING
+			// Change section only if the current section has been fully loaded
+			if(canScroll && event.deltaX != 0){
+				event.preventDefault();
+
+				if (currentSectionId == 5) {
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayStationery, totalStationery, $('#stationeryCarousel'), currentSectionId + 1, 'communication');
+
+					// Detect if user is scrolling right
+					if (event.deltaX > 0) {
+						// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
+						// Update the 'current loaded project' var
+						if (currentDisplayStationery < totalStationery){
+							currentDisplayStationery = currentDisplayStationery + 1 ;
+						}
+					} else if (event.deltaX < 0) {
+						// THE LAST MOVE
+						// Update the 'current loaded project' var
+						if (currentDisplayStationery > 1){
+							currentDisplayStationery = currentDisplayStationery - 1 ;
+						}
+					};
+				};
+		    } else {
+		    	// PREVENT OVERLAPING CHANGE SECTION ANIMATIONS
+				// If there is an animation running to change the section, wait until it's over to change of section again
+				event.preventDefault();
+
+				// NOTICE YOU HAVE TO WAIT TO SCROLL AGAIN
+				// console.log("You can't scroll yet, canScroll: " + canScroll);
+		    }
+	    });
+
+
+
+
 
 
 	// HELPER FUNCTIONS
-		// ARROWS INTERACTION
+		// ARROWS INTERACTION | by CLICK and by KEYBOARD
 			// Next Project | Right Arrow Nav Click
-			function rightArrowNavClick(currentDisplayProject, totalProjects, currentCarouselSelector, nextSectionId, nextSectionName){
+			function rightMovementNavigation(currentDisplayProject, totalProjects, currentCarouselSelector, nextSectionId, nextSectionName){
 				// Check if there are next projects to show
 				if (currentDisplayProject < totalProjects) {
 					showMeTheNextProject(currentDisplayProject, currentCarouselSelector, totalProjects);
@@ -54,11 +149,65 @@
 			}
 
 			//  Previous Project | Left Arrow Nav Click
-			function leftArrowNavClick(currentDisplayProject, currentCarouselSelector){
-				// Check if there are previous projects to show
+			function leftMovementNavigation(currentDisplayProject, currentCarouselSelector){
+				// Trigger only if there are previous projects to show
 				if (currentDisplayProject > 1){
 					showMeThePreviousProject(currentDisplayProject, currentCarouselSelector);
 				}
+			}
+
+		// BOTTOM NAV BARS INTERACTION
+			function bottomNavBarClick(projectToLoadIdByDataAttr, projectsToSkipByPreviousCalc, currentDisplayProject, currentCarouselSelector, totalProjects){
+				
+				// CHECK IF USER IS TRYING TO LOAD THE CURRENT PROJECT
+				if (projectToLoadIdByDataAttr == currentDisplayProject){
+					console.log('Seriously?, you are trying to load the current project');
+				} 
+
+				// CHECK IF USER IS LOADING NEXT PROJECTS
+				else if(projectToLoadIdByDataAttr > currentDisplayProject){
+					// console.log('Ready to go to next project');
+
+					// Repeat the action until reaching the desired project
+					for (var i = 0; i < projectsToSkipByPreviousCalc; i++) {
+						// ADD A DELAY WHEN THEY SKIP VARIOUS PROJECTS
+						setTimeout(function(){
+							showMeTheNextProject(currentDisplayProject, currentCarouselSelector, totalProjects);
+						}, i * 100);
+					};	
+				} 
+
+				// CHECK IF USER IS LOADING PREVIOUS PROJECTS
+				else if(projectToLoadIdByDataAttr < currentDisplayProject){
+					// console.log('Ready to go to previous project');
+
+					// Repeat the action until reaching the desired project
+					for (var i = 0; i < projectsToSkipByPreviousCalc; i++) {
+						// ADD A DELAY WHEN THEY SKIP VARIOUS PROJECTS
+						setTimeout(function(){
+							showMeThePreviousProject(currentDisplayProject, currentCarouselSelector, totalProjects);
+						}, i * 100);
+					};
+				}
+			}
+
+		// MOUSE WHEEL INTERACTION
+			function scrollHorizontalCarousel(scrollXAcceleration, scrollYAcceleration, scrollDeltaFactor, currentDisplayProject, totalProjects, currentCarouselSelector, nextSectionId, nextSectionName){
+				delayBetweenSections();
+
+		    	// CHECK IF JS IS DETECTING MOUSEWHEEL
+				console.log('Scroll started.');
+		  		console.log(scrollXAcceleration, scrollYAcceleration, scrollDeltaFactor);
+
+		  		// Detect if user is scrolling right
+	    		if (event.deltaX > 0){
+	    			rightMovementNavigation(currentDisplayProject, totalProjects, currentCarouselSelector, nextSectionId, nextSectionName);
+
+	    		} 
+	    		// Detect if user is scrolling left
+	    		else if (event.deltaX < 0){
+	    			leftMovementNavigation(currentDisplayProject, currentCarouselSelector);
+	    		}
 			}
 
 

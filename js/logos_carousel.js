@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+
 
 	// CAROUSEL INTERACTION
 
@@ -7,141 +7,124 @@ jQuery(document).ready(function($) {
 		var currentDisplayLogo = 1;
 
 		// INTERACTION BY ARROWS CLICK
-			// Next Project Interaction | Arrows Nav Click
-			$('#logosCarousel').on('click', '.rightArrow a', function(event) {
-				event.preventDefault();
+		// Next Project Interaction | Arrows Nav Click
+		$('#logosCarousel').on('click', '.rightArrow a', function(event) {
+			event.preventDefault();
+			rightMovementNavigation(currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
 
-				// Check if there are next projects to show
-				if (currentDisplayLogo < totalLogos) {
-					showMeTheNextLogo(currentDisplayLogo);
+			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
+			// Update the 'current loaded project' var
+			if (currentDisplayLogo < totalLogos){
+				currentDisplayLogo = currentDisplayLogo + 1 ;
+			}
+		});
 
-				} 
-				// If there aren't, scroll to next section
-				else if (currentDisplayLogo == totalLogos) {
-					// HELPER FUNCTIONS FROM SCROLL_LISTENER.JS
-					delayBetweenSections();
-					scrollNextSection();
-					currentSectionId = 5;
-		 			window.history.pushState("object or string", "section", "?section=stationery");
-		 			
-				};
-			});
+		//  Previous Project Interaction | Arrows Nav Click
+		$('#logosCarousel').on('click', '.leftArrow a', function(event) {
+			event.preventDefault();
+			leftMovementNavigation(currentDisplayLogo, $('#logosCarousel'));
 
-			//  Previous Project Interaction | Arrows Nav Click
-			$('#logosCarousel').on('click', '.leftArrow a', function(event) {
-				event.preventDefault();
-
-				if (currentDisplayLogo > 1){
-					showMeThePreviousLogo(currentDisplayLogo);
-				}
-			});
+			// THE LAST MOVE
+			// Update the 'current loaded project' var
+			if (currentDisplayLogo > 1){
+				currentDisplayLogo = currentDisplayLogo - 1 ;
+			}
+		});
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-
 		$('#logosCarousel').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
 			projectsToSkip = Math.abs(projectToLoad - currentDisplayLogo);
+			console.log('loadprojectid data attribute value: ' + projectToLoad);
+			
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayLogo, $('#logosCarousel'), totalLogos);
 
-			// CHECK IF USER IS TRYING TO LOAD THE CURRENT PROJECT
-			if (projectToLoad == currentDisplayLogo){
-				console.log('Seriously?, you are trying to load the current project');
-			} 
-
-			// CHECK IF USER IS LOADING NEXT PROJECTS
-			else if(projectToLoad > currentDisplayLogo){
-				// console.log('Ready to go to next project');
-
-				// Repeat the action until reaching the desired project
+			// THE LAST MOVE
+			// Update the 'current loaded stationery id' var
+			if (projectToLoad > currentDisplayLogo) {
 				for (var i = 0; i < projectsToSkip; i++) {
-					// ADD A DELAY WHEN THEY SKIP VARIOUS PROJECTS
-					setTimeout(function(){
-						showMeTheNextLogo(currentDisplayLogo);
-					}, i * 100);
-				};	
-			} 
+					currentDisplayLogo = currentDisplayLogo + 1 ;
+				};
+				console.log('New currentDisplayLogo value: '+ currentDisplayLogo);
 
-			// CHECK IF USER IS LOADING PREVIOUS PROJECTS
-			else {
-				// console.log('Ready to go to previous project');
-
-				// Repeat the action until reaching the desired project
+			} else if (projectToLoad < currentDisplayLogo) {
 				for (var i = 0; i < projectsToSkip; i++) {
-					// ADD A DELAY WHEN THEY SKIP VARIOUS PROJECTS
-					setTimeout(function(){
-						showMeThePreviousLogo(currentDisplayLogo);
-					}, i * 100);
+					currentDisplayLogo = currentDisplayLogo - 1 ;
+
+					// Fix to each(loop) inside bottomNavBarClick() function, it doesn't update the 'current display project' var
+					if (currentDisplayLogo == 1) {
+						$('#logosCarousel').find('.leftArrow').addClass('firstArrow');
+					};
+				};
+				console.log('New currentDisplayLogo value: '+ currentDisplayLogo);
+			};
+		});
+
+
+		// INTERACTION BY KEYBOARD
+		$(document).keyup(function(event) {
+			// TRIGGER THE KEY INTERACTION FUNCTIONS OF THE CURRENT CAROUSEL SECTION
+			// RIGHT ARROW INTERACTION (KEYCODE = 39)
+			if (event.keyCode == 39 ){
+				event.preventDefault();
+
+				// Trigger the functions of the Logos Carousel
+				if (currentSectionId == 4) {
+					rightMovementNavigation(currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
+
+					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
+					// Update the 'current loaded project' var
+					if (currentDisplayLogo < totalLogos){
+						currentDisplayLogo = currentDisplayLogo + 1 ;
+					}
+				};
+			}
+
+			// LEFT ARROW INTERACTION (KEYCODE = 37)
+			if (event.keyCode == 37){
+				event.preventDefault();
+
+				// Trigger the functions of the Logos Carousel
+				if (currentSectionId == 4 && currentDisplayLogo > 1) {
+					leftMovementNavigation(currentDisplayLogo, $('#logosCarousel'));
+
+					// THE LAST MOVE
+					// Update the 'current loaded project' var
+					if (currentDisplayLogo > 1){
+						currentDisplayLogo = currentDisplayLogo - 1 ;
+					}
 				};
 			}
 		});
 
 
-	
-		// INTERACTION BY KEYBOARD
-			$(document).keyup(function(event) {
-
-				// TRIGGER THE KEY INTERACTION FUNCTIONS ONLY IF WE ARE AT THE LOGOS CAROUSEL SECTION
-				// RIGHT ARROW INTERACTION (KEYCODE = 39)
-				if (event.keyCode == 39 && currentSectionId == 4){
-					event.preventDefault();
-
-					
-					if (currentDisplayLogo < totalLogos) {
-						showMeTheNextLogo(currentDisplayLogo);
-
-					} else if (currentDisplayLogo == totalLogos){
-						delayBetweenSections();
-						scrollNextSection();
-						currentSectionId = 5;
-			 			window.history.pushState("object or string", "section", "?section=stationery");
-					};
-				}
-
-				// LEFT ARROW INTERACTION (KEYCODE = 37)
-				if (event.keyCode == 37 && currentSectionId == 4 && currentDisplayLogo > 1){
-					event.preventDefault();
-					
-					showMeThePreviousLogo(currentDisplayLogo);
-				}
-			});
-
-
-			
-
 		// INTERACTION BY HORIZONTAL SCROLLING
 		$('#mbrtWrapper').on('mousewheel', function(event) {
 			// CONTROL TRIGGERING
 			// Change section only if the current section has been fully loaded
-			if(canScroll && event.deltaX != 0 && currentSectionId == 4){
-				
-				delayBetweenSections();
+			if(canScroll && event.deltaX != 0){
+				event.preventDefault();
 
-		    	// CHECK IF JS IS DETECTING MOUSEWHEEL
-				console.log('Scroll started.');
-		  		console.log(event.deltaX, event.deltaY, event.deltaFactor);
+				if (currentSectionId == 4) {
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
 
-		  		// Detect if user is scrolling right
-	    		if (event.deltaX > 0){
-
-	    			if (currentDisplayLogo < totalLogos) {
-	    				showMeTheNextLogo(currentDisplayLogo);
-
-	    			} else if (currentDisplayLogo == totalLogos){
-	    				delayBetweenSections();
-						scrollNextSection();
-						currentSectionId = 5;
-			 			window.history.pushState("object or string", "section", "?section=stationery");
-
-	    			};
-
-	    		} 
-	    		// Detect if user is scrolling left and if there are previous projects to show
-	    		else if (event.deltaX < 0 && currentDisplayLogo > 1){
-	    			showMeThePreviousLogo(currentDisplayLogo);
-	    		}
-
-
+					// Detect if user is scrolling right
+					if (event.deltaX > 0) {
+						// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
+						// Update the 'current loaded project' var
+						if (currentDisplayLogo < totalLogos){
+							currentDisplayLogo = currentDisplayLogo + 1 ;
+						}
+					} else if (event.deltaX < 0) {
+						// THE LAST MOVE
+						// Update the 'current loaded project' var
+						if (currentDisplayLogo > 1){
+							currentDisplayLogo = currentDisplayLogo - 1 ;
+						}
+					};
+				};
 		    } else {
 		    	// PREVENT OVERLAPING CHANGE SECTION ANIMATIONS
 				// If there is an animation running to change the section, wait until it's over to change of section again
@@ -151,190 +134,6 @@ jQuery(document).ready(function($) {
 				// console.log("You can't scroll yet, canScroll: " + canScroll);
 		    }
 	    });
-
-
-
-
-	// HELPER FUNCTIONS
-		// CHANGE POSITION OF PROJECT PHOTOS
-			// PUT SELECTED PROJECT PHOTO ON THE LEFT EDGE, OUTSIDE THE VIEWPORT
-			function sendToBack(project, projectBar){
-				project.addClass('holdingBackPhoto');
-				project.removeClass('previousPhoto');
-				project.removeClass('currentPhoto');
-			}
-
-			// PUT SELECTED PROJECT PHOTO ON THE LEFT SIDE, INSIDE THE VIEWPORT
-			function sendToPrevious(project, projectBar){
-				project.addClass('previousPhoto');
-				project.removeClass('currentPhoto');
-				project.removeClass('holdingBackPhoto');
-
-				// CHANGE BARS POSITION OF THE BOTTOM NAV TO THE CORRECT POSITION
-				projectBar.addClass('previousBar');
-				projectBar.removeClass('currentBar');
-				projectBar.removeClass('nextBar');
-			}
-
-			// PUT SELECTED PROJECT PHOTO ON CENTER
-			function sendToCurrent(project, projectBar){
-				project.addClass('currentPhoto');
-				project.removeClass('nextPhoto');
-				project.removeClass('previousPhoto');
-
-				// CHANGE BARS POSITION OF THE BOTTOM NAV TO THE CORRECT POSITION
-				projectBar.addClass('currentBar');
-				projectBar.removeClass('previousBar');
-				projectBar.removeClass('nextBar');
-			}
-
-			// PUT SELECTED PROJECT PHOTO ON THE RIGHT EDGE, INSIDE THE VIEWPORT
-			function sendToNext(project, projectBar){
-				project.addClass('nextPhoto');
-				project.removeClass('currentPhoto');
-				project.removeClass('holdingFrontPhoto');
-
-				// CHANGE BARS POSITION OF THE BOTTOM NAV TO THE CORRECT POSITION
-				projectBar.addClass('nextBar');
-				projectBar.removeClass('currentBar');
-				projectBar.removeClass('previousBar');
-			}
-
-			// PUT SELECTED PROJECT PHOTO ON THE RIGHT SIDE, OUTSIDE THE VIEWPORT
-			function sendToFront(project){
-				project.addClass('holdingFrontPhoto');
-				project.removeClass('nextPhoto');
-				project.removeClass('currentPhoto');
-			}
-
-		// SET ATTRIBUTE VALUE
-			// SET ID OF THE PROJECT TO BRING
-			function setAttrIdToBring(element, idToBring){
-				element.data("idtobring", idToBring);
-			}
-
-		// GO NEXT PROJECT, ONE BY ONE
-		function showMeTheNextLogo(currentShowingLogoId){
-			// CHECK IF IT'S MOVING FROM THE FIRST PROJECT
-			if (currentShowingLogoId == 1) {
-				// SHOW THE LEFT ARROW TO GO PREVIOUS PHOTOS
-				$('#logosCarousel').find('.leftArrow').removeClass('firstArrow');
-			};
-
-			// DISPLACE 1 POSITION PROJECT PHOTOS
-			// First move the previous photos to their new positions
-				// The 'holding back photos' stay like that, only the 'previous photo' go backwards
-				$('#logosCarousel').find('.previousPhoto').addClass('holdingBackPhoto');
-				$('#logosCarousel').find('.previousPhoto').removeClass('previousPhoto');
-
-			// Second move the current photo
-				// Because you are moving forward, the current photo goes backwards, so put its right class
-				$('#logosCarousel').find('.currentPhoto').addClass('previousPhoto');
-				$('#logosCarousel').find('.currentPhoto').removeClass('currentPhoto');
-
-			// Finally, move the next photos
-				// We will only move the 'next photo' and the first 'holding front photo', so we will start moving first the 'next photo'
-				$('#logosCarousel').find('.nextPhoto').addClass('currentPhoto');
-				$('#logosCarousel').find('.nextPhoto').removeClass('nextPhoto');
-
-				holdingFrontProjects = $('#logosCarousel').find('.holdingFrontPhoto');
-				$(holdingFrontProjects[0]).addClass('nextPhoto');
-				$(holdingFrontProjects[0]).removeClass('holdingFrontPhoto');
-
-
-			// SET THE ATTRIBUTES OF THE ARROWS
-			// First set the new attribute for each arrow, depending on the new project loaded, the previous photo id for left arrow and the next photo id for right arrow
-			leftIdToBring = currentShowingLogoId;
-			rightIdToBring = currentShowingLogoId + 2;
-
-			// If the right id is greater than the total of projects, it means it will scroll down instead of showing the next photo
-			if (rightIdToBring > totalLogos) {
-				rightIdToBring = 'next';
-			};
-
-			$('#logosCarousel').find('.leftArrow a').data("idtobring", leftIdToBring);
-			$('#logosCarousel').find('.rightArrow a').data("idtobring", rightIdToBring);
-
-
-			// SET THE STYLE FOR THE BOTTOM NAV BARS
-				// First move the 'current bar' to the 'previous bar' position
-				$('#logosCarousel').find('.currentBar').addClass('previousBar');
-				$('#logosCarousel').find('.currentBar').removeClass('currentBar');
-
-				// Then, bring only the first 'next bar' to the 'current bar' position
-				nextBars = $('#logosCarousel').find('.nextBar');
-				$(nextBars[0]).addClass('currentBar');
-				$(nextBars[0]).removeClass('nextBar');
-
-
-			// THE LAST MOVE
-				// Update the 'current loaded logo' var
-				currentDisplayLogo = currentShowingLogoId + 1 ;
-		}
-
-		// GO PREVIOUS PROJECT, ONE BY ONE
-		function showMeThePreviousLogo(currentShowingLogoId){
-
-			// CHECK IF IT'S MOVING TO THE FIRST PROJECT
-			if (currentShowingLogoId == 2) {
-				// SHOW THE LEFT ARROW TO GO PREVIOUS PHOTOS
-				$('#logosCarousel').find('.leftArrow').addClass('firstArrow');
-			};
-
-			// DISPLACE 1 POSITION PROJECT PHOTOS
-			// First move the next photos to their new positions
-				// The 'holding front photos' stay like that, only the 'next photo' go backwards
-				$('#logosCarousel').find('.nextPhoto').addClass('holdingFrontPhoto');
-				$('#logosCarousel').find('.nextPhoto').removeClass('nextPhoto');
-
-			// Second move the current photo
-				// Because you are moving backwards, the current photo goes frontwards, so put its right class
-				$('#logosCarousel').find('.currentPhoto').addClass('nextPhoto');
-				$('#logosCarousel').find('.currentPhoto').removeClass('currentPhoto');
-
-			// Finally, move the previous photos
-				// We will only move the 'previous photo' and the last 'holding back photo', so we will start moving first the 'previous photo'
-				$('#logosCarousel').find('.previousPhoto').addClass('currentPhoto');
-				$('#logosCarousel').find('.previousPhoto').removeClass('previousPhoto');
-
-				holdingBackProjects = $('#logosCarousel').find('.holdingBackPhoto');
-				$(holdingBackProjects[holdingBackProjects.length - 1]).addClass('previousPhoto');
-				$(holdingBackProjects[holdingBackProjects.length - 1]).removeClass('holdingBackPhoto');
-
-
-			// SET THE ATTRIBUTES OF THE ARROWS
-			// First set the new attribute for each arrow, depending on the new project loaded, the previous photo id for left arrow and the next photo id for right arrow
-			leftIdToBring = currentShowingLogoId - 2;
-			rightIdToBring = currentShowingLogoId;
-
-			$('#logosCarousel').find('.leftArrow a').data("idtobring", leftIdToBring);
-			$('#logosCarousel').find('.rightArrow a').data("idtobring", rightIdToBring);
-
-
-			// SET THE STYLE FOR THE BOTTOM NAV BARS
-				// First move the 'current bar' to the 'next bar' position
-				$('#logosCarousel').find('.currentBar').addClass('nextBar');
-				$('#logosCarousel').find('.currentBar').removeClass('currentBar');
-
-				// Then, bring only the last 'previous bar' to the 'current bar' position
-				previousBars = $('#logosCarousel').find('.previousBar');
-				$(previousBars[previousBars.length - 1]).addClass('currentBar');
-				$(previousBars[previousBars.length - 1]).removeClass('previousBar');
-
-
-			// THE LAST MOVE
-				// Update the 'current loaded logo' var
-				currentDisplayLogo = currentShowingLogoId - 1 ;
-		}
-});
-
-
-
-
-
-
-
-
 
 
 
