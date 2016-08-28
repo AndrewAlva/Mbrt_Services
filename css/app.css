@@ -1,34 +1,34 @@
 @-webkit-keyframes writingBar {
   0% {
-    border-right: 4px solid #97979b; }
+    border-right: 0.25vw solid #97979b; }
   100% {
-    border-right: 4px solid rgba(151, 151, 155, 0); } }
+    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
 @-moz-keyframes writingBar {
   0% {
-    border-right: 4px solid #97979b; }
+    border-right: 0.25vw solid #97979b; }
   100% {
-    border-right: 4px solid rgba(151, 151, 155, 0); } }
+    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
 @-ms-keyframes writingBar {
   0% {
-    border-right: 4px solid #97979b; }
+    border-right: 0.25vw solid #97979b; }
   100% {
-    border-right: 4px solid rgba(151, 151, 155, 0); } }
+    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
 @-o-keyframes writingBar {
   0% {
-    border-right: 4px solid #97979b; }
+    border-right: 0.25vw solid #97979b; }
   100% {
-    border-right: 4px solid rgba(151, 151, 155, 0); } }
+    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
 @keyframes writingBar {
   0% {
-    border-right: 4px solid #97979b; }
+    border-right: 0.25vw solid #97979b; }
   100% {
-    border-right: 4px solid rgba(151, 151, 155, 0); } }
+    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
 .testSquare {
   position: fixed;
-  width: 100%;
-  height: 16px;
+  width: 113.2px;
+  height: 39px;
   margin: auto;
-  top: 653px;
+  top: 92px;
   left: 0;
   right: 0;
   border: 1px solid red;
@@ -50,7 +50,76 @@
     font-weight: 400;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-    color: #9a999e; }
+    color: #97979b; }
+    #fullWrapper #mbrtWrapper #topLeftLogo {
+      position: fixed;
+      top: 1.5vw;
+      left: 2.45vw;
+      width: 9.37vw;
+      height: 1.83vw;
+      z-index: 1000000; }
+      #fullWrapper #mbrtWrapper #topLeftLogo img {
+        position: absolute;
+        width: 100%; }
+    #fullWrapper #mbrtWrapper #rightBarsNav {
+      position: fixed;
+      width: 3.85vw;
+      height: 21.25vw;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1000; }
+      #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: right; }
+        #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar {
+          position: relative;
+          float: right;
+          display: inline-block;
+          vertical-align: top;
+          zoom: 1;
+          /* Fix for IE7 */
+          *display: inline;
+          /* Fix for IE7 */
+          height: 0.1vw;
+          margin-bottom: 1.41vw;
+          cursor: pointer;
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+          #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
+            position: absolute;
+            width: 11.8vw;
+            height: 1.04vw;
+            line-height: 1.04vw;
+            top: -0.52vw;
+            right: 0;
+            box-sizing: border-box;
+            font-size: 0.76vw;
+            color: rgba(6, 17, 26, 0);
+            -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+            -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+            -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+            -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+            transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s; }
+        #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .deactiveNavBar {
+          width: 100%;
+          background-color: #c9c9c9; }
+          #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .deactiveNavBar:hover {
+            background-color: rgba(201, 201, 201, 0); }
+          #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .deactiveNavBar .navName:hover {
+            color: #06111a;
+            padding-right: 1.49vw; }
+        #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .activeNavBar {
+          width: 166.2%;
+          background-color: #06111a; }
     #fullWrapper #mbrtWrapper .mainSection {
       position: absolute;
       width: 100%;
@@ -63,8 +132,9 @@
       will-change: transform; }
     #fullWrapper #mbrtWrapper .introSection .introLetter {
       position: absolute;
-      width: 1296px;
-      height: 690px;
+      width: 67.5vw;
+      min-width: 760px;
+      height: 35.94vw;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -82,26 +152,25 @@
         box-sizing: border-box;
         margin-top: 0; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
-        height: 75px;
-        line-height: 75px; }
+        height: 3.9vw;
+        line-height: 3.9vw; }
         #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
-          font-size: 52pt;
+          font-size: 3.64vw;
           -webkit-animation: writingBar 0.8s ease infinite alternate;
           -moz-animation: writingBar 0.8s ease infinite alternate;
           -ms-animation: writingBar 0.8s ease infinite alternate;
           -o-animation: writingBar 0.8s ease infinite alternate;
           animation: writingBar 0.8s ease infinite alternate;
-          padding-right: 25px; }
+          padding-right: 1vw; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
-        font-size: 19pt;
-        line-height: 23pt; }
+        font-size: 1.32vw;
+        line-height: 1.59vw; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
-        font-size: 28pt; }
+        font-size: 1.94vw; }
     #fullWrapper #mbrtWrapper .coverSection .nameSection {
       position: absolute;
-      width: 325px;
-      height: 110px;
-      line-height: 110px;
+      height: 5.73vw;
+      line-height: 5.73vw;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -117,9 +186,9 @@
         *display: inline;
         /* Fix for IE7 */
         margin: 0;
-        padding-right: 25px;
+        padding-right: 1vw;
         box-sizing: border-box;
-        font-size: 52pt;
+        font-size: 3.63vw;
         text-align: center;
         -webkit-animation: writingBar 0.8s ease infinite alternate;
         -moz-animation: writingBar 0.8s ease infinite alternate;
@@ -129,27 +198,29 @@
     #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
       position: absolute;
       width: 100%;
-      height: 840px;
+      height: 43.65vw;
       margin: auto;
       top: 0;
       bottom: 0; }
       #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
         position: relative;
-        width: 122px;
-        height: 42px;
-        line-height: 42px;
+        height: 1.9vw;
+        line-height: 1.9vw;
         margin: auto;
-        margin-bottom: 47px;
+        margin-bottom: 2.25vw;
         left: 0;
         right: 0;
-        font-size: 28pt; }
+        font-size: 1.78vw;
+        text-align: center; }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle h3 {
+          margin: 0; }
       #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages {
         position: relative;
         width: 100%;
-        height: 650px; }
+        height: 33.85vw; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper {
           position: absolute;
-          width: 1200px;
+          width: 62.5vw;
           height: 100%;
           margin: auto;
           left: 0;
@@ -157,7 +228,7 @@
           overflow: hidden; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto {
             position: absolute;
-            width: 1200px;
+            width: 62.5vw;
             height: 100%;
             box-sizing: border-box;
             margin: auto;
@@ -172,6 +243,7 @@
             will-change: transform; }
             #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto img {
               position: absolute;
+              width: 100%;
               margin: auto;
               top: 0;
               bottom: 0;
@@ -198,8 +270,8 @@
                 -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
               #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
                 position: absolute;
-                width: 315px;
-                height: 200px;
+                width: 16.41vw;
+                height: 10.42vw;
                 margin: auto;
                 top: 0;
                 bottom: 0;
@@ -209,32 +281,32 @@
                 #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox h5 {
                   position: relative;
                   width: 100%;
-                  height: 20px;
-                  line-height: 20px;
-                  font-size: 18.5pt;
+                  height: 1.04vw;
+                  line-height: 1.04vw;
+                  font-size: 1.28vw;
                   margin: 0;
-                  margin-bottom: 7px;
+                  margin-bottom: 0.36vw;
                   color: #06111a; }
                 #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox p {
                   position: relative;
                   width: 100%;
-                  height: 16px;
-                  line-height: 16px;
-                  font-size: 15pt;
+                  height: 0.83vw;
+                  line-height: 0.83vw;
+                  font-size: 1.04vw;
                   margin: 0;
-                  margin-bottom: 34px; }
+                  margin-bottom: 1.77vw; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingBackPhoto {
-            -webkit-transform: translate(-2400px, 0);
-            -moz-transform: translate(-2400px, 0);
-            -ms-transform: translate(-2400px, 0);
-            -o-transform: translate(-2400px, 0);
-            transform: translate(-2400px, 0); }
+            -webkit-transform: translate(-125vw, 0);
+            -moz-transform: translate(-125vw, 0);
+            -ms-transform: translate(-125vw, 0);
+            -o-transform: translate(-125vw, 0);
+            transform: translate(-125vw, 0); }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .previousPhoto {
-            -webkit-transform: translate(-1200px, 0);
-            -moz-transform: translate(-1200px, 0);
-            -ms-transform: translate(-1200px, 0);
-            -o-transform: translate(-1200px, 0);
-            transform: translate(-1200px, 0); }
+            -webkit-transform: translate(-62.5vw, 0);
+            -moz-transform: translate(-62.5vw, 0);
+            -ms-transform: translate(-62.5vw, 0);
+            -o-transform: translate(-62.5vw, 0);
+            transform: translate(-62.5vw, 0); }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .currentPhoto {
             z-index: 1;
             -webkit-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
@@ -243,23 +315,23 @@
             -o-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
             transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .nextPhoto {
-            -webkit-transform: translate(1200px, 0);
-            -moz-transform: translate(1200px, 0);
-            -ms-transform: translate(1200px, 0);
-            -o-transform: translate(1200px, 0);
-            transform: translate(1200px, 0); }
+            -webkit-transform: translate(62.5vw, 0);
+            -moz-transform: translate(62.5vw, 0);
+            -ms-transform: translate(62.5vw, 0);
+            -o-transform: translate(62.5vw, 0);
+            transform: translate(62.5vw, 0); }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingFrontPhoto {
-            -webkit-transform: translate(2400px, 0);
-            -moz-transform: translate(2400px, 0);
-            -ms-transform: translate(2400px, 0);
-            -o-transform: translate(2400px, 0);
-            transform: translate(2400px, 0); }
+            -webkit-transform: translate(125vw, 0);
+            -moz-transform: translate(125vw, 0);
+            -ms-transform: translate(125vw, 0);
+            -o-transform: translate(125vw, 0);
+            transform: translate(125vw, 0); }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .justInsertedPhoto {
             z-index: -1;
             display: none; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .arrow {
           position: absolute;
-          width: 100px;
+          width: 5.21vw;
           height: 100%;
           margin: auto;
           -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
@@ -291,9 +363,9 @@
               right: 0; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .leftArrow {
           left: 0;
-          right: 1300px; }
+          right: 67.7vw; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .rightArrow {
-          left: 1300px;
+          left: 67.7vw;
           right: 0; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .firstArrow {
           display: none;
@@ -303,18 +375,20 @@
           -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
       #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars {
         position: relative;
-        width: 570px;
-        height: 4px;
+        width: 47.92vw;
+        height: 0.2vw;
         margin: auto;
         left: 0;
         right: 0;
-        margin-top: 90px; }
+        margin-top: 4.69vw; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul {
           position: absolute;
-          width: 100%;
           height: 100%;
           margin: 0;
-          padding: 0; }
+          padding: 0;
+          margin: auto;
+          left: 0;
+          right: 0; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar {
             height: 100%;
             position: relative;
@@ -326,9 +400,9 @@
             *display: inline;
             /* Fix for IE7 */
             list-style-type: none;
-            margin-left: 7.5px;
-            margin-right: 7.5px;
-            background-color: #ececee;
+            margin-left: 0.39vw;
+            margin-right: 0.39vw;
+            background-color: #c9c9c9;
             cursor: pointer;
             -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
@@ -376,8 +450,14 @@
               -ms-transform: translateX(102%);
               -o-transform: translateX(102%);
               transform: translateX(102%); }
-        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList li {
-          width: calc(20% - 15px); }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList {
+          width: 29.69vw; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList li {
+            width: calc(20% - 0.78vw); }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList {
+          width: 11.98vw; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList li {
+            width: calc(50% - 0.78vw); }
     #fullWrapper #mbrtWrapper .coming-up {
       -webkit-transform: translateY(100%);
       -moz-transform: translateY(100%);
@@ -466,40 +546,52 @@
       bottom: 0; }
 
 #welcomeWrapper #receiverLetter .introTitle h1 {
-  margin-bottom: 30px; }
+  margin-bottom: 1.66vw; }
 #welcomeWrapper #receiverLetter .introParagraph p {
-  margin-bottom: 40px; }
+  margin-bottom: 2.1vw; }
 #welcomeWrapper #receiverLetter .introQuotes h2 {
-  margin-bottom: 40px; }
+  margin-bottom: 2.3vw; }
 
 #servicesWrapper #servicesLetter .introTitle h1 {
-  margin-bottom: 32px; }
+  margin-bottom: 1.67vw; }
 #servicesWrapper #servicesLetter .introParagraph p {
-  margin-bottom: 86px; }
+  margin-bottom: 4.48vw; }
 #servicesWrapper #servicesLetter .introQuotes h2 {
-  margin-bottom: 42px; }
+  margin-bottom: 2.18vw; }
 #servicesWrapper #servicesLetter #servicesList {
   position: relative;
   width: 100%; }
   #servicesWrapper #servicesLetter #servicesList #column-1 {
-    width: 283px; }
+    width: 14.74vw; }
   #servicesWrapper #servicesLetter #servicesList #column-2 {
-    width: 362px; }
+    width: 18.85vw; }
   #servicesWrapper #servicesLetter #servicesList #column-3 {
-    width: 368px; }
+    width: 19.17vw; }
   #servicesWrapper #servicesLetter #servicesList #column-4 {
-    width: 283px; }
+    width: 14.74vw; }
   #servicesWrapper #servicesLetter #servicesList th {
-    height: 65px;
+    height: 3.38vw;
     vertical-align: top;
     text-align: left;
-    font-size: 20pt;
-    line-height: 25pt;
+    font-size: 1.29vw;
+    line-height: 1.72vw;
     font-weight: bolder; }
   #servicesWrapper #servicesLetter #servicesList td {
-    font-size: 9pt;
-    line-height: 19pt;
-    letter-spacing: 0.9pt;
+    font-size: 0.62vw;
+    line-height: 1.33vw;
+    letter-spacing: 0.06vw;
     text-transform: uppercase; }
+    @media screen and (max-width: 1280px) {
+      #servicesWrapper #servicesLetter #servicesList td {
+        font-size: 6pt; } }
+
+#brandingCover .nameSection {
+  width: 16.93vw; }
+
+#logosCarousel .innerCarousel .carouselTitle {
+  width: 5.95vw; }
+
+#stationeryCarousel .innerCarousel .carouselTitle {
+  width: 10.3vw; }
 
 /*# sourceMappingURL=app.css.map */

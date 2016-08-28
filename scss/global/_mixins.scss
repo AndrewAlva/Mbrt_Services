@@ -7,6 +7,15 @@
 	*display: inline; /* Fix for IE7 */
 }
 
+@mixin displayRight(){
+	position: relative;
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+}
+
 @mixin transitions($timing){
 	-webkit-transition: all $timing cubic-bezier(.65,0,.25,1);
 	   -moz-transition: all $timing cubic-bezier(.65,0,.25,1);
@@ -39,22 +48,22 @@
 }
 
 @-webkit-keyframes writingBar {
-	0% { border-right: 4px solid rgba(151,151,155,1); }
-	100% { border-right: 4px solid rgba(151,151,155,0); }
+	0% { border-right: 0.25vw solid rgba(151,151,155,1); }
+	100% { border-right: 0.25vw solid rgba(151,151,155,0); }
 }
 @-moz-keyframes writingBar {
-	0% { border-right: 4px solid rgba(151,151,155,1); }
-	100% { border-right: 4px solid rgba(151,151,155,0); }
+	0% { border-right: 0.25vw solid rgba(151,151,155,1); }
+	100% { border-right: 0.25vw solid rgba(151,151,155,0); }
 }
 @-ms-keyframes writingBar {
-	0% { border-right: 4px solid rgba(151,151,155,1); }
-	100% { border-right: 4px solid rgba(151,151,155,0); }
+	0% { border-right: 0.25vw solid rgba(151,151,155,1); }
+	100% { border-right: 0.25vw solid rgba(151,151,155,0); }
 }
 @-o-keyframes writingBar {
-	0% { border-right: 4px solid rgba(151,151,155,1); }
-	100% { border-right: 4px solid rgba(151,151,155,0); }
+	0% { border-right: 0.25vw solid rgba(151,151,155,1); }
+	100% { border-right: 0.25vw solid rgba(151,151,155,0); }
 }
 @keyframes writingBar {
-	0% { border-right: 4px solid rgba(151,151,155,1); }
-	100% { border-right: 4px solid rgba(151,151,155,0); }
+	0% { border-right: 0.25vw solid rgba(151,151,155,1); }
+	100% { border-right: 0.25vw solid rgba(151,151,155,0); }
 }
