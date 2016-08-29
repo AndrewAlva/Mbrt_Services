@@ -1,84 +1,84 @@
 
 	
-
-	// CAROUSEL INTERACTION
+	// ADVERTISING & CAMPAIGNS CAROUSEL INTERACTION
+	// Section ID = 11
 
 		// GLOBAL VARS
-		var totalLogos = 5;
-		var currentDisplayLogo = 1;
+		var totalAds = 6;
+		var currentDisplayAd = 1;
 
 		// INTERACTION BY ARROWS CLICK
 		// Next Project Interaction | Arrows Nav Click
-		$('#logosCarousel').on('click', '.rightArrow a', function(event) {
+		$('#advertisingCarousel').on('click', '.rightArrow a', function(event) {
 			event.preventDefault();
-			rightMovementNavigation(currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
+			rightMovementNavigation(currentDisplayAd, totalAds, $('#advertisingCarousel'), currentSectionId + 1, 'web');
 
 			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 			// Update the 'current loaded project' var
-			if (currentDisplayLogo < totalLogos){
-				currentDisplayLogo = currentDisplayLogo + 1 ;
+			if (currentDisplayAd < totalAds){
+				currentDisplayAd = currentDisplayAd + 1 ;
 			}
 		});
 
-		//  Previous Project Interaction | Arrows Nav Click
-		$('#logosCarousel').on('click', '.leftArrow a', function(event) {
+		// Previous Project Interaction | Arrows Nav Click
+		$('#advertisingCarousel').on('click', '.leftArrow a', function(event) {
 			event.preventDefault();
-			leftMovementNavigation(currentDisplayLogo, $('#logosCarousel'));
+			leftMovementNavigation(currentDisplayAd, $('#advertisingCarousel'));
 
 			// THE LAST MOVE
 			// Update the 'current loaded project' var
-			if (currentDisplayLogo > 1){
-				currentDisplayLogo = currentDisplayLogo - 1 ;
+			if (currentDisplayAd > 1){
+				currentDisplayAd = currentDisplayAd - 1 ;
 			}
 		});
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-		$('#logosCarousel').on('click', '.singleBar', function(event) {
+		$('#advertisingCarousel').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
-			projectsToSkip = Math.abs(projectToLoad - currentDisplayLogo);
-			console.log('loadprojectid data attribute value: ' + projectToLoad);
+			projectsToSkip = Math.abs(projectToLoad - currentDisplayAd);
 			
-			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayLogo, $('#logosCarousel'), totalLogos);
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayAd, $('#advertisingCarousel'), totalAds);
 
 			// THE LAST MOVE
 			// Update the 'current loaded stationery id' var
-			if (projectToLoad > currentDisplayLogo) {
+			if (projectToLoad > currentDisplayAd) {
 				for (var i = 0; i < projectsToSkip; i++) {
-					currentDisplayLogo = currentDisplayLogo + 1 ;
+					currentDisplayAd = currentDisplayAd + 1 ;
 				};
-				console.log('New currentDisplayLogo value: '+ currentDisplayLogo);
+				console.log('New currentDisplayAd value: '+ currentDisplayAd);
 
-			} else if (projectToLoad < currentDisplayLogo) {
+			} else if (projectToLoad < currentDisplayAd) {
 				for (var i = 0; i < projectsToSkip; i++) {
-					currentDisplayLogo = currentDisplayLogo - 1 ;
+					currentDisplayAd = currentDisplayAd - 1 ;
 
 					// Fix to each(loop) inside bottomNavBarClick() function, it doesn't update the 'current display project' var
-					if (currentDisplayLogo == 1) {
-						$('#logosCarousel').find('.leftArrow').addClass('firstArrow');
+					if (currentDisplayAd == 1) {
+						$('#advertisingCarousel').find('.leftArrow').addClass('firstArrow');
 					};
 				};
-				console.log('New currentDisplayLogo value: '+ currentDisplayLogo);
+				console.log('New currentDisplayAd value: '+ currentDisplayAd);
 			};
 		});
 
 
-		// INTERACTION BY KEYBOARD
+		// INTERACTION BY KEYBOARD ARROWS
 		$(document).keyup(function(event) {
+
 			// TRIGGER THE KEY INTERACTION FUNCTIONS OF THE CURRENT CAROUSEL SECTION
 			// RIGHT ARROW INTERACTION (KEYCODE = 39)
 			if (event.keyCode == 39 ){
 				event.preventDefault();
 
-				// Trigger the functions of the Logos Carousel
-				if (currentSectionId == 4) {
-					rightMovementNavigation(currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
+				// Trigger the functions of the Advertising Carousel
+				if (currentSectionId == 11) {
+					rightMovementNavigation(currentDisplayAd, totalAds, $('#advertisingCarousel'), currentSectionId + 1, 'web');
 
 					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 					// Update the 'current loaded project' var
-					if (currentDisplayLogo < totalLogos){
-						currentDisplayLogo = currentDisplayLogo + 1 ;
+					if (currentDisplayAd < totalAds){
+						currentDisplayAd = currentDisplayAd + 1 ;
 					}
 				};
 			}
@@ -87,14 +87,14 @@
 			if (event.keyCode == 37){
 				event.preventDefault();
 
-				// Trigger the functions of the Logos Carousel
-				if (currentSectionId == 4 && currentDisplayLogo > 1) {
-					leftMovementNavigation(currentDisplayLogo, $('#logosCarousel'));
+				// Trigger the functions of the Advertising Carousel
+				if (currentSectionId == 11 && currentDisplayAd > 1) {
+					leftMovementNavigation(currentDisplayAd, $('#advertisingCarousel'));
 
 					// THE LAST MOVE
 					// Update the 'current loaded project' var
-					if (currentDisplayLogo > 1){
-						currentDisplayLogo = currentDisplayLogo - 1 ;
+					if (currentDisplayAd > 1){
+						currentDisplayAd = currentDisplayAd - 1 ;
 					}
 				};
 			}
@@ -108,21 +108,21 @@
 			if(canScroll && event.deltaX != 0){
 				event.preventDefault();
 
-				if (currentSectionId == 4) {
-					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
+				if (currentSectionId == 11) {
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayAd, totalAds, $('#advertisingCarousel'), currentSectionId + 1, 'web');
 
 					// Detect if user is scrolling right
 					if (event.deltaX > 0) {
 						// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 						// Update the 'current loaded project' var
-						if (currentDisplayLogo < totalLogos){
-							currentDisplayLogo = currentDisplayLogo + 1 ;
+						if (currentDisplayAd < totalAds){
+							currentDisplayAd = currentDisplayAd + 1 ;
 						}
 					} else if (event.deltaX < 0) {
 						// THE LAST MOVE
 						// Update the 'current loaded project' var
-						if (currentDisplayLogo > 1){
-							currentDisplayLogo = currentDisplayLogo - 1 ;
+						if (currentDisplayAd > 1){
+							currentDisplayAd = currentDisplayAd - 1 ;
 						}
 					};
 				};
@@ -135,7 +135,3 @@
 				// console.log("You can't scroll yet, canScroll: " + canScroll);
 		    }
 	    });
-
-
-
-

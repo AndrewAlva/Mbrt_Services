@@ -3,11 +3,11 @@
 
 .testSquare{
 	position: fixed;
-	width: 113.2px;
-	height: 39px;
+	width: 158.6px;
+	height: 100%;
 	margin: auto;
-	top: 92px;
-	left: 0; right: 0;
+
+	left: 0;
 	border: 1px solid red;
 	box-sizing: border-box;
 	z-index: 1000;
@@ -109,6 +109,23 @@
 				}
 			}
 
+			.hiddenMainNav{
+				display: none;
+			}
+			.crystalMainNav{
+				@include opacity(0);
+				-webkit-transform: translateY(0.5vw);
+				   -moz-transform: translateY(0.5vw);
+				    -ms-transform: translateY(0.5vw);
+				     -o-transform: translateY(0.5vw);
+				        transform: translateY(0.5vw);
+			}
+
+			.animatableMainNav{
+				@include transitions(0.7s);
+			}
+
+
 			.mainSection{
 				position: absolute;
 				width: 100%;
@@ -178,6 +195,415 @@
 				}
 			}
 
+			.contactSection{
+				.contactLetter{
+					position: absolute;
+					width: 67.4vw;
+					height: 22.35vw;
+					margin: auto;
+					top: 0; bottom: 0; left: 0; right: 0;
+
+					.topBox{
+						position: relative;
+						width: 100%;
+						height: 4.95vw;
+						margin-bottom: 8.6vw;
+
+						.contactTitle{
+							@include displayLeft();
+							width: 69%;
+							height: 100%;
+
+							h1{
+								margin: 0;
+								font-size: 3.64vw;
+								@include writingBar();
+								padding-right: 1vw;
+							}
+						}
+
+						.contactButton{
+							@include displayLeft();
+							width: 31%;
+							height: 100%;
+
+							a{
+								position: absolute;
+								width: 10.48vw;
+								height: 2.46vw;
+								line-height: 2.46vw;
+								margin: auto;
+								top: 0; bottom: 0; left: 0; right: 0;
+								border: 1px solid $light-gray;
+								color: $mid-gray;
+								font-weight: 700;
+								font-size: 1.3vw;
+								text-align: center;
+								text-decoration: none;
+
+								@include transitions(0.6s);
+
+								&:hover{
+									background-color: $light-gray;
+									color: #fff;
+								}
+							}
+						}
+					}
+
+					.bottomBox{
+						position: relative;
+						width: 100%;
+						height: 8.98vw;
+						box-sizing: border-box;
+
+						.contactColumns{
+							@include displayLeft();
+							width: 16.2vw;
+							height: 100%;
+
+							.indexRow{
+								height: 1.69vw;
+
+								h5{
+									position: absolute;
+									margin: 0;
+									font-size: 1.8vw;
+									line-height: 1.65vw;
+									border-right: 2px solid $mid-gray;
+									padding-right: 0.5vw;
+								}
+							}
+
+							.firstRow{
+								width: 100%;
+
+								.innerHeadRow{
+									font-weight: 700;
+									font-size: 1.3vw;
+									line-height: 2vw;
+								}
+
+								.innerFootRow{
+									font-size: 1.04vw;
+									font-variant-numeric: lining-nums; 
+									margin-top: -0.1vw;
+									margin-bottom: 1.72vw;
+
+									a{
+										text-decoration: none;
+										color: $mid-gray;
+									}
+								}
+							}
+
+							.secondRow{
+								font-size: 1.04vw;
+								font-variant-numeric: lining-nums; 
+								a{
+									text-decoration: none;
+									color: $mid-gray;
+								}
+
+								.innerHeadRow{
+									margin-bottom: 0.47vw;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.carouselVertSection{
+				.innerCarousel{
+					position: absolute;
+					width: 77.55vw;
+					height: 47.5vw;
+					margin: auto;
+					top: 0; bottom: 0;
+					right: 9.2vw; left: 0;
+
+					.carouselTitle{
+						position: relative;
+						float: left;
+						width: 18.54vw;
+						height: 100%;
+
+						h3{
+							position: absolute;
+							text-align: left;
+							width: 16.14vw;
+							height: 1.66vw;
+							line-height: 1.66vw;
+							font-size: 1.9vw;
+							margin: auto;
+							top: 0; bottom: 0;
+						}
+					}
+
+					.arrow{
+						position: relative;
+						float: left;
+						width: 5.2vw;
+						height: 100%;
+						margin: auto;
+						@include transitions(0.4s);
+
+						a{
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							display: block;
+							@include transitions(0.4s);
+
+							&:hover{
+								@include opacity(0.6);
+							}
+
+							i{
+								position: absolute;
+								margin: auto;
+								top: 0; bottom: 0; left: 0; right: 0;
+							}
+						}
+					}
+
+					.firstArrow{
+						a{
+							display: none;
+							@include opacity(0);
+						}
+					}
+
+					.carouselImages{
+						position: relative;
+						float: left;
+						width: 35.41vw;
+						height: 43.75vw;
+						top: 0;
+						overflow: hidden;
+
+						.projectsWrapper{
+							width: 100%;
+							height: 100%;
+							margin: auto;
+							left: 0; right: 0;
+							overflow: hidden;
+
+							.projectPhoto{
+								position: absolute;
+								width: 29.16vw;
+								height: 100%;
+								box-sizing: border-box;
+								margin: auto;
+								left: 0; right: 0;
+								top: 0; bottom: 0;
+								overflow: hidden;
+								@include transitions(1.3s);
+								will-change: transform;
+
+								img{
+									position: absolute;
+									width: 100%;
+									margin: auto;
+									top: 0; bottom: 0; left: 0; right: 0;
+								}
+							}
+
+							.holdingBackPhoto{
+								// background-color: aqua;
+								-webkit-transform: translate(-70.82vw, 0);
+								   -moz-transform: translate(-70.82vw, 0);
+								    -ms-transform: translate(-70.82vw, 0);
+								     -o-transform: translate(-70.82vw, 0);
+								        transform: translate(-70.82vw, 0);
+
+							}
+							.previousPhoto{
+								// background-color: red;
+								-webkit-transform: translate(-35.41vw, 0);
+								   -moz-transform: translate(-35.41vw, 0);
+								    -ms-transform: translate(-35.41vw, 0);
+								     -o-transform: translate(-35.41vw, 0);
+								        transform: translate(-35.41vw, 0);
+
+							}
+							.currentPhoto{
+								// background-color: blue;
+								z-index: 1;
+								@include trans-delayed(1.3s, 0.1s);
+
+							}
+							.nextPhoto{
+								// background-color: green;
+								-webkit-transform: translate(35.41vw, 0);
+								   -moz-transform: translate(35.41vw, 0);
+								    -ms-transform: translate(35.41vw, 0);
+								     -o-transform: translate(35.41vw, 0);
+								        transform: translate(35.41vw, 0);
+
+							}
+							.holdingFrontPhoto{
+								// background-color: purple;
+								-webkit-transform: translate(70.82vw, 0);
+								   -moz-transform: translate(70.82vw, 0);
+								    -ms-transform: translate(70.82vw, 0);
+								     -o-transform: translate(70.82vw, 0);
+								        transform: translate(70.82vw, 0);
+
+							}
+						}
+					}
+
+					.dataWrapper{
+						position: relative;
+						float: left;
+						width: 13.05vw;
+						height: 100%;
+
+						.projectData{
+							position: absolute;
+							width: 100%;
+							height: 100%;
+
+							.innerCenteredBox{
+								position: absolute;
+								width: 100%;
+								height: 11.2vw;
+								margin: auto;
+								top: 0; bottom: 0; 
+								left: 0; right: 0;
+								text-align: left;
+
+								h5{
+									position: relative;
+									width: 100%;
+									height: 1.04vw;
+									line-height: 1.04vw;
+									font-size: 1.28vw;
+									margin: 0;
+									margin-bottom: 0.36vw;
+									color: $black;
+								}
+
+								.shiftData{
+									position: relative;
+									width: 100%;
+									height: 0.83vw;
+									line-height: 0.83vw;
+									font-size: 1.04vw;
+									margin-bottom: 1.77vw;
+
+									p{
+										position: absolute;
+										margin: 0;
+										@include transitions(0.7s);
+									}
+
+									.currentBrand, .currentClient {
+										z-index: 1;
+										@include opacity(1);
+										@include trans-delayed(0.7s, 0.7s);
+										-webkit-transform: none;
+										   -moz-transform: none;
+										    -ms-transform: none;
+										     -o-transform: none;
+										        transform: none;
+									}
+									.nextBrand, .nextClient, .previousBrand, .previousClient {
+										z-index: -1;
+										@include opacity(0);
+										-webkit-transform: translateY(0.5vw);
+										   -moz-transform: translateY(0.5vw);
+										    -ms-transform: translateY(0.5vw);
+										     -o-transform: translateY(0.5vw);
+										        transform: translateY(0.5vw);
+									}
+								}
+							}
+						}
+					}
+
+					.projectsBars{
+						position: absolute;
+						width: 47.92vw;
+						height: 0.2vw;
+						margin: auto;
+						left: 5.4vw; right: 0;
+						bottom: 0;
+
+						ul{
+							position: absolute;
+							height: 100%;
+							margin: 0;
+							padding: 0;
+							margin: auto;
+							left: 0; right: 0;
+
+							.singleBar{
+								height: 100%;
+								@include displayLeft();
+								list-style-type: none;
+								margin-left: 0.39vw;
+								margin-right: 0.39vw;
+								background-color: $light-gray;
+								cursor: pointer;
+								@include transitions(0.6s);
+								overflow: hidden;
+
+								&:hover{
+									@include opacity(0.4);
+								}
+
+								.coverBar{
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									background-color: $black;
+									@include transitions(1s);
+									-webkit-transform-origin: left;
+									transform-origin: left;
+								}
+
+								.currentBar{
+									@include trans-delayed(1s, 0.1s);
+									-webkit-transform: none;
+									   -moz-transform: none;
+									    -ms-transform: none;
+									     -o-transform: none;
+									        transform: none;
+								}
+
+								.nextBar{
+									-webkit-transform: translateX(-102%);
+									   -moz-transform: translateX(-102%);
+									    -ms-transform: translateX(-102%);
+									     -o-transform: translateX(-102%);
+									        transform: translateX(-102%);
+								}
+
+								.previousBar{
+									-webkit-transform: translateX(102%);
+									   -moz-transform: translateX(102%);
+									    -ms-transform: translateX(102%);
+									     -o-transform: translateX(102%);
+									        transform: translateX(102%);
+								}
+							}
+						}
+
+						.sixBarsList{
+							width: 35.93vw;
+
+							li{
+								width: calc(16.66% - 0.78vw);
+							}
+						}
+
+					}
+				}
+			}
+
 			.carouselSection{
 				.innerCarousel{
 					position: absolute;
@@ -221,6 +647,7 @@
 								box-sizing: border-box;
 								margin: auto;
 								left: 0; right: 0;
+								top: 0; bottom: 0;
 								overflow: hidden;
 								@include transitions(1.3s);
 								will-change: transform;
@@ -472,6 +899,14 @@
 
 							li{
 								width: calc(12.5% - 0.78vw);
+							}
+						}
+
+						.fourBarsList{
+							width: 23.96vw;
+
+							li{
+								width: calc(25% - 0.78vw);
 							}
 						}
 					}
@@ -739,6 +1174,38 @@
 		}
 	}
 // END INTERIORISM CAROUSEL
+
+	// ADVERTISING CAROUSEL SECTION
+
+// WEB COVER SECTION
+	#webCover{
+		.nameSection{
+			width: 50.5vw;
+		}
+	}
+// END WEB COVER
+
+// LUCKY WEBSITE CAROUSEL SECTION
+	#luckyWebCarousel{
+		.innerCarousel{
+			.carouselTitle{
+				width: 12.5vw;
+			}
+		}
+	}
+// END LUCKY WEBSITE CAROUSEL
+
+
+// CAMILA WEBSITE CAROUSEL SECTION
+	#camilaWebCarousel{
+		.innerCarousel{
+			.carouselTitle{
+				width: 18.5vw;
+			}
+		}
+	}
+// END CAMILA WEBSITE CAROUSEL
+
 
 
 

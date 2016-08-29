@@ -1,7 +1,8 @@
 
+	
 	// POINT OF SALE DESIGN CAROUSEL INTERACTION
-	// Section ID = 8
-	9
+	// Section ID = 9
+	
 
 		// GLOBAL VARS
 		var totalPOS = 2;
