@@ -1028,6 +1028,7 @@
 			.introTitle{
 				h1{
 					margin-bottom: 1.66vw;
+					color: $black;
 				}
 			}
 
@@ -1040,6 +1041,7 @@
 			.introQuotes{
 				h2{
 					margin-bottom: 2.3vw;
+					color: $black;
 				}
 			}
 		}
@@ -1053,6 +1055,7 @@
 			.introTitle{
 				h1{
 					margin-bottom: 1.67vw;
+					color: $black;
 				}
 			}
 			
@@ -1065,6 +1068,7 @@
 			.introQuotes{
 				h2{
 					margin-bottom: 2.18vw;
+					color: $black;
 				}
 			}
 
@@ -1092,6 +1096,7 @@
 					font-size: 1.29vw;
 					line-height: 1.72vw;
 					font-weight: bolder;
+					color: $black;
 				}
 
 				td{
@@ -1113,6 +1118,7 @@
 	#brandingCover{
 		.nameSection{
 			width: 16.93vw;
+			color: $black;
 		}
 	}
 // END BRANDING COVER
@@ -1122,6 +1128,7 @@
 		.innerCarousel{
 			.carouselTitle{
 				width: 5.95vw;
+				color: $black;
 			}
 		}
 	}
@@ -1132,6 +1139,7 @@
 		.innerCarousel{
 			.carouselTitle{
 				width: 10.3vw;
+				color: $black;
 			}
 		}
 	}
@@ -1141,6 +1149,7 @@
 	#communicationCover{
 		.nameSection{
 			width: 41.95vw;
+			color: $black;
 		}
 	}
 // END BRAND COMMUNICATIONS COVER
@@ -1150,16 +1159,29 @@
 		.innerCarousel{
 			.carouselTitle{
 				width: 28.5vw;
+				color: $black;
 			}
 		}
 	}
 // END PACKAGING & PRODUCT CAROUSEL
+
+// UNIFORMS CAROUSEL SECTION
+	#uniformsCarousel{
+		.innerCarousel{
+			.carouselTitle{
+				width: 28.5vw;
+				color: $black;
+			}
+		}
+	}
+// END UNIFORMS CAROUSEL
 
 // POINT OF SALE DESIGN CAROUSEL SECTION
 	#POSCarousel{
 		.innerCarousel{
 			.carouselTitle{
 				width: 12vw;
+				color: $black;
 			}
 		}
 	}
@@ -1170,17 +1192,27 @@
 		.innerCarousel{
 			.carouselTitle{
 				width: 11vw;
+				color: $black;
 			}
 		}
 	}
 // END INTERIORISM CAROUSEL
 
-	// ADVERTISING CAROUSEL SECTION
+// ADVERTISING CAROUSEL SECTION
+	#advertisingCarousel{
+		.innerCarousel{
+			.carouselTitle{
+				color: $black;
+			}
+		}
+	}	
+// END ADVERTISING CAROUSEL
 
 // WEB COVER SECTION
 	#webCover{
 		.nameSection{
 			width: 50.5vw;
+			color: $black;
 		}
 	}
 // END WEB COVER
@@ -1190,6 +1222,7 @@
 		.innerCarousel{
 			.carouselTitle{
 				width: 12.5vw;
+				color: $black;
 			}
 		}
 	}
@@ -1201,10 +1234,36 @@
 		.innerCarousel{
 			.carouselTitle{
 				width: 18.5vw;
+				color: $black;
 			}
 		}
 	}
 // END CAMILA WEBSITE CAROUSEL
+
+
+// CONTACT FINAL SECTION
+	#contactWrapper{
+		.contactLetter{
+			.contactTitle{
+				h1{
+					color: $black;
+				}
+			}
+
+			.indexRow{
+				h5{
+					color: $black;
+				}
+			}
+
+			.firstRow{
+				.innerHeadRow{
+					color: $black;
+				}
+			}
+		}
+	}
+// END CONTACT
 
 
 

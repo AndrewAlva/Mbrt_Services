@@ -980,18 +980,22 @@
       bottom: 0; }
 
 #welcomeWrapper #receiverLetter .introTitle h1 {
-  margin-bottom: 1.66vw; }
+  margin-bottom: 1.66vw;
+  color: #06111a; }
 #welcomeWrapper #receiverLetter .introParagraph p {
   margin-bottom: 2.1vw; }
 #welcomeWrapper #receiverLetter .introQuotes h2 {
-  margin-bottom: 2.3vw; }
+  margin-bottom: 2.3vw;
+  color: #06111a; }
 
 #servicesWrapper #servicesLetter .introTitle h1 {
-  margin-bottom: 1.67vw; }
+  margin-bottom: 1.67vw;
+  color: #06111a; }
 #servicesWrapper #servicesLetter .introParagraph p {
   margin-bottom: 4.48vw; }
 #servicesWrapper #servicesLetter .introQuotes h2 {
-  margin-bottom: 2.18vw; }
+  margin-bottom: 2.18vw;
+  color: #06111a; }
 #servicesWrapper #servicesLetter #servicesList {
   position: relative;
   width: 100%; }
@@ -1009,7 +1013,8 @@
     text-align: left;
     font-size: 1.29vw;
     line-height: 1.72vw;
-    font-weight: bolder; }
+    font-weight: bolder;
+    color: #06111a; }
   #servicesWrapper #servicesLetter #servicesList td {
     font-size: 0.62vw;
     line-height: 1.33vw;
@@ -1020,33 +1025,57 @@
         font-size: 6pt; } }
 
 #brandingCover .nameSection {
-  width: 16.93vw; }
+  width: 16.93vw;
+  color: #06111a; }
 
 #logosCarousel .innerCarousel .carouselTitle {
-  width: 5.95vw; }
+  width: 5.95vw;
+  color: #06111a; }
 
 #stationeryCarousel .innerCarousel .carouselTitle {
-  width: 10.3vw; }
+  width: 10.3vw;
+  color: #06111a; }
 
 #communicationCover .nameSection {
-  width: 41.95vw; }
+  width: 41.95vw;
+  color: #06111a; }
 
 #packagingCarousel .innerCarousel .carouselTitle {
-  width: 28.5vw; }
+  width: 28.5vw;
+  color: #06111a; }
+
+#uniformsCarousel .innerCarousel .carouselTitle {
+  width: 28.5vw;
+  color: #06111a; }
 
 #POSCarousel .innerCarousel .carouselTitle {
-  width: 12vw; }
+  width: 12vw;
+  color: #06111a; }
 
 #interiorismCarousel .innerCarousel .carouselTitle {
-  width: 11vw; }
+  width: 11vw;
+  color: #06111a; }
+
+#advertisingCarousel .innerCarousel .carouselTitle {
+  color: #06111a; }
 
 #webCover .nameSection {
-  width: 50.5vw; }
+  width: 50.5vw;
+  color: #06111a; }
 
 #luckyWebCarousel .innerCarousel .carouselTitle {
-  width: 12.5vw; }
+  width: 12.5vw;
+  color: #06111a; }
 
 #camilaWebCarousel .innerCarousel .carouselTitle {
-  width: 18.5vw; }
+  width: 18.5vw;
+  color: #06111a; }
+
+#contactWrapper .contactLetter .contactTitle h1 {
+  color: #06111a; }
+#contactWrapper .contactLetter .indexRow h5 {
+  color: #06111a; }
+#contactWrapper .contactLetter .firstRow .innerHeadRow {
+  color: #06111a; }
 
 /*# sourceMappingURL=app.css.map */

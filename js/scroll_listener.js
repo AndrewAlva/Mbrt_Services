@@ -4,12 +4,12 @@
 	var canScroll = true;
 	var transitionsTiming = 900;
 	var pauseToLoadSection = 500;
-	var currentSectionId = 0;
+	var currentSectionId;
 	var lastSectionId = 15;
 
 
 		// SCROLL LISTENER
-		$('#mbrtWrapper').on('mousewheel', function(event) {
+		$(document).on('mousewheel', function(event) {
 
 			// CONTROL TRIGGERING
 			// Change section only if the current section has been fully loaded
