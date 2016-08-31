@@ -30,6 +30,8 @@
   margin: auto;
   left: 0;
   border: 1px solid red;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 1000; }
 
@@ -99,6 +101,8 @@
             line-height: 1.04vw;
             top: -0.52vw;
             right: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
             box-sizing: border-box;
             font-size: 0.76vw;
             color: rgba(6, 17, 26, 0);
@@ -165,6 +169,8 @@
         /* Fix for IE7 */
         *display: inline;
         /* Fix for IE7 */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         margin-top: 0; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
@@ -203,6 +209,8 @@
         /* Fix for IE7 */
         margin: 0;
         padding-right: 1vw;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         font-size: 3.63vw;
         text-align: center;
@@ -284,6 +292,8 @@
         position: relative;
         width: 100%;
         height: 8.98vw;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box; }
         #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns {
           position: relative;
@@ -408,6 +418,8 @@
             position: absolute;
             width: 29.16vw;
             height: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
             box-sizing: border-box;
             margin: auto;
             left: 0;
@@ -657,6 +669,8 @@
             position: absolute;
             width: 62.5vw;
             height: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
             box-sizing: border-box;
             margin: auto;
             left: 0;
