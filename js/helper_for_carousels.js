@@ -16,8 +16,11 @@
 					// HELPER FUNCTIONS FROM SCROLL_LISTENER.JS
 					delayBetweenSections();
 					scrollNextSection();
-					currentSectionId = nextSectionId;
 		 			window.history.pushState("object or string", "section", "?section=" + nextSectionName);
+
+		 			setTimeout(function(){
+						currentSectionId = nextSectionId;
+		 			}, transitionsTiming);
 		 			
 				};
 			}
@@ -207,7 +210,6 @@
 				nextBrands = currentCarouselSelector.find('.nextBrand');
 				$(nextBrands[0]).addClass('currentBrand');
 				$(nextBrands[0]).removeClass('nextBrand');
-				console.log('Brand Data changed!');
 			}
 
 			function switchPreviousProjectDataBrand(currentCarouselSelector){
@@ -219,7 +221,6 @@
 				previousBrands = currentCarouselSelector.find('.previousBrand');
 				$(previousBrands[previousBrands.length - 1]).addClass('currentBrand');
 				$(previousBrands[previousBrands.length - 1]).removeClass('previousBrand');
-				console.log('Brand Data changed!');
 			}
 
 
@@ -233,7 +234,6 @@
 				nextClients = currentCarouselSelector.find('.nextClient');
 				$(nextClients[0]).addClass('currentClient');
 				$(nextClients[0]).removeClass('nextClient');
-				console.log('Client Data changed!');
 			}
 
 			function switchPreviousProjectDataClient(currentCarouselSelector){
@@ -245,7 +245,6 @@
 				previousClients = currentCarouselSelector.find('.previousClient');
 				$(previousClients[previousClients.length - 1]).addClass('currentClient');
 				$(previousClients[previousClients.length - 1]).removeClass('previousClient');
-				console.log('Client Data changed!');
 			}
 
 
