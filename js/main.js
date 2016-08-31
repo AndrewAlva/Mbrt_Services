@@ -6,7 +6,7 @@
 		
 		
 	// LOAD CURRENT SECTION BY URL
-	currentSectionName = currentSectionName.replace('?section=', '');
+	currentSectionName = currentSectionName.replace('?', '');
 
 	if (currentSectionName != ''){
 		openSection(currentSectionName);
