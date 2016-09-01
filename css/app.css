@@ -946,6 +946,10 @@
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fourBarsList li {
             width: calc(25% - 0.78vw); }
     #fullWrapper #mbrtWrapper .coming-up {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+      -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
       -webkit-transform: translateY(100%);
       -moz-transform: translateY(100%);
       -ms-transform: translateY(100%);
@@ -958,6 +962,10 @@
       -o-transform: none;
       transform: none; }
     #fullWrapper #mbrtWrapper .passed-up {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+      -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
       -webkit-transform: translateY(-100%);
       -moz-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
@@ -1116,11 +1124,11 @@
   width: 50.5vw;
   color: #06111a; }
 
-#luckyWebCarousel .innerCarousel .carouselTitle {
+#luckyCarousel .innerCarousel .carouselTitle {
   width: 12.5vw;
   color: #06111a; }
 
-#camilaWebCarousel .innerCarousel .carouselTitle {
+#camilaCarousel .innerCarousel .carouselTitle {
   width: 18.5vw;
   color: #06111a; }
 

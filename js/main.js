@@ -42,8 +42,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'welcome') {
@@ -62,8 +62,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 			
 		} else if (section == 'services') {
@@ -82,8 +82,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 			
 		} else if (section == 'branding') {
@@ -102,8 +102,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 			
 		} else if (section == 'logos') {
@@ -122,8 +122,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'stationery') {
@@ -142,8 +142,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'communication') {
@@ -162,8 +162,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'packaging') {
@@ -182,8 +182,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'uniforms') {
@@ -202,8 +202,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'pos') {
@@ -222,8 +222,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'interiorism') {
@@ -242,8 +242,8 @@
 			$('#interiorismCarousel').addClass('is-active');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'advertising') {
@@ -262,8 +262,8 @@
 			$('#interiorismCarousel').addClass('passed-up');
 			$('#advertisingCarousel').addClass('is-active');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'web') {
@@ -282,8 +282,8 @@
 			$('#interiorismCarousel').addClass('passed-up');
 			$('#advertisingCarousel').addClass('passed-up');
 			$('#webCover').addClass('is-active');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'lucky') {
@@ -302,8 +302,8 @@
 			$('#interiorismCarousel').addClass('passed-up');
 			$('#advertisingCarousel').addClass('passed-up');
 			$('#webCover').addClass('passed-up');
-			$('#luckyWebCarousel').addClass('is-active');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('is-active');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'camila') {
@@ -322,8 +322,8 @@
 			$('#interiorismCarousel').addClass('passed-up');
 			$('#advertisingCarousel').addClass('passed-up');
 			$('#webCover').addClass('passed-up');
-			$('#luckyWebCarousel').addClass('passed-up');
-			$('#camilaWebCarousel').addClass('is-active');
+			$('#luckyCarousel').addClass('passed-up');
+			$('#camilaCarousel').addClass('is-active');
 			$('#contactWrapper').addClass('coming-up');
 
 		} else if (section == 'contact') {
@@ -342,8 +342,8 @@
 			$('#interiorismCarousel').addClass('passed-up');
 			$('#advertisingCarousel').addClass('passed-up');
 			$('#webCover').addClass('passed-up');
-			$('#luckyWebCarousel').addClass('passed-up');
-			$('#camilaWebCarousel').addClass('passed-up');
+			$('#luckyCarousel').addClass('passed-up');
+			$('#camilaCarousel').addClass('passed-up');
 			$('#contactWrapper').addClass('is-active');
 
 		} else {
@@ -361,8 +361,8 @@
 			$('#interiorismCarousel').addClass('coming-up');
 			$('#advertisingCarousel').addClass('coming-up');
 			$('#webCover').addClass('coming-up');
-			$('#luckyWebCarousel').addClass('coming-up');
-			$('#camilaWebCarousel').addClass('coming-up');
+			$('#luckyCarousel').addClass('coming-up');
+			$('#camilaCarousel').addClass('coming-up');
 			$('#contactWrapper').addClass('coming-up');
 		}
 	}
@@ -395,3 +395,13 @@
 		});
 	}
 	
+	
+
+
+
+
+
+
+
+
+
