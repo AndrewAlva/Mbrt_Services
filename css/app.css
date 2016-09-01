@@ -25,7 +25,7 @@
     border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
 .testSquare {
   position: fixed;
-  width: 158.6px;
+  width: 50%;
   height: 100%;
   margin: auto;
   left: 0;
@@ -344,7 +344,7 @@
       margin: auto;
       top: 0;
       bottom: 0;
-      right: 9.2vw;
+      right: 2.2vw;
       left: 0; }
       #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle {
         position: relative;
@@ -558,7 +558,7 @@
         width: 47.92vw;
         height: 0.2vw;
         margin: auto;
-        left: 5.4vw;
+        left: 2.2vw;
         right: 0;
         bottom: 0; }
         #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul {
