@@ -16,3 +16,5 @@ Mandelbrot Services Letter to introduce them with potential clients.
 * 404.html is only for dynamic webs?
 * Have you ever seen or done this kind of animations?
 	Text Motion: http://renaterechner.at/en/
+
+* How to put passwords or another resource to block the access to an specific user
