@@ -23,6 +23,157 @@
     border-right: 0.25vw solid #97979b; }
   100% {
     border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
+#indexWrapper #mainLogo {
+  position: absolute;
+  width: 662px;
+  height: 384px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 232px; }
+  #indexWrapper #mainLogo img {
+    position: absolute;
+    width: 100%; }
+#indexWrapper #startExploring {
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+  -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
+  #indexWrapper #startExploring:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+  #indexWrapper #startExploring .startText {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 11.5pt;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 17px; }
+  #indexWrapper #startExploring .startGo {
+    position: relative;
+    width: 100%;
+    height: 40px; }
+    #indexWrapper #startExploring .startGo i {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; }
+
+#welcomeWrapper #receiverLetter .introTitle h1 {
+  margin-bottom: 1.66vw;
+  color: #06111a; }
+#welcomeWrapper #receiverLetter .introParagraph p {
+  margin-bottom: 2.1vw; }
+#welcomeWrapper #receiverLetter .introQuotes h2 {
+  margin-bottom: 2.3vw;
+  color: #06111a; }
+
+#servicesWrapper #servicesLetter .introTitle h1 {
+  margin-bottom: 1.67vw;
+  color: #06111a; }
+#servicesWrapper #servicesLetter .introParagraph p {
+  margin-bottom: 4.48vw; }
+#servicesWrapper #servicesLetter .introQuotes h2 {
+  margin-bottom: 2.18vw;
+  color: #06111a; }
+#servicesWrapper #servicesLetter #servicesList {
+  position: relative;
+  width: 100%; }
+  #servicesWrapper #servicesLetter #servicesList #column-1 {
+    width: 14.74vw; }
+  #servicesWrapper #servicesLetter #servicesList #column-2 {
+    width: 18.85vw; }
+  #servicesWrapper #servicesLetter #servicesList #column-3 {
+    width: 19.17vw; }
+  #servicesWrapper #servicesLetter #servicesList #column-4 {
+    width: 14.74vw; }
+  #servicesWrapper #servicesLetter #servicesList th {
+    height: 3.38vw;
+    vertical-align: top;
+    text-align: left;
+    font-size: 1.29vw;
+    line-height: 1.72vw;
+    font-weight: bolder;
+    color: #06111a; }
+  #servicesWrapper #servicesLetter #servicesList td {
+    font-size: 0.62vw;
+    line-height: 1.33vw;
+    letter-spacing: 0.06vw;
+    text-transform: uppercase; }
+    @media screen and (max-width: 1280px) {
+      #servicesWrapper #servicesLetter #servicesList td {
+        font-size: 6pt; } }
+
+#brandingCover .nameSection {
+  width: 16.93vw;
+  color: #06111a; }
+
+#logosCarousel .innerCarousel .carouselTitle {
+  width: 5.95vw;
+  color: #06111a; }
+
+#stationeryCarousel .innerCarousel .carouselTitle {
+  width: 10.3vw;
+  color: #06111a; }
+
+#communicationCover .nameSection {
+  width: 41.95vw;
+  color: #06111a; }
+
+#packagingCarousel .innerCarousel .carouselTitle {
+  width: 28.5vw;
+  color: #06111a; }
+
+#uniformsCarousel .innerCarousel .carouselTitle {
+  width: 28.5vw;
+  color: #06111a; }
+
+#POSCarousel .innerCarousel .carouselTitle {
+  width: 12vw;
+  color: #06111a; }
+
+#interiorismCarousel .innerCarousel .carouselTitle {
+  width: 11vw;
+  color: #06111a; }
+
+#advertisingCarousel .innerCarousel .carouselTitle {
+  color: #06111a; }
+
+#webCover .nameSection {
+  width: 50.5vw;
+  color: #06111a; }
+
+#luckyCarousel .innerCarousel .carouselTitle {
+  width: 12.5vw;
+  color: #06111a; }
+
+#camilaCarousel .innerCarousel .carouselTitle {
+  width: 18.5vw;
+  color: #06111a; }
+
+#contactWrapper .contactLetter .contactTitle h1 {
+  color: #06111a; }
+#contactWrapper .contactLetter .indexRow h5 {
+  color: #06111a; }
+#contactWrapper .contactLetter .firstRow .innerHeadRow {
+  color: #06111a; }
+
 .testSquare {
   position: fixed;
   width: 50%;
@@ -42,6 +193,39 @@
   margin: 0;
   padding: 0;
   overflow: hidden; }
+  #fullWrapper #mbrtLoader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000000000000;
+    background-color: #fff;
+    -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.4s;
+    -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.4s;
+    -ms-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.4s;
+    -o-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.4s;
+    transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.4s; }
+    #fullWrapper #mbrtLoader h1 {
+      position: absolute;
+      text-align: center;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+  #fullWrapper .crystalLoader {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+    -webkit-transform: translateY(0.5vw);
+    -moz-transform: translateY(0.5vw);
+    -ms-transform: translateY(0.5vw);
+    -o-transform: translateY(0.5vw);
+    transform: translateY(0.5vw); }
   #fullWrapper #mbrtWrapper {
     position: absolute;
     width: 100%;
@@ -57,7 +241,8 @@
       left: 2.45vw;
       width: 9.37vw;
       height: 1.83vw;
-      z-index: 1000000; }
+      z-index: 1000000;
+      cursor: pointer; }
       #fullWrapper #mbrtWrapper #topLeftLogo img {
         position: absolute;
         width: 100%; }
@@ -987,156 +1172,5 @@
       width: 40px;
       height: 40px;
       background-position: -5px -45px; }
-
-#indexWrapper #mainLogo {
-  position: absolute;
-  width: 662px;
-  height: 384px;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 232px; }
-  #indexWrapper #mainLogo img {
-    position: absolute;
-    width: 100%; }
-#indexWrapper #startExploring {
-  position: absolute;
-  width: 50px;
-  height: 80px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 50px;
-  cursor: pointer;
-  -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-  -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-  -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-  -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-  transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
-  #indexWrapper #startExploring:hover {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
-  #indexWrapper #startExploring .startText {
-    position: relative;
-    width: 100%;
-    height: 25px;
-    line-height: 25px;
-    font-size: 11.5pt;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-bottom: 17px; }
-  #indexWrapper #startExploring .startGo {
-    position: relative;
-    width: 100%;
-    height: 40px; }
-    #indexWrapper #startExploring .startGo i {
-      position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0; }
-
-#welcomeWrapper #receiverLetter .introTitle h1 {
-  margin-bottom: 1.66vw;
-  color: #06111a; }
-#welcomeWrapper #receiverLetter .introParagraph p {
-  margin-bottom: 2.1vw; }
-#welcomeWrapper #receiverLetter .introQuotes h2 {
-  margin-bottom: 2.3vw;
-  color: #06111a; }
-
-#servicesWrapper #servicesLetter .introTitle h1 {
-  margin-bottom: 1.67vw;
-  color: #06111a; }
-#servicesWrapper #servicesLetter .introParagraph p {
-  margin-bottom: 4.48vw; }
-#servicesWrapper #servicesLetter .introQuotes h2 {
-  margin-bottom: 2.18vw;
-  color: #06111a; }
-#servicesWrapper #servicesLetter #servicesList {
-  position: relative;
-  width: 100%; }
-  #servicesWrapper #servicesLetter #servicesList #column-1 {
-    width: 14.74vw; }
-  #servicesWrapper #servicesLetter #servicesList #column-2 {
-    width: 18.85vw; }
-  #servicesWrapper #servicesLetter #servicesList #column-3 {
-    width: 19.17vw; }
-  #servicesWrapper #servicesLetter #servicesList #column-4 {
-    width: 14.74vw; }
-  #servicesWrapper #servicesLetter #servicesList th {
-    height: 3.38vw;
-    vertical-align: top;
-    text-align: left;
-    font-size: 1.29vw;
-    line-height: 1.72vw;
-    font-weight: bolder;
-    color: #06111a; }
-  #servicesWrapper #servicesLetter #servicesList td {
-    font-size: 0.62vw;
-    line-height: 1.33vw;
-    letter-spacing: 0.06vw;
-    text-transform: uppercase; }
-    @media screen and (max-width: 1280px) {
-      #servicesWrapper #servicesLetter #servicesList td {
-        font-size: 6pt; } }
-
-#brandingCover .nameSection {
-  width: 16.93vw;
-  color: #06111a; }
-
-#logosCarousel .innerCarousel .carouselTitle {
-  width: 5.95vw;
-  color: #06111a; }
-
-#stationeryCarousel .innerCarousel .carouselTitle {
-  width: 10.3vw;
-  color: #06111a; }
-
-#communicationCover .nameSection {
-  width: 41.95vw;
-  color: #06111a; }
-
-#packagingCarousel .innerCarousel .carouselTitle {
-  width: 28.5vw;
-  color: #06111a; }
-
-#uniformsCarousel .innerCarousel .carouselTitle {
-  width: 28.5vw;
-  color: #06111a; }
-
-#POSCarousel .innerCarousel .carouselTitle {
-  width: 12vw;
-  color: #06111a; }
-
-#interiorismCarousel .innerCarousel .carouselTitle {
-  width: 11vw;
-  color: #06111a; }
-
-#advertisingCarousel .innerCarousel .carouselTitle {
-  color: #06111a; }
-
-#webCover .nameSection {
-  width: 50.5vw;
-  color: #06111a; }
-
-#luckyCarousel .innerCarousel .carouselTitle {
-  width: 12.5vw;
-  color: #06111a; }
-
-#camilaCarousel .innerCarousel .carouselTitle {
-  width: 18.5vw;
-  color: #06111a; }
-
-#contactWrapper .contactLetter .contactTitle h1 {
-  color: #06111a; }
-#contactWrapper .contactLetter .indexRow h5 {
-  color: #06111a; }
-#contactWrapper .contactLetter .firstRow .innerHeadRow {
-  color: #06111a; }
 
 /*# sourceMappingURL=app.css.map */

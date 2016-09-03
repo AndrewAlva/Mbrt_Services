@@ -1,0 +1,27 @@
+
+// WELCOME SECTION
+	#welcomeWrapper{
+		#receiverLetter{
+			
+			.introTitle{
+				h1{
+					margin-bottom: 1.66vw;
+					color: $black;
+				}
+			}
+
+			.introParagraph{
+				p{
+					margin-bottom: 2.1vw;
+				}
+			}
+
+			.introQuotes{
+				h2{
+					margin-bottom: 2.3vw;
+					color: $black;
+				}
+			}
+		}
+	}
+// END WELCOME SECTION

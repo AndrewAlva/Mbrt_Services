@@ -1,5 +1,22 @@
-@import 'global/mixins';
-@import 'global/vars';
+@import '_global/mixins';
+@import '_global/vars';
+
+@import'sections/00_index';
+@import'sections/01_welcome';
+@import'sections/02_services';
+@import'sections/03_branding';
+@import'sections/04_logos';
+@import'sections/05_stationery';
+@import'sections/06_communication';
+@import'sections/07_packaging';
+@import'sections/08_uniforms';
+@import'sections/09_pos';
+@import'sections/10_interiorism';
+@import'sections/11_masters';
+@import'sections/12_web';
+@import'sections/13_lucky';
+@import'sections/14_camila';
+@import'sections/15_contact';
 
 .testSquare{
 	position: fixed;
@@ -22,6 +39,34 @@
 		padding: 0;
 		overflow: hidden;
 
+		#mbrtLoader{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: 1000000000000;
+			background-color: #fff;
+			@include trans-delayed(1s, 0.4s);
+
+			h1{
+				position: absolute;
+				text-align: center;
+				width: 200px;
+				height: 50px;
+				line-height: 50px;
+				margin: auto;
+				top: 0; bottom: 0; left: 0; right: 0;
+			}
+		}
+		.crystalLoader{
+			@include opacity(0);
+			-webkit-transform: translateY(0.5vw);
+			   -moz-transform: translateY(0.5vw);
+			    -ms-transform: translateY(0.5vw);
+			     -o-transform: translateY(0.5vw);
+			        transform: translateY(0.5vw);
+		}
+
 		#mbrtWrapper{
 			position: absolute;
 			width: 100%;
@@ -41,6 +86,7 @@
 				width: 9.37vw;
 				height: 1.83vw;
 				z-index: 1000000;
+				cursor: pointer;
 
 				img{
 					position: absolute;
@@ -1002,334 +1048,6 @@
 		
 	}
 // END GENERAL
-
-
-
-
-// INDEX SECTION
-	#indexWrapper{
-
-		#mainLogo{
-			position: absolute;
-			width: 662px;
-			height: 384px;
-			margin: auto;
-			top: 0; bottom: 0; right: 0; left: 232px;
-
-			img{
-				position: absolute;
-				width: 100%;
-			}
-		}
-
-		#startExploring{
-			position: absolute;
-			width: 50px;
-			height: 80px;
-			margin: auto;
-			left: 0; right: 0;
-			bottom: 50px;
-			cursor: pointer;
-			@include transitions(0.4s);
-
-			&:hover{
-				@include opacity(0.6);
-			}
-
-			.startText{
-				position: relative;
-				width: 100%;
-				height: 25px;
-				line-height: 25px;
-				font-size: 11.5pt;
-				letter-spacing: 2px;
-				text-align: center;
-				margin-bottom: 17px;
-			}
-
-			.startGo{
-				position: relative;
-				width: 100%;
-				height: 40px;
-
-				i{
-					position: absolute;
-					margin: auto;
-					left: 0; right: 0; top: 0; bottom: 0;
-				}
-			}
-		}
-	}
-// END INDEX SECTION
-
-// WELCOME SECTION
-	#welcomeWrapper{
-		#receiverLetter{
-			
-			.introTitle{
-				h1{
-					margin-bottom: 1.66vw;
-					color: $black;
-				}
-			}
-
-			.introParagraph{
-				p{
-					margin-bottom: 2.1vw;
-				}
-			}
-
-			.introQuotes{
-				h2{
-					margin-bottom: 2.3vw;
-					color: $black;
-				}
-			}
-		}
-	}
-// END WELCOME SECTION
-
-// SERVICES INDEX SECTION
-	#servicesWrapper{
-		#servicesLetter{
-
-			.introTitle{
-				h1{
-					margin-bottom: 1.67vw;
-					color: $black;
-				}
-			}
-			
-			.introParagraph{
-				p{
-					margin-bottom: 4.48vw;
-				}
-			}
-
-			.introQuotes{
-				h2{
-					margin-bottom: 2.18vw;
-					color: $black;
-				}
-			}
-
-			#servicesList{
-				position: relative;
-				width: 100%;
-
-				#column-1{
-					width: 14.74vw;
-				}
-				#column-2{
-					width: 18.85vw;
-				}
-				#column-3{
-					width: 19.17vw;
-				}
-				#column-4{
-					width: 14.74vw;
-				}
-
-				th{
-					height: 3.38vw;
-					vertical-align: top;
-					text-align: left;
-					font-size: 1.29vw;
-					line-height: 1.72vw;
-					font-weight: bolder;
-					color: $black;
-				}
-
-				td{
-					font-size: 0.62vw;
-					line-height: 1.33vw;
-					letter-spacing: 0.06vw;
-					text-transform: uppercase;
-
-					@media screen and (max-width: 1280px) {
-						font-size: 6pt;
-					}
-				}
-			}
-		}
-	}
-// END SERVICES INDEX
-
-// BRANDING COVER SECTION
-	#brandingCover{
-		.nameSection{
-			width: 16.93vw;
-			color: $black;
-		}
-	}
-// END BRANDING COVER
-
-// LOGOS CAROUSEL SECTION
-	#logosCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				width: 5.95vw;
-				color: $black;
-			}
-		}
-	}
-// END LOGOS CAROUSEL
-
-// STATIONERY CAROUSEL SECTION
-	#stationeryCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				width: 10.3vw;
-				color: $black;
-			}
-		}
-	}
-// END STATIONERY CAROUSEL
-
-// BRAND COMMUNICATIONS COVER SECTION
-	#communicationCover{
-		.nameSection{
-			width: 41.95vw;
-			color: $black;
-		}
-	}
-// END BRAND COMMUNICATIONS COVER
-
-// PACKAGING & PRODUCT CAROUSEL SECTION
-	#packagingCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				width: 28.5vw;
-				color: $black;
-			}
-		}
-	}
-// END PACKAGING & PRODUCT CAROUSEL
-
-// UNIFORMS CAROUSEL SECTION
-	#uniformsCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				width: 28.5vw;
-				color: $black;
-			}
-		}
-	}
-// END UNIFORMS CAROUSEL
-
-// POINT OF SALE DESIGN CAROUSEL SECTION
-	#POSCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				width: 12vw;
-				color: $black;
-			}
-		}
-	}
-// END POINT OF SALE DESIGN CAROUSEL
-
-// INTERIORISM CAROUSEL SECTION
-	#interiorismCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				width: 11vw;
-				color: $black;
-			}
-		}
-	}
-// END INTERIORISM CAROUSEL
-
-// ADVERTISING CAROUSEL SECTION
-	#advertisingCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				color: $black;
-			}
-		}
-	}	
-// END ADVERTISING CAROUSEL
-
-// WEB COVER SECTION
-	#webCover{
-		.nameSection{
-			width: 50.5vw;
-			color: $black;
-		}
-	}
-// END WEB COVER
-
-// LUCKY WEBSITE CAROUSEL SECTION
-	#luckyCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				width: 12.5vw;
-				color: $black;
-			}
-		}
-	}
-// END LUCKY WEBSITE CAROUSEL
-
-
-// CAMILA WEBSITE CAROUSEL SECTION
-	#camilaCarousel{
-		.innerCarousel{
-			.carouselTitle{
-				width: 18.5vw;
-				color: $black;
-			}
-		}
-	}
-// END CAMILA WEBSITE CAROUSEL
-
-
-// CONTACT FINAL SECTION
-	#contactWrapper{
-		.contactLetter{
-			.contactTitle{
-				h1{
-					color: $black;
-				}
-			}
-
-			.indexRow{
-				h5{
-					color: $black;
-				}
-			}
-
-			.firstRow{
-				.innerHeadRow{
-					color: $black;
-				}
-			}
-		}
-	}
-// END CONTACT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

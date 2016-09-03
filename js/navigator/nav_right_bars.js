@@ -74,8 +74,10 @@
 
 		for (var i = 0; i < sectionsToSkip; i++) {
 			
-			// Update the right nav bars style
-			shiftBackwardNavBars();
+			if (idSectionToGo > 0) {
+				// Update the right nav bars style
+				shiftBackwardNavBars();
+			};
 
 			// Set the delay to change between sections until reach the section user want to go
 			setTimeout(function(){
@@ -162,6 +164,45 @@
 			// Finally update the URL
 			window.history.pushState("object or string", "section", setCurrentSectionName);
 		}, transitionsTiming);
+	}
+
+	function activeNextNavBar(){
+		// First deactive 'current nav bar'
+		$('.currentNavBar').addClass('deactiveNavBar');
+		$('.currentNavBar').addClass('prevNavBar');
+		$('.currentNavBar').removeClass('activeNavBar');
+		$('.currentNavBar').removeClass('currentNavBar');
+
+		// Then update the first 'next nav bar' to the current position
+		nextNavBarsArray = $('.nextNavBar');
+		$(nextNavBarsArray[0]).addClass('activeNavBar');
+		$(nextNavBarsArray[0]).addClass('currentNavBar');
+		$(nextNavBarsArray[0]).removeClass('deactiveNavBar');
+		$(nextNavBarsArray[0]).removeClass('nextNavBar');
+	}
+
+	function activePreviousNavBar(){
+		// First deactive 'current nav bar'
+		$('.currentNavBar').addClass('deactiveNavBar');
+		$('.currentNavBar').addClass('nextNavBar');
+		$('.currentNavBar').removeClass('activeNavBar');
+		$('.currentNavBar').removeClass('currentNavBar');
+
+		// Then update the closest 'prev nav bar' to the current position
+		// Reverse the order of the array element so the [0] element would be the last one, the closest to the current position
+		prevNavBarsArray = $('.prevNavBar').get().reverse();
+		$(prevNavBarsArray[0]).addClass('activeNavBar');
+		$(prevNavBarsArray[0]).addClass('currentNavBar');
+		$(prevNavBarsArray[0]).removeClass('deactiveNavBar');
+		$(prevNavBarsArray[0]).removeClass('prevNavBar');
+	}
+
+	function resetNavBars(){
+		$('.navBar').removeClass('prevNavBar');
+		$('.navBar').removeClass('currentNavBar');
+		$('.navBar').removeClass('nextNavBar');
+		$('.navBar').removeClass('activeNavBar');
+		$('.navBar').removeClass('deactiveNavBar');
 	}
 
 

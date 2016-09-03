@@ -16,6 +16,7 @@
 					// HELPER FUNCTIONS FROM SCROLL_LISTENER.JS
 					delayBetweenSections();
 					scrollNextSection();
+					activeNextNavBar();
 		 			window.history.pushState("object or string", "section", "?" + nextSectionName);
 
 		 			setTimeout(function(){
