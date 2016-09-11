@@ -20,11 +20,11 @@
 
 .testSquare{
 	position: fixed;
-	width: 750px;
-	height: 47px;
+	width: 123px;
+	height: 406px;
 	margin: auto;
-	top: 550px;
-	left: 126px;
+	top: 0; bottom: 0;
+	right: 0;
 	border: 1px solid red;
 	@include boxSizeFit();
 	z-index: 1000;
@@ -94,8 +94,8 @@
 
 			#rightBarsNav{
 				position: fixed;
-				width: 3.85vw;
-				height: 21.25vw;
+				width: 3.85%;
+				height: 43%;
 				margin: auto;
 				top: 0; bottom: 0;
 				right: 0;
@@ -112,21 +112,27 @@
 					.navBar{
 						@include displayRight();
 						height: 2px;
-						margin-bottom: 1.41vw;
+						margin-bottom: 36.3%;
 						cursor: pointer;
 						@include transitions(0.6s);
 
 						.navName{
 							position: absolute;
-							width: 11.8vw;
-							height: 1.04vw;
-							line-height: 1.04vw;
-							top: -0.52vw;
+							width: 305%;
+							line-height: 1.2em;
+							top: -0.62em;
 							right: 0;
 							@include boxSizeFit();
-							font-size: 0.76vw;
 							color: $nav-black-deactive;
 							@include trans-delayed(0.6s, 0.2s);
+							font-size: 0.85em;
+							@media screen and (max-width: 1750px) {
+						        font-size: 0.6em;
+							}
+							@media screen and (max-width: 1400px) {
+						        font-size: 0.45em;
+							}
+							
 						}
 					}
 
@@ -141,7 +147,7 @@
 						.navName{
 							&:hover{
 								color: $nav-black-active;
-								padding-right: 1.49vw;
+								padding-right: 30%;
 							}
 						}
 					}
@@ -149,6 +155,10 @@
 					.activeNavBar{
 						width: 166.2%;
 						background-color: $nav-black-active;
+
+						.navName{
+							width: 188%;
+						}
 					}
 				}
 			}
@@ -196,8 +206,8 @@
 
 					.introTitle{
 						line-height: 3.7em;
+
 						h1{
-							// font-size: 3.64vw;
 							height: 3%;
 							@include writingBar();
 							padding-right: 1%;
@@ -208,14 +218,7 @@
 
 					.introParagraph{
 						p{
-							// font-size: 1.32vw;
 							line-height: 1.2em;
-						}
-					}
-
-					.introQuotes{
-						h2{
-							// font-size: 1.94vw;
 						}
 					}
 				}
