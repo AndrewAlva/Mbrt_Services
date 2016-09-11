@@ -20,11 +20,11 @@
 
 .testSquare{
 	position: fixed;
-	width: 50%;
-	height: 100%;
+	width: 440px;
+	height: 75px;
 	margin: auto;
-
-	left: 0;
+	top: 135px;
+	left: 311px;
 	border: 1px solid red;
 	@include boxSizeFit();
 	z-index: 1000;
@@ -60,11 +60,11 @@
 		}
 		.crystalLoader{
 			@include opacity(0);
-			-webkit-transform: translateY(0.5vw);
-			   -moz-transform: translateY(0.5vw);
-			    -ms-transform: translateY(0.5vw);
-			     -o-transform: translateY(0.5vw);
-			        transform: translateY(0.5vw);
+			-webkit-transform: translateY(0.5%);
+			   -moz-transform: translateY(0.5%);
+			    -ms-transform: translateY(0.5%);
+			     -o-transform: translateY(0.5%);
+			        transform: translateY(0.5%);
 		}
 
 		#mbrtWrapper{
@@ -79,12 +79,10 @@
 
 			#topLeftLogo{
 				position: fixed;
-				// top: 3vw;
-				// left: 3.45vw;
-				top: 1.5vw;
-				left: 2.45vw;
-				width: 9.37vw;
-				height: 1.83vw;
+				top: 2.5%;
+				left: 2.45%;
+				width: 9.37%;
+				height: 3.83%;
 				z-index: 1000000;
 				cursor: pointer;
 
@@ -160,11 +158,11 @@
 			}
 			.crystalMainNav{
 				@include opacity(0);
-				-webkit-transform: translateY(0.5vw);
-				   -moz-transform: translateY(0.5vw);
-				    -ms-transform: translateY(0.5vw);
-				     -o-transform: translateY(0.5vw);
-				        transform: translateY(0.5vw);
+				-webkit-transform: translateY(0.5%);
+				   -moz-transform: translateY(0.5%);
+				    -ms-transform: translateY(0.5%);
+				     -o-transform: translateY(0.5%);
+				        transform: translateY(0.5%);
 			}
 
 			.animatableMainNav{
@@ -183,9 +181,10 @@
 			.introSection{
 				.introLetter{
 					position: absolute;
-					width: 67.5vw;
+					width: 67.5%;
 					min-width: 760px;
-					height: 35.94vw;
+					height: 71.14%;
+					min-height: 393.2px;
 					margin: auto;
 					top: 0; bottom: 0; left: 0; right: 0;
 
@@ -196,25 +195,27 @@
 					}
 
 					.introTitle{
-						height: 3.9vw;
-						line-height: 3.9vw;
+						line-height: 3.7em;
 						h1{
-							font-size: 3.64vw;
+							// font-size: 3.64vw;
+							height: 3%;
 							@include writingBar();
-							padding-right: 1vw;
+							padding-right: 1%;
+							padding-top: 0.5%;
+							padding-bottom: 0.5%;
 						}
 					}
 
 					.introParagraph{
 						p{
-							font-size: 1.32vw;
-							line-height: 1.59vw;
+							// font-size: 1.32vw;
+							line-height: 1.2em;
 						}
 					}
 
 					.introQuotes{
 						h2{
-							font-size: 1.94vw;
+							// font-size: 1.94vw;
 						}
 					}
 				}

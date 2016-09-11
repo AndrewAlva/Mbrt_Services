@@ -2,24 +2,35 @@
 // WELCOME SECTION
 	#welcomeWrapper{
 		#receiverLetter{
-			
+			border: 1px solid blue;
 			.introTitle{
 				h1{
-					margin-bottom: 1.66vw;
+					width: 67.47%;
+					height: 100%;
+					margin-bottom: 3.4%;
 					color: $black;
 				}
 			}
 
 			.introParagraph{
 				p{
-					margin-bottom: 2.1vw;
+					width: 100%;
+					margin-bottom: 2.8%;
 				}
 			}
 
 			.introQuotes{
 				h2{
-					margin-bottom: 2.3vw;
+					margin-bottom: 3.3%;
 					color: $black;
+				}
+
+				#welcomeQuote-1{
+					width: 57.9%;
+				}
+
+				#welcomeQuote-2{
+					width: 50%;
 				}
 			}
 		}

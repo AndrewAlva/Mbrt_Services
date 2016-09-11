@@ -9,8 +9,13 @@
 			// Remove loader after fadeout is complete
 			setTimeout(function(){$('#mbrtLoader').remove();},1600);
 		}, transitionsTiming);
-
 	};
+
+	// FIT TEXT SCRIPT
+	jQuery(".fitTitle").fitText(1.26);
+	jQuery(".fitParagraph").fitText(5);
+	jQuery("#welcomeQuote-1").fitText(2);
+	jQuery("#welcomeQuote-2").fitText(1.73);
 
 	// VARS LOAD CURRENT SECTION
 	var currentSectionId;

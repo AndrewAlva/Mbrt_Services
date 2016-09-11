@@ -1,28 +1,28 @@
 @-webkit-keyframes writingBar {
   0% {
-    border-right: 0.25vw solid #97979b; }
+    border-right: 4px solid #97979b; }
   100% {
-    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
 @-moz-keyframes writingBar {
   0% {
-    border-right: 0.25vw solid #97979b; }
+    border-right: 4px solid #97979b; }
   100% {
-    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
 @-ms-keyframes writingBar {
   0% {
-    border-right: 0.25vw solid #97979b; }
+    border-right: 4px solid #97979b; }
   100% {
-    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
 @-o-keyframes writingBar {
   0% {
-    border-right: 0.25vw solid #97979b; }
+    border-right: 4px solid #97979b; }
   100% {
-    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
 @keyframes writingBar {
   0% {
-    border-right: 0.25vw solid #97979b; }
+    border-right: 4px solid #97979b; }
   100% {
-    border-right: 0.25vw solid rgba(151, 151, 155, 0); } }
+    border-right: 4px solid rgba(151, 151, 155, 0); } }
 #indexWrapper #mainLogo {
   position: absolute;
   width: 662px;
@@ -75,17 +75,27 @@
       top: 0;
       bottom: 0; }
 
-#welcomeWrapper #receiverLetter .introTitle h1 {
-  margin-bottom: 1.66vw;
-  color: #06111a; }
-#welcomeWrapper #receiverLetter .introParagraph p {
-  margin-bottom: 2.1vw; }
-#welcomeWrapper #receiverLetter .introQuotes h2 {
-  margin-bottom: 2.3vw;
-  color: #06111a; }
+#welcomeWrapper #receiverLetter {
+  border: 1px solid blue; }
+  #welcomeWrapper #receiverLetter .introTitle h1 {
+    width: 67.47%;
+    height: 100%;
+    margin-bottom: 3.4%;
+    color: #06111a; }
+  #welcomeWrapper #receiverLetter .introParagraph p {
+    width: 100%;
+    margin-bottom: 2.8%; }
+  #welcomeWrapper #receiverLetter .introQuotes h2 {
+    margin-bottom: 3.3%;
+    color: #06111a; }
+  #welcomeWrapper #receiverLetter .introQuotes #welcomeQuote-1 {
+    width: 57.9%; }
+  #welcomeWrapper #receiverLetter .introQuotes #welcomeQuote-2 {
+    width: 50%; }
 
 #servicesWrapper #servicesLetter .introTitle h1 {
-  margin-bottom: 1.67vw;
+  width: 33.77%;
+  margin-bottom: 3.4%;
   color: #06111a; }
 #servicesWrapper #servicesLetter .introParagraph p {
   margin-bottom: 4.48vw; }
@@ -176,10 +186,11 @@
 
 .testSquare {
   position: fixed;
-  width: 50%;
-  height: 100%;
+  width: 440px;
+  height: 75px;
   margin: auto;
-  left: 0;
+  top: 135px;
+  left: 311px;
   border: 1px solid red;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -221,11 +232,11 @@
     filter: alpha(opacity=0);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
-    -webkit-transform: translateY(0.5vw);
-    -moz-transform: translateY(0.5vw);
-    -ms-transform: translateY(0.5vw);
-    -o-transform: translateY(0.5vw);
-    transform: translateY(0.5vw); }
+    -webkit-transform: translateY(0.5%);
+    -moz-transform: translateY(0.5%);
+    -ms-transform: translateY(0.5%);
+    -o-transform: translateY(0.5%);
+    transform: translateY(0.5%); }
   #fullWrapper #mbrtWrapper {
     position: absolute;
     width: 100%;
@@ -237,10 +248,10 @@
     color: #97979b; }
     #fullWrapper #mbrtWrapper #topLeftLogo {
       position: fixed;
-      top: 1.5vw;
-      left: 2.45vw;
-      width: 9.37vw;
-      height: 1.83vw;
+      top: 2.5%;
+      left: 2.45%;
+      width: 9.37%;
+      height: 3.83%;
       z-index: 1000000;
       cursor: pointer; }
       #fullWrapper #mbrtWrapper #topLeftLogo img {
@@ -314,11 +325,11 @@
       filter: alpha(opacity=0);
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
       -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
-      -webkit-transform: translateY(0.5vw);
-      -moz-transform: translateY(0.5vw);
-      -ms-transform: translateY(0.5vw);
-      -o-transform: translateY(0.5vw);
-      transform: translateY(0.5vw); }
+      -webkit-transform: translateY(0.5%);
+      -moz-transform: translateY(0.5%);
+      -ms-transform: translateY(0.5%);
+      -o-transform: translateY(0.5%);
+      transform: translateY(0.5%); }
     #fullWrapper #mbrtWrapper .animatableMainNav {
       -webkit-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1);
       -moz-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1);
@@ -337,9 +348,10 @@
       will-change: transform; }
     #fullWrapper #mbrtWrapper .introSection .introLetter {
       position: absolute;
-      width: 67.5vw;
+      width: 67.5%;
       min-width: 760px;
-      height: 35.94vw;
+      height: 71.14%;
+      min-height: 393.2px;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -359,21 +371,19 @@
         box-sizing: border-box;
         margin-top: 0; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
-        height: 3.9vw;
-        line-height: 3.9vw; }
+        line-height: 3.7em; }
         #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
-          font-size: 3.64vw;
+          height: 3%;
           -webkit-animation: writingBar 0.8s ease infinite alternate;
           -moz-animation: writingBar 0.8s ease infinite alternate;
           -ms-animation: writingBar 0.8s ease infinite alternate;
           -o-animation: writingBar 0.8s ease infinite alternate;
           animation: writingBar 0.8s ease infinite alternate;
-          padding-right: 1vw; }
+          padding-right: 1%;
+          padding-top: 0.5%;
+          padding-bottom: 0.5%; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
-        font-size: 1.32vw;
-        line-height: 1.59vw; }
-      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
-        font-size: 1.94vw; }
+        line-height: 1.2em; }
     #fullWrapper #mbrtWrapper .coverSection .nameSection {
       position: absolute;
       height: 5.73vw;
