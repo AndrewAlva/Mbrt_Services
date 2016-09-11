@@ -20,11 +20,11 @@
 
 .testSquare{
 	position: fixed;
-	width: 440px;
-	height: 75px;
+	width: 750px;
+	height: 47px;
 	margin: auto;
-	top: 135px;
-	left: 311px;
+	top: 550px;
+	left: 126px;
 	border: 1px solid red;
 	@include boxSizeFit();
 	z-index: 1000;

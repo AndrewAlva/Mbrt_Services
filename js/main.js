@@ -12,10 +12,16 @@
 	};
 
 	// FIT TEXT SCRIPT
-	jQuery(".fitTitle").fitText(1.26);
+	jQuery("#welcomeTitle").fitText(1.26);
 	jQuery(".fitParagraph").fitText(5);
 	jQuery("#welcomeQuote-1").fitText(2);
 	jQuery("#welcomeQuote-2").fitText(1.73);
+	jQuery("#servicesTitle").fitText(0.65);
+	jQuery("#servicesQuote").fitText(1.25);
+	jQuery("#column-1").fitText(1.15);
+	jQuery("#column-2").fitText(1.47);
+	jQuery("#column-3").fitText(1.49);
+	jQuery("#column-4").fitText(1.15);
 
 	// VARS LOAD CURRENT SECTION
 	var currentSectionId;

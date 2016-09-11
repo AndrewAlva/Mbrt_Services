@@ -75,56 +75,54 @@
       top: 0;
       bottom: 0; }
 
-#welcomeWrapper #receiverLetter {
-  border: 1px solid blue; }
-  #welcomeWrapper #receiverLetter .introTitle h1 {
-    width: 67.47%;
-    height: 100%;
-    margin-bottom: 3.4%;
-    color: #06111a; }
-  #welcomeWrapper #receiverLetter .introParagraph p {
-    width: 100%;
-    margin-bottom: 2.8%; }
-  #welcomeWrapper #receiverLetter .introQuotes h2 {
-    margin-bottom: 3.3%;
-    color: #06111a; }
-  #welcomeWrapper #receiverLetter .introQuotes #welcomeQuote-1 {
-    width: 57.9%; }
-  #welcomeWrapper #receiverLetter .introQuotes #welcomeQuote-2 {
-    width: 50%; }
+#welcomeWrapper #receiverLetter .introTitle h1 {
+  width: 67.47%;
+  height: 100%;
+  margin-bottom: 3.4%;
+  color: #06111a; }
+#welcomeWrapper #receiverLetter .introParagraph p {
+  width: 100%;
+  margin-bottom: 2.8%; }
+#welcomeWrapper #receiverLetter .introQuotes h2 {
+  margin-bottom: 3.3%;
+  color: #06111a; }
+#welcomeWrapper #receiverLetter .introQuotes #welcomeQuote-1 {
+  width: 57.9%; }
+#welcomeWrapper #receiverLetter .introQuotes #welcomeQuote-2 {
+  width: 50%; }
 
 #servicesWrapper #servicesLetter .introTitle h1 {
   width: 33.77%;
   margin-bottom: 3.4%;
   color: #06111a; }
 #servicesWrapper #servicesLetter .introParagraph p {
-  margin-bottom: 4.48vw; }
+  margin-bottom: 6.8%; }
 #servicesWrapper #servicesLetter .introQuotes h2 {
-  margin-bottom: 2.18vw;
+  width: 36%;
+  margin-bottom: 3.6%;
   color: #06111a; }
 #servicesWrapper #servicesLetter #servicesList {
   position: relative;
   width: 100%; }
   #servicesWrapper #servicesLetter #servicesList #column-1 {
-    width: 14.74vw; }
+    width: 21.9%; }
   #servicesWrapper #servicesLetter #servicesList #column-2 {
-    width: 18.85vw; }
+    width: 27.9%; }
   #servicesWrapper #servicesLetter #servicesList #column-3 {
-    width: 19.17vw; }
+    width: 28.3%; }
   #servicesWrapper #servicesLetter #servicesList #column-4 {
-    width: 14.74vw; }
+    width: 21.9%; }
   #servicesWrapper #servicesLetter #servicesList th {
-    height: 3.38vw;
     vertical-align: top;
     text-align: left;
-    font-size: 1.29vw;
-    line-height: 1.72vw;
+    line-height: 1.4em;
+    padding-bottom: 2.3%;
     font-weight: bolder;
     color: #06111a; }
   #servicesWrapper #servicesLetter #servicesList td {
-    font-size: 0.62vw;
-    line-height: 1.33vw;
-    letter-spacing: 0.06vw;
+    font-size: 0.74em;
+    line-height: 2.13em;
+    letter-spacing: 0.1em;
     text-transform: uppercase; }
     @media screen and (max-width: 1280px) {
       #servicesWrapper #servicesLetter #servicesList td {
@@ -186,11 +184,11 @@
 
 .testSquare {
   position: fixed;
-  width: 440px;
-  height: 75px;
+  width: 750px;
+  height: 47px;
   margin: auto;
-  top: 135px;
-  left: 311px;
+  top: 550px;
+  left: 126px;
   border: 1px solid red;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
