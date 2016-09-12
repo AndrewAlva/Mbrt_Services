@@ -2,8 +2,11 @@
 // BRAND COMMUNICATIONS COVER SECTION
 	#communicationCover{
 		.nameSection{
-			width: 42.55vw;
+			width: 820px;
 			color: $black;
+			@media screen and (max-width: 1279px){
+				width: 540px;
+			}
 		}
 	}
 // END BRAND COMMUNICATIONS COVER

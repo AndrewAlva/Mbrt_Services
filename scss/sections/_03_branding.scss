@@ -2,8 +2,11 @@
 // BRANDING COVER SECTION
 	#brandingCover{
 		.nameSection{
-			width: 17.83vw;
+			width: 335px;
 			color: $black;
+			@media screen and (max-width: 1279px){
+				width: 235px;
+			}
 		}
 	}
 // END BRANDING COVER

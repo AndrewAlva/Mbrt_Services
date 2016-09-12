@@ -2,8 +2,11 @@
 // WEB COVER SECTION
 	#webCover{
 		.nameSection{
-			width: 51.1vw;
+			width: 980px;
 			color: $black;
+			@media screen and (max-width: 1279px){
+				width: 650px;
+			}
 		}
 	}
 // END WEB COVER
