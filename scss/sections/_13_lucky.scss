@@ -3,8 +3,11 @@
 	#luckyCarousel{
 		.innerCarousel{
 			.carouselTitle{
-				width: 12.5vw;
+				width: 250px;
 				color: $black;
+				@media screen and (max-width: 1279px){
+					width: 170px;
+				}
 			}
 		}
 	}

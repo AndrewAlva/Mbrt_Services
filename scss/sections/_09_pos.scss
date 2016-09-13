@@ -3,8 +3,11 @@
 	#POSCarousel{
 		.innerCarousel{
 			.carouselTitle{
-				width: 12vw;
+				width: 235px;
 				color: $black;
+				@media screen and (max-width: 1279px){
+					width: 160px;
+				}
 			}
 		}
 	}

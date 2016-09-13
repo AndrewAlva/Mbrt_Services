@@ -141,10 +141,16 @@
 #logosCarousel .innerCarousel .carouselTitle {
   width: 115px;
   color: #06111a; }
+  @media screen and (max-width: 1279px) {
+    #logosCarousel .innerCarousel .carouselTitle {
+      width: 85px; } }
 
 #stationeryCarousel .innerCarousel .carouselTitle {
-  width: 10.3vw;
+  width: 200px;
   color: #06111a; }
+  @media screen and (max-width: 1279px) {
+    #stationeryCarousel .innerCarousel .carouselTitle {
+      width: 140px; } }
 
 #communicationCover .nameSection {
   width: 820px;
@@ -154,20 +160,32 @@
       width: 540px; } }
 
 #packagingCarousel .innerCarousel .carouselTitle {
-  width: 28.5vw;
+  width: 550px;
   color: #06111a; }
+  @media screen and (max-width: 1279px) {
+    #packagingCarousel .innerCarousel .carouselTitle {
+      width: 390px; } }
 
 #uniformsCarousel .innerCarousel .carouselTitle {
-  width: 28.5vw;
+  width: 500px;
   color: #06111a; }
+  @media screen and (max-width: 1279px) {
+    #uniformsCarousel .innerCarousel .carouselTitle {
+      width: 330px; } }
 
 #POSCarousel .innerCarousel .carouselTitle {
-  width: 12vw;
+  width: 235px;
   color: #06111a; }
+  @media screen and (max-width: 1279px) {
+    #POSCarousel .innerCarousel .carouselTitle {
+      width: 160px; } }
 
 #interiorismCarousel .innerCarousel .carouselTitle {
-  width: 11vw;
+  width: 215px;
   color: #06111a; }
+  @media screen and (max-width: 1279px) {
+    #interiorismCarousel .innerCarousel .carouselTitle {
+      width: 155px; } }
 
 #advertisingCarousel .innerCarousel .carouselTitle {
   color: #06111a; }
@@ -180,12 +198,18 @@
       width: 650px; } }
 
 #luckyCarousel .innerCarousel .carouselTitle {
-  width: 12.5vw;
+  width: 250px;
   color: #06111a; }
+  @media screen and (max-width: 1279px) {
+    #luckyCarousel .innerCarousel .carouselTitle {
+      width: 170px; } }
 
 #camilaCarousel .innerCarousel .carouselTitle {
-  width: 18.5vw;
+  width: 360px;
   color: #06111a; }
+  @media screen and (max-width: 1279px) {
+    #camilaCarousel .innerCarousel .carouselTitle {
+      width: 250px; } }
 
 #contactWrapper .contactLetter .contactTitle h1 {
   color: #06111a; }
@@ -196,12 +220,11 @@
 
 .testSquare {
   position: fixed;
-  width: 132px;
-  height: 80px;
+  width: 50%;
+  height: 100%;
   margin: auto;
   top: 0;
   bottom: 0;
-  right: 132px;
   left: 0;
   border: 1px solid red;
   -webkit-box-sizing: border-box;
@@ -455,16 +478,33 @@
       bottom: 0; }
       #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
         position: relative;
-        height: 36px;
+        height: 50px;
         line-height: 1.1em;
         margin: auto;
-        margin-bottom: 43px;
+        margin-bottom: 29px;
         left: 0;
         right: 0;
         font-size: 34px;
-        text-align: center; }
+        color: #c9c9c9;
+        text-align: left;
+        -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+        @media screen and (max-width: 1279px) {
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
+            font-size: 23.8px; } }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle h3 {
           margin: 0; }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle .maskedTitle {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          color: #06111a;
+          overflow: hidden; }
       #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages {
         position: relative;
         width: 100%;
@@ -812,7 +852,12 @@
         position: relative;
         float: left;
         width: 22.9%;
-        height: 100%; }
+        height: 100%;
+        -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
         #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
           position: absolute;
           text-align: left;
@@ -822,7 +867,27 @@
           font-size: 36px;
           margin: auto;
           top: 0;
-          bottom: 0; }
+          bottom: 0;
+          color: #c9c9c9; }
+          @media screen and (max-width: 1279px) {
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
+              width: 100%;
+              font-size: 22px; } }
+        #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle .maskTitle {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle .maskTitle h3 {
+            color: #06111a;
+            width: 320px; }
       #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .arrow {
         position: relative;
         float: left;

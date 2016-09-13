@@ -3,8 +3,11 @@
 	#uniformsCarousel{
 		.innerCarousel{
 			.carouselTitle{
-				width: 28.5vw;
+				width: 500px;
 				color: $black;
+				@media screen and (max-width: 1279px){
+					width: 330px;
+				}
 			}
 		}
 	}

@@ -3,8 +3,11 @@
 	#camilaCarousel{
 		.innerCarousel{
 			.carouselTitle{
-				width: 18.5vw;
+				width: 360px;
 				color: $black;
+				@media screen and (max-width: 1279px){
+					width: 250px;
+				}
 			}
 		}
 	}

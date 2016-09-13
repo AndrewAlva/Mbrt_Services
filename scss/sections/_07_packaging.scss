@@ -3,8 +3,11 @@
 	#packagingCarousel{
 		.innerCarousel{
 			.carouselTitle{
-				width: 28.5vw;
+				width: 550px;
 				color: $black;
+				@media screen and (max-width: 1279px){
+					width: 390px;
+				}
 			}
 		}
 	}

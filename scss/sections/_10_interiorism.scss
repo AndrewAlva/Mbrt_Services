@@ -3,8 +3,11 @@
 	#interiorismCarousel{
 		.innerCarousel{
 			.carouselTitle{
-				width: 11vw;
+				width: 215px;
 				color: $black;
+				@media screen and (max-width: 1279px){
+					width: 155px;
+				}
 			}
 		}
 	}

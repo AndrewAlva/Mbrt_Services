@@ -3,8 +3,11 @@
 	#stationeryCarousel{
 		.innerCarousel{
 			.carouselTitle{
-				width: 10.3vw;
+				width: 200px;
 				color: $black;
+				@media screen and (max-width: 1279px){
+					width: 140px;
+				}
 			}
 		}
 	}
