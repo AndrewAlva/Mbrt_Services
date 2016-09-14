@@ -20,11 +20,11 @@
 
 .testSquare{
 	position: fixed;
-	width: 858px;
-	height: 68px;
+	width: 95px;
+	height: 20px;
 	margin: auto;
-	top: 279px;
-	left: 314px;
+	top: 525px;
+	left: 623px;
 	border: 1px solid red;
 	@include boxSizeFit();
 	z-index: 1000;
@@ -126,13 +126,6 @@
 							color: $nav-black-deactive;
 							@include trans-delayed(0.6s, 0.2s);
 							font-size: 0.85em;
-							@media screen and (max-width: 1750px) {
-						        font-size: 0.6em;
-							}
-							@media screen and (max-width: 1400px) {
-						        font-size: 0.45em;
-							}
-							
 						}
 					}
 
@@ -243,10 +236,6 @@
 						text-align: center;
 						@include writingBar();
 						@include transitions(0.6s);
-		
-						@media screen and (max-width: 1279px) {
-							font-size: 45px;
-						}
 					}
 				}
 			}
@@ -270,9 +259,6 @@
 						color: $light-gray;
 						text-align: left;
 						@include transitions(0.6s);
-						@media screen and (max-width: 1279px){
-							font-size: 23.8px;
-						}
 
 						h3{
 							margin: 0;
@@ -345,9 +331,6 @@
 										margin: auto;
 										top: 0; bottom: 0; left: 14%; right: 0;
 										text-align: left;
-										@media screen and (max-width: 1279px){
-											height: 21.8%;
-										}
 
 										h5{
 											position: relative;
@@ -357,9 +340,6 @@
 											margin: 0;
 											margin-bottom: 7px;
 											color: $black;
-											@media screen and (max-width: 1279px) {
-												font-size: 16.9px;
-											}
 										}
 
 										p{
@@ -370,10 +350,6 @@
 											font-size: 19px;
 											margin: 0;
 											margin-bottom: 10.5%;
-											@media screen and (max-width: 1279px){
-												height: 6.5%;
-												font-size: 14px;
-											}
 										}
 									}
 
@@ -386,11 +362,6 @@
 										left: 0; right: 0;
 										bottom: 10%;
 										border: 1px solid $mid-gray;
-										@media screen and (max-width: 1279px){
-											width: 86px;
-											height: 23px;
-											line-height: 1.4em;
-										}
 
 										a{
 											position: absolute;
@@ -403,9 +374,6 @@
 											color: $mid-gray;
 											background-color: $link-mid-gray-deactive;
 											@include transitions(0.6s);
-											@media screen and (max-width: 1279px){
-												font-size: 10.5px;
-											}
 
 											&:hover{
 												color: #fff;
@@ -514,9 +482,6 @@
 						margin: auto;
 						left: 0; right: 0;
 						margin-top: 4.69%;
-						@media screen and (max-width: 1279px){
-							height: 2px;
-						}
 
 						ul{
 							position: absolute;
@@ -536,10 +501,6 @@
 								cursor: pointer;
 								@include transitions(0.6s);
 								overflow: hidden;
-								@media screen and (max-width: 1279px){
-									margin-left: 3px;
-									margin-right: 3px;
-								}
 
 								&:hover{
 									@include opacity(0.4);
@@ -587,9 +548,6 @@
 							
 							li{
 								width: calc(20% - 15px);
-								@media screen and (max-width: 1279px){
-									width: calc(20% - 6px);
-								}
 							}
 						}
 
@@ -598,9 +556,6 @@
 
 							li{
 								width: calc(50% - 15px);
-								@media screen and (max-width: 1279px){
-									width: calc(50% - 6px);
-								}
 							}
 						}
 
@@ -609,9 +564,6 @@
 
 							li{
 								width: calc(16.66% - 15px);
-								@media screen and (max-width: 1279px){
-									width: calc(16.66% - 6px);
-								}
 							}
 						}
 
@@ -620,9 +572,6 @@
 
 							li{
 								width: calc(33.33% - 15px);
-								@media screen and (max-width: 1279px){
-									width: calc(33.33% - 6px);
-								}
 							}
 						}
 
@@ -631,9 +580,6 @@
 
 							li{
 								width: calc(12.5% - 15px);
-								@media screen and (max-width: 1279px){
-									width: calc(12.5% - 6px);
-								}
 							}
 						}
 
@@ -642,9 +588,6 @@
 
 							li{
 								width: calc(25% - 15px);
-								@media screen and (max-width: 1279px){
-									width: calc(25% - 6px);
-								}
 							}
 						}
 					}
@@ -681,16 +624,6 @@
 							top: 0; bottom: 0;
 							right: 0;
 							color: $light-gray;
-							@media screen and (max-width: 1649px){
-								width: 93%;
-								height: 31px;
-								font-size: 29.6px;
-							}
-							@media screen and (max-width: 1279px){
-								width: 100%;
-								height: 24px;
-								font-size: 22px;
-							}
 						}
 
 						.maskTitle{
@@ -845,12 +778,6 @@
 								left: 0; right: 0;
 								text-align: left;
 								@include transitions(0.6s);
-								@media screen and (max-width: 1649px){
-									height: 18%;
-								}
-								@media screen and (max-width: 1279px){
-									height: 12.5%;
-								}
 
 								h5{
 									position: relative;
@@ -860,12 +787,6 @@
 									margin: 0;
 									margin-bottom: 2.3%;
 									color: $black;
-									@media screen and (max-width: 1649px){
-										font-size: 20px;
-									}
-									@media screen and (max-width: 1279px){
-										font-size: 16.9px;
-									}
 								}
 
 								.shiftData{
@@ -875,15 +796,6 @@
 									line-height: 0.8em;
 									font-size: 20px;
 									margin-bottom: 11%;
-
-									@media screen and (max-width: 1649px){
-										height: 6.9%;
-										font-size: 17px;
-									}
-									@media screen and (max-width: 1279px){
-										height: 6.4%;
-										font-size: 14px;
-									}
 
 									p{
 										position: absolute;
@@ -928,9 +840,6 @@
 						margin: auto;
 						left: 12.4%; right: 0;
 						bottom: 0;
-						@media screen and (max-width: 1279px){
-							height: 2px;
-						}
 
 						ul{
 							position: absolute;
@@ -950,10 +859,6 @@
 								cursor: pointer;
 								@include transitions(0.6s);
 								overflow: hidden;
-								@media screen and (max-width: 1279px){
-									margin-left: 3px;
-									margin-right: 3px;
-								}
 
 								&:hover{
 									@include opacity(0.4);
@@ -1001,9 +906,6 @@
 
 							li{
 								width: calc(16.66% - 15px);
-								@media screen and (max-width: 1279px){
-									width: calc(16.66% - 6px);
-								}
 							}
 						}
 
@@ -1019,9 +921,6 @@
 					margin: auto;
 					top: 0; bottom: 0; left: 0; right: 0;
 
-					@media screen and (max-width: 1649px){}
-					@media screen and (max-width: 1279px){}
-
 					.topBox{
 						position: relative;
 						width: 100%;
@@ -1034,8 +933,9 @@
 							height: 100%;
 
 							h1{
+								position: absolute;
 								margin: 0;
-								font-size: 70px;
+								font-size: 65px;
 								@include writingBar();
 								padding-right: 2.1%;
 							}
@@ -1044,23 +944,19 @@
 						.contactButton{
 							@include displayLeft();
 							width: 31%;
-							height: 48.8%;
-							top: 25.6%;
-							display: table;
+							height: 100%;
 
 							a{
 								position: absolute;
 								width: 50.1%;
-								// height: 48.8%;
-								display: table-cell;
-								vertical-align: middle;
-								// line-height: 1.9em;
+								height: 48.8%;
+								display: table;
 								margin: auto;
 								top: 0; bottom: 0; left: 0; right: 0;
 								border: 1px solid $light-gray;
 								color: $mid-gray;
 								font-weight: 700;
-								font-size: 1.3vw;
+								font-size: 25px;
 								text-align: center;
 								text-decoration: none;
 
@@ -1070,6 +966,11 @@
 									background-color: $light-gray;
 									color: #fff;
 								}
+
+								p{
+									display: table-cell;
+									vertical-align: middle;
+								}
 							}
 						}
 					}
@@ -1077,24 +978,24 @@
 					.bottomBox{
 						position: relative;
 						width: 100%;
-						height: 8.98vw;
+						height: 48.2%;
 						@include boxSizeFit();
 
 						.contactColumns{
 							@include displayLeft();
-							width: 16.2vw;
+							width: 24%;
 							height: 100%;
 
 							.indexRow{
-								height: 1.69vw;
+								height: 18%;
 
 								h5{
 									position: absolute;
 									margin: 0;
-									font-size: 1.8vw;
-									line-height: 1.65vw;
+									font-size: 34.5px;
+									line-height: 0.9em;
 									border-right: 2px solid $mid-gray;
-									padding-right: 0.5vw;
+									padding-right: 3.2%;
 								}
 							}
 
@@ -1103,15 +1004,15 @@
 
 								.innerHeadRow{
 									font-weight: 700;
-									font-size: 1.3vw;
-									line-height: 2vw;
+									font-size: 25px;
+									line-height: 1.5em;
 								}
 
 								.innerFootRow{
-									font-size: 1.04vw;
+									font-size: 19.9px;
 									font-variant-numeric: lining-nums; 
-									margin-top: -0.1vw;
-									margin-bottom: 1.72vw;
+									margin-top: -0.6%;
+									margin-bottom: 10.6%;
 
 									a{
 										text-decoration: none;
@@ -1121,7 +1022,7 @@
 							}
 
 							.secondRow{
-								font-size: 1.04vw;
+								font-size: 19.9px;
 								font-variant-numeric: lining-nums; 
 								a{
 									text-decoration: none;
@@ -1129,7 +1030,7 @@
 								}
 
 								.innerHeadRow{
-									margin-bottom: 0.47vw;
+									margin-bottom: 3%;
 								}
 							}
 						}
@@ -1191,6 +1092,9 @@
 // END GENERAL
 
 
+// RESPONSIVE STYLES
+	@import '_global/responsive';
+// END RESPONSIVE
 
 
 

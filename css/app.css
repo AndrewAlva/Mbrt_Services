@@ -220,11 +220,11 @@
 
 .testSquare {
   position: fixed;
-  width: 858px;
-  height: 68px;
+  width: 95px;
+  height: 20px;
   margin: auto;
-  top: 279px;
-  left: 314px;
+  top: 525px;
+  left: 623px;
   border: 1px solid red;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -340,12 +340,6 @@
             -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
             transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
             font-size: 0.85em; }
-            @media screen and (max-width: 1750px) {
-              #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
-                font-size: 0.6em; } }
-            @media screen and (max-width: 1400px) {
-              #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
-                font-size: 0.45em; } }
         #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .deactiveNavBar {
           width: 100%;
           background-color: #c9c9c9; }
@@ -465,9 +459,6 @@
         -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
         -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
         transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
-        @media screen and (max-width: 1279px) {
-          #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
-            font-size: 45px; } }
     #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
       position: absolute;
       width: 100%;
@@ -491,9 +482,6 @@
         -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
         -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
         transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
-        @media screen and (max-width: 1279px) {
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
-            font-size: 23.8px; } }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle h3 {
           margin: 0; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle .maskedTitle {
@@ -572,9 +560,6 @@
                 left: 14%;
                 right: 0;
                 text-align: left; }
-                @media screen and (max-width: 1279px) {
-                  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
-                    height: 21.8%; } }
                 #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox h5 {
                   position: relative;
                   width: 100%;
@@ -583,9 +568,6 @@
                   margin: 0;
                   margin-bottom: 7px;
                   color: #06111a; }
-                  @media screen and (max-width: 1279px) {
-                    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox h5 {
-                      font-size: 16.9px; } }
                 #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox p {
                   position: relative;
                   width: 100%;
@@ -594,10 +576,6 @@
                   font-size: 19px;
                   margin: 0;
                   margin-bottom: 10.5%; }
-                  @media screen and (max-width: 1279px) {
-                    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox p {
-                      height: 6.5%;
-                      font-size: 14px; } }
               #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite {
                 position: absolute;
                 width: 126px;
@@ -608,11 +586,6 @@
                 right: 0;
                 bottom: 10%;
                 border: 1px solid #97979b; }
-                @media screen and (max-width: 1279px) {
-                  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite {
-                    width: 86px;
-                    height: 23px;
-                    line-height: 1.4em; } }
                 #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite a {
                   position: absolute;
                   display: block;
@@ -628,9 +601,6 @@
                   -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
                   -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
                   transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
-                  @media screen and (max-width: 1279px) {
-                    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite a {
-                      font-size: 10.5px; } }
                   #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite a:hover {
                     color: #fff;
                     background-color: #97979b; }
@@ -720,9 +690,6 @@
         left: 0;
         right: 0;
         margin-top: 4.69%; }
-        @media screen and (max-width: 1279px) {
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars {
-            height: 2px; } }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul {
           position: absolute;
           height: 100%;
@@ -752,10 +719,6 @@
             -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             overflow: hidden; }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar {
-                margin-left: 3px;
-                margin-right: 3px; } }
             #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar:hover {
               opacity: 0.4;
               filter: alpha(opacity=40);
@@ -800,44 +763,26 @@
           width: 62%; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList li {
             width: calc(20% - 15px); }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList li {
-                width: calc(20% - 6px); } }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList {
           width: 25%; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList li {
             width: calc(50% - 15px); }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList li {
-                width: calc(50% - 6px); } }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .sixBarsList {
           width: 75%; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .sixBarsList li {
             width: calc(16.66% - 15px); }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .sixBarsList li {
-                width: calc(16.66% - 6px); } }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .threeBarsList {
           width: 37.6%; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .threeBarsList li {
             width: calc(33.33% - 15px); }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .threeBarsList li {
-                width: calc(33.33% - 6px); } }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .eightBarsList {
           width: 100%; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .eightBarsList li {
             width: calc(12.5% - 15px); }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .eightBarsList li {
-                width: calc(12.5% - 6px); } }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fourBarsList {
           width: 50%; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fourBarsList li {
             width: calc(25% - 15px); }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fourBarsList li {
-                width: calc(25% - 6px); } }
     #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel {
       position: absolute;
       width: 89%;
@@ -873,16 +818,6 @@
           bottom: 0;
           right: 0;
           color: #c9c9c9; }
-          @media screen and (max-width: 1649px) {
-            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
-              width: 93%;
-              height: 31px;
-              font-size: 29.6px; } }
-          @media screen and (max-width: 1279px) {
-            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
-              width: 100%;
-              height: 24px;
-              font-size: 22px; } }
         #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle .maskTitle {
           position: absolute;
           top: 0;
@@ -1038,12 +973,6 @@
             -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
-            @media screen and (max-width: 1649px) {
-              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox {
-                height: 18%; } }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox {
-                height: 12.5%; } }
             #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox h5 {
               position: relative;
               width: 100%;
@@ -1052,12 +981,6 @@
               margin: 0;
               margin-bottom: 2.3%;
               color: #06111a; }
-              @media screen and (max-width: 1649px) {
-                #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox h5 {
-                  font-size: 20px; } }
-              @media screen and (max-width: 1279px) {
-                #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox h5 {
-                  font-size: 16.9px; } }
             #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData {
               position: relative;
               width: 100%;
@@ -1065,14 +988,6 @@
               line-height: 0.8em;
               font-size: 20px;
               margin-bottom: 11%; }
-              @media screen and (max-width: 1649px) {
-                #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData {
-                  height: 6.9%;
-                  font-size: 17px; } }
-              @media screen and (max-width: 1279px) {
-                #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData {
-                  height: 6.4%;
-                  font-size: 14px; } }
               #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData p {
                 position: absolute;
                 margin: 0;
@@ -1123,9 +1038,6 @@
         left: 12.4%;
         right: 0;
         bottom: 0; }
-        @media screen and (max-width: 1279px) {
-          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars {
-            height: 2px; } }
         #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul {
           position: absolute;
           height: 100%;
@@ -1155,10 +1067,6 @@
             -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             overflow: hidden; }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar {
-                margin-left: 3px;
-                margin-right: 3px; } }
             #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar:hover {
               opacity: 0.4;
               filter: alpha(opacity=40);
@@ -1203,9 +1111,6 @@
           width: 75%; }
           #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars .sixBarsList li {
             width: calc(16.66% - 15px); }
-            @media screen and (max-width: 1279px) {
-              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars .sixBarsList li {
-                width: calc(16.66% - 6px); } }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter {
       position: absolute;
       width: 67.4%;
@@ -1232,8 +1137,9 @@
           width: 69%;
           height: 100%; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+            position: absolute;
             margin: 0;
-            font-size: 70px;
+            font-size: 65px;
             -webkit-animation: writingBar 0.8s ease infinite alternate;
             -moz-animation: writingBar 0.8s ease infinite alternate;
             -ms-animation: writingBar 0.8s ease infinite alternate;
@@ -1250,14 +1156,12 @@
           *display: inline;
           /* Fix for IE7 */
           width: 31%;
-          height: 48.8%;
-          top: 25.6%;
-          display: table; }
+          height: 100%; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
             position: absolute;
             width: 50.1%;
-            display: table-cell;
-            vertical-align: middle;
+            height: 48.8%;
+            display: table;
             margin: auto;
             top: 0;
             bottom: 0;
@@ -1266,7 +1170,7 @@
             border: 1px solid #c9c9c9;
             color: #97979b;
             font-weight: 700;
-            font-size: 1.3vw;
+            font-size: 25px;
             text-align: center;
             text-decoration: none;
             -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
@@ -1277,10 +1181,13 @@
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a:hover {
               background-color: #c9c9c9;
               color: #fff; }
+            #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a p {
+              display: table-cell;
+              vertical-align: middle; }
       #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox {
         position: relative;
         width: 100%;
-        height: 8.98vw;
+        height: 48.2%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; }
@@ -1293,39 +1200,39 @@
           /* Fix for IE7 */
           *display: inline;
           /* Fix for IE7 */
-          width: 16.2vw;
+          width: 24%;
           height: 100%; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
-            height: 1.69vw; }
+            height: 18%; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
               position: absolute;
               margin: 0;
-              font-size: 1.8vw;
-              line-height: 1.65vw;
+              font-size: 34.5px;
+              line-height: 0.9em;
               border-right: 2px solid #97979b;
-              padding-right: 0.5vw; }
+              padding-right: 3.2%; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow {
             width: 100%; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
               font-weight: 700;
-              font-size: 1.3vw;
-              line-height: 2vw; }
+              font-size: 25px;
+              line-height: 1.5em; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
-              font-size: 1.04vw;
+              font-size: 19.9px;
               font-variant-numeric: lining-nums;
-              margin-top: -0.1vw;
-              margin-bottom: 1.72vw; }
+              margin-top: -0.6%;
+              margin-bottom: 10.6%; }
               #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow a {
                 text-decoration: none;
                 color: #97979b; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-            font-size: 1.04vw;
+            font-size: 19.9px;
             font-variant-numeric: lining-nums; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow a {
               text-decoration: none;
               color: #97979b; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow .innerHeadRow {
-              margin-bottom: 0.47vw; }
+              margin-bottom: 3%; }
     #fullWrapper #mbrtWrapper .coming-up {
       opacity: 0;
       filter: alpha(opacity=0);
@@ -1368,5 +1275,94 @@
       width: 40px;
       height: 40px;
       background-position: -5px -45px; }
+
+@media screen and (max-width: 1849px) {
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
+    height: 19.4%; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+      font-size: 62px; } }
+@media screen and (max-width: 1750px) {
+  #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
+    font-size: 0.6em; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+    font-size: 58px; } }
+@media screen and (max-width: 1649px) {
+  #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
+    width: 93%;
+    height: 31px;
+    font-size: 29.6px; }
+  #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox {
+    height: 18%; }
+    #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox h5 {
+      font-size: 20px; }
+    #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData {
+      height: 6.9%;
+      font-size: 17px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
+    height: 19.4%; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+    font-size: 50px; } }
+@media screen and (max-width: 1400px) {
+  #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
+    font-size: 0.45em; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+    font-size: 45px; } }
+@media screen and (max-width: 1279px) {
+  #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
+    font-size: 45px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
+    font-size: 23.8px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
+    height: 21.8%; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox h5 {
+      font-size: 16.9px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox p {
+      height: 6.5%;
+      font-size: 14px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite {
+    width: 86px;
+    height: 23px;
+    line-height: 1.4em; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite a {
+      font-size: 10.5px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars {
+    height: 2px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar {
+      margin-left: 3px;
+      margin-right: 3px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList li {
+      width: calc(20% - 6px); }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList li {
+      width: calc(50% - 6px); }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .sixBarsList li {
+      width: calc(16.66% - 6px); }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .threeBarsList li {
+      width: calc(33.33% - 6px); }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .eightBarsList li {
+      width: calc(12.5% - 6px); }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fourBarsList li {
+      width: calc(25% - 6px); }
+  #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
+    width: 100%;
+    height: 24px;
+    font-size: 22px; }
+  #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox {
+    height: 12.5%; }
+    #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox h5 {
+      font-size: 16.9px; }
+    #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData {
+      height: 6.4%;
+      font-size: 14px; }
+  #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars {
+    height: 2px; }
+    #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar {
+      margin-left: 3px;
+      margin-right: 3px; }
+    #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars .sixBarsList li {
+      width: calc(16.66% - 6px); }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
+    height: 19.4%; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+    font-size: 36px; } }
 
 /*# sourceMappingURL=app.css.map */

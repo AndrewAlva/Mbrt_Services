@@ -1,0 +1,314 @@
+// Desktop 1920x1080 Resize
+@media screen and (max-width: 1849px){
+	#fullWrapper{
+		#mbrtWrapper{
+			// Contact Section
+			.contactSection{
+				.contactLetter{
+					.topBox{
+						height: 19.4%;
+
+						.contactTitle{
+							h1{
+								font-size: 62px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Desktop 1920x1080 Resize Intermediate Fix
+@media screen and (max-width: 1750px){
+	#fullWrapper{
+		#mbrtWrapper{
+			// Global Right Navigator
+			#rightBarsNav{
+				.barsWrapper{
+					.navBar{
+						.navName{
+							font-size: 0.6em;
+						}
+					}
+				}
+			}
+
+			// Contact Section
+			.contactSection{
+				.contactLetter{
+					.topBox{
+						.contactTitle{
+							h1{
+								font-size: 58px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Desktop 1920x1080 Resize
+@media screen and (max-width: 1649px){
+	#fullWrapper{
+		#mbrtWrapper{
+			// Vertical Carousel Section
+			.carouselVertSection{
+				.innerCarousel{
+					.carouselTitle{
+						h3{
+							width: 93%;
+							height: 31px;
+							font-size: 29.6px;
+						}
+					}
+
+					.dataWrapper{
+						.projectData{
+							.innerCenteredBox{
+								height: 18%;
+
+								h5{
+									font-size: 20px;
+								}
+
+								.shiftData{
+									height: 6.9%;
+									font-size: 17px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// Contact Section
+			.contactSection{
+				.contactLetter{
+					.topBox{
+						height: 19.4%;
+					}
+				}
+			}
+
+			// Contact Section
+			.contactSection{
+				.contactLetter{
+					.topBox{
+						.contactTitle{
+							h1{
+								font-size: 50px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Desktop 1920x1080 Resize Intermediate Fix
+@media screen and (max-width: 1400px){
+	#fullWrapper{
+		#mbrtWrapper{
+			// Global Right Navigator
+			#rightBarsNav{
+				.barsWrapper{
+					.navBar{
+						.navName{
+							font-size: 0.45em;
+						}
+					}
+				}
+			}
+
+			// Contact Section
+			.contactSection{
+				.contactLetter{
+					.topBox{
+						.contactTitle{
+							h1{
+								font-size: 45px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Laptop and Tablet Min Size
+@media screen and (max-width: 1279px){
+	#fullWrapper{
+		#mbrtWrapper{
+			// Cover Section
+			.coverSection{
+				.nameSection{
+					h1{
+						font-size: 45px;
+					}
+				}
+			}
+
+			// Carousel Section
+			.carouselSection{
+				.innerCarousel{
+					.carouselTitle{
+						font-size: 23.8px;
+					}
+
+					.carouselImages{
+						.projectsWrapper{
+							.projectPhoto{
+								.projectData{
+									.innerCenteredBox{
+										height: 21.8%;
+
+										h5{
+											font-size: 16.9px;
+										}
+
+										p{
+											height: 6.5%;
+											font-size: 14px;
+										}
+									}
+
+									.visitWebsite{
+										width: 86px;
+										height: 23px;
+										line-height: 1.4em;
+
+										a{
+											font-size: 10.5px;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					.projectsBars{
+						height: 2px;
+
+						ul{
+							.singleBar{
+								margin-left: 3px;
+								margin-right: 3px;
+							}
+						}
+
+						.fiveBarsList{
+							li{
+								width: calc(20% - 6px);
+							}
+						}
+
+						.twoBarsList{
+							li{
+								width: calc(50% - 6px);
+							}
+						}
+
+						.sixBarsList{
+							li{
+								width: calc(16.66% - 6px);
+							}
+						}
+
+						.threeBarsList{
+							li{
+								width: calc(33.33% - 6px);
+							}
+						}
+
+						.eightBarsList{
+							li{
+								width: calc(12.5% - 6px);
+							}
+						}
+
+						.fourBarsList{
+							li{
+								width: calc(25% - 6px);
+							}
+						}
+					}
+				}
+			}
+
+			// Vertical Carousel Section
+			.carouselVertSection{
+				.innerCarousel{
+					.carouselTitle{
+						h3{
+							width: 100%;
+							height: 24px;
+							font-size: 22px;
+						}
+					}
+
+					.dataWrapper{
+						.projectData{
+							.innerCenteredBox{
+								height: 12.5%;
+
+								h5{
+									font-size: 16.9px;
+								}
+
+								.shiftData{
+									height: 6.4%;
+									font-size: 14px;
+								}
+							}
+						}
+					}
+
+					.projectsBars{
+						height: 2px;
+
+						ul{
+							.singleBar{
+								margin-left: 3px;
+								margin-right: 3px;
+							}
+						}
+
+						.sixBarsList{
+							li{
+								width: calc(16.66% - 6px);
+							}
+						}
+					}
+				}
+			}
+
+			// Contact Section
+			.contactSection{
+				.contactLetter{
+					.topBox{
+						height: 19.4%;
+					}
+				}
+			}
+
+			// Contact Section
+			.contactSection{
+				.contactLetter{
+					.topBox{
+						.contactTitle{
+							h1{
+								font-size: 36px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
