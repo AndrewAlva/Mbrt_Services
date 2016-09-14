@@ -1014,16 +1014,19 @@
 			.contactSection{
 				.contactLetter{
 					position: absolute;
-					width: 67.4vw;
-					height: 22.35vw;
+					width: 67.4%;
+					height: 45.5%;
 					margin: auto;
 					top: 0; bottom: 0; left: 0; right: 0;
+
+					@media screen and (max-width: 1649px){}
+					@media screen and (max-width: 1279px){}
 
 					.topBox{
 						position: relative;
 						width: 100%;
-						height: 4.95vw;
-						margin-bottom: 8.6vw;
+						height: 22.5%;
+						margin-bottom: 12.7%;
 
 						.contactTitle{
 							@include displayLeft();
