@@ -220,12 +220,11 @@
 
 .testSquare {
   position: fixed;
-  width: 210px;
-  height: 60%;
+  width: 858px;
+  height: 68px;
   margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  top: 279px;
+  left: 314px;
   border: 1px solid red;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1234,13 +1233,13 @@
           height: 100%; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
             margin: 0;
-            font-size: 3.64vw;
+            font-size: 70px;
             -webkit-animation: writingBar 0.8s ease infinite alternate;
             -moz-animation: writingBar 0.8s ease infinite alternate;
             -ms-animation: writingBar 0.8s ease infinite alternate;
             -o-animation: writingBar 0.8s ease infinite alternate;
             animation: writingBar 0.8s ease infinite alternate;
-            padding-right: 1vw; }
+            padding-right: 2.1%; }
         #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton {
           position: relative;
           float: left;
@@ -1251,12 +1250,14 @@
           *display: inline;
           /* Fix for IE7 */
           width: 31%;
-          height: 100%; }
+          height: 48.8%;
+          top: 25.6%;
+          display: table; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
             position: absolute;
-            width: 10.48vw;
-            height: 2.46vw;
-            line-height: 2.46vw;
+            width: 50.1%;
+            display: table-cell;
+            vertical-align: middle;
             margin: auto;
             top: 0;
             bottom: 0;
