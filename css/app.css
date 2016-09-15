@@ -1203,7 +1203,7 @@
           width: 24%;
           height: 100%; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
-            height: 18%; }
+            height: 15%; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
               position: absolute;
               margin: 0;
@@ -1280,12 +1280,20 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
     height: 19.4%; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-      font-size: 62px; } }
+      font-size: 62px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+    height: 14%; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+      font-size: 33.2px; } }
 @media screen and (max-width: 1750px) {
   #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
     font-size: 0.6em; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-    font-size: 58px; } }
+    font-size: 58px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+    height: 13.5%; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+      font-size: 31.4px; } }
 @media screen and (max-width: 1649px) {
   #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
     width: 93%;
@@ -1300,13 +1308,25 @@
       font-size: 17px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
     height: 19.4%; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-    font-size: 50px; } }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
+    height: 15.4%; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+      font-size: 50px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
+      font-size: 18px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+    height: 13.5%; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+      font-size: 29.6px; } }
 @media screen and (max-width: 1400px) {
   #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
     font-size: 0.45em; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-    font-size: 45px; } }
+    font-size: 45px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+    height: 11%; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+      font-size: 25.1px; } }
 @media screen and (max-width: 1279px) {
   #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
     font-size: 45px; }
@@ -1362,7 +1382,15 @@
       width: calc(16.66% - 6px); }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
     height: 19.4%; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-    font-size: 36px; } }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
+    height: 11.5%; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+      font-size: 36px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
+      font-size: 13px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+    height: 10%; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+      font-size: 23px; } }
 
 /*# sourceMappingURL=app.css.map */

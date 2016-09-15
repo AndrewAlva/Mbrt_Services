@@ -14,6 +14,18 @@
 							}
 						}
 					}
+
+					.bottomBox{
+						.contactColumns{
+							.indexRow{
+								height: 14%;
+
+								h5{
+									font-size: 33.2px;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -42,6 +54,18 @@
 						.contactTitle{
 							h1{
 								font-size: 58px;
+							}
+						}
+					}
+
+					.bottomBox{
+						.contactColumns{
+							.indexRow{
+								height: 13.5%;
+
+								h5{
+									font-size: 31.4px;
+								}
 							}
 						}
 					}
@@ -98,9 +122,28 @@
 			.contactSection{
 				.contactLetter{
 					.topBox{
+						height: 15.4%;
 						.contactTitle{
 							h1{
 								font-size: 50px;
+							}
+						}
+
+						.contactButton{
+							a{
+								font-size: 18px;
+							}
+						}
+					}
+
+					.bottomBox{
+						.contactColumns{
+							.indexRow{
+								height: 13.5%;
+
+								h5{
+									font-size: 29.6px;
+								}
 							}
 						}
 					}
@@ -132,6 +175,18 @@
 						.contactTitle{
 							h1{
 								font-size: 45px;
+							}
+						}
+					}
+
+					.bottomBox{
+						.contactColumns{
+							.indexRow{
+								height: 11%;
+
+								h5{
+									font-size: 25.1px;
+								}
 							}
 						}
 					}
@@ -301,9 +356,29 @@
 			.contactSection{
 				.contactLetter{
 					.topBox{
+						height: 11.5%;
+
 						.contactTitle{
 							h1{
 								font-size: 36px;
+							}
+						}
+
+						.contactButton{
+							a{
+								font-size: 13px;
+							}
+						}
+					}
+
+					.bottomBox{
+						.contactColumns{
+							.indexRow{
+								height: 10%;
+								
+								h5{
+									font-size: 23px;
+								}
 							}
 						}
 					}
