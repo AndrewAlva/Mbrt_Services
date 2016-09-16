@@ -12,10 +12,7 @@
 	};
 
 	// FIT TEXT SCRIPT
-	jQuery("#welcomeTitle").fitText(1.26);
-	jQuery(".fitParagraph").fitText(5);
-	jQuery("#welcomeQuote-1").fitText(2);
-	jQuery("#welcomeQuote-2").fitText(1.73);
+
 	jQuery("#servicesTitle").fitText(0.65);
 	jQuery("#servicesQuote").fitText(1.25);
 	jQuery("#column-1").fitText(1.15);

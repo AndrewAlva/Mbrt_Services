@@ -4,33 +4,53 @@
 		#receiverLetter{
 			
 			.introTitle{
-				h1{
-					width: 67.47%;
-					height: 100%;
-					margin-bottom: 3.4%;
-					color: $black;
+				width: 900px;
+				margin-bottom: 27px;
+
+				.maskTitle{
+					h1{
+						width: 900px;
+					}
 				}
 			}
+
 
 			.introParagraph{
+				margin-bottom: 46px;
+
 				p{
-					width: 100%;
-					margin-bottom: 2.8%;
+					
 				}
 			}
 
+			#welcomePara-1{
+				height: 142px;
+			}
+			#welcomePara-2, #welcomePara-3{
+				height: 53px;
+			}
+
+
 			.introQuotes{
-				h2{
-					margin-bottom: 3.3%;
-					color: $black;
-				}
+				margin-bottom: 40px;
+			}
 
-				#welcomeQuote-1{
-					width: 57.9%;
-				}
+			#welcomeQuote-1{
+				width: 760px;
 
-				#welcomeQuote-2{
-					width: 50%;
+				.maskTitle{
+					h2{
+						width: 760px;
+					}
+				}
+			}
+			#welcomeQuote-2{
+				width: 660px;
+
+				.maskTitle{
+					h2{
+						width: 660px;
+					}
 				}
 			}
 		}

@@ -24,6 +24,20 @@
 									font-size: 33.2px;
 								}
 							}
+
+							.firstRow{
+								.innerHeadRow{
+									font-size: 24px;
+								}
+
+								.innerFootRow{
+									font-size: 19.1px;
+								}
+							}
+
+							.secondRow{
+								font-size: 19.1px;
+							}
 						}
 					}
 				}
@@ -67,6 +81,31 @@
 									font-size: 31.4px;
 								}
 							}
+
+							.firstRow{
+								.innerHeadRow{
+									font-size: 22.7px;
+								}
+
+								.innerFootRow{
+									font-size: 18.1px;
+								}
+							}
+
+							.secondRow{
+								font-size: 18.1px;
+							}
+						}
+					}
+				}
+			}
+
+			// Services Section
+			#servicesWrapper{
+				#servicesLetter{
+					#servicesList{
+						td{
+							font-size: 8px;
 						}
 					}
 				}
@@ -113,15 +152,6 @@
 			.contactSection{
 				.contactLetter{
 					.topBox{
-						height: 19.4%;
-					}
-				}
-			}
-
-			// Contact Section
-			.contactSection{
-				.contactLetter{
-					.topBox{
 						height: 15.4%;
 						.contactTitle{
 							h1{
@@ -144,6 +174,20 @@
 								h5{
 									font-size: 29.6px;
 								}
+							}
+
+							.firstRow{
+								.innerHeadRow{
+									font-size: 21.5px;
+								}
+
+								.innerFootRow{
+									font-size: 17.1px;
+								}
+							}
+
+							.secondRow{
+								font-size: 17.1px;
 							}
 						}
 					}
@@ -187,6 +231,20 @@
 								h5{
 									font-size: 25.1px;
 								}
+							}
+
+							.firstRow{
+								.innerHeadRow{
+									font-size: 18.2px;
+								}
+
+								.innerFootRow{
+									font-size: 14.5px;
+								}
+							}
+
+							.secondRow{
+								font-size: 14.5px;
 							}
 						}
 					}
@@ -347,15 +405,6 @@
 			.contactSection{
 				.contactLetter{
 					.topBox{
-						height: 19.4%;
-					}
-				}
-			}
-
-			// Contact Section
-			.contactSection{
-				.contactLetter{
-					.topBox{
 						height: 11.5%;
 
 						.contactTitle{
@@ -380,7 +429,125 @@
 									font-size: 23px;
 								}
 							}
+
+							.firstRow{
+								.innerHeadRow{
+									font-size: 16.6px;
+								}
+
+								.innerFootRow{
+									font-size: 13.2px;
+								}
+							}
+
+							.secondRow{
+								font-size: 13.2px;
+							}
 						}
+					}
+				}
+			}
+
+			// Services Section
+			#servicesWrapper{
+				#servicesLetter{
+					#servicesList{
+						td{
+							font-size: 7px;
+						}
+					}
+				}
+			}
+
+			// Branding Cover
+			#brandingCover{
+				.nameSection{
+					width: 235px;
+				}
+			}
+
+			// Logos Carousel
+			#logosCarousel{
+				.innerCarousel{
+					.carouselTitle{
+						width: 85px;
+					}
+				}
+			}
+
+			// Stationery Carousel
+			#stationeryCarousel{
+				.innerCarousel{
+					.carouselTitle{
+						width: 140px;
+					}
+				}
+			}
+
+			// Brand Communications Cover
+			#communicationCover{
+				.nameSection{
+					width: 540px;
+				}
+			}
+
+			// Packaging Carousel
+			#packagingCarousel{
+				.innerCarousel{
+					.carouselTitle{
+						width: 390px;
+					}
+				}
+			}
+
+			// Uniforms Carousel
+			#uniformsCarousel{
+				.innerCarousel{
+					.carouselTitle{
+						width: 330px;
+					}
+				}
+			}
+
+			// POS Carousel
+			#POSCarousel{
+				.innerCarousel{
+					.carouselTitle{
+						width: 160px;
+					}
+				}
+			}
+
+			// Interiorism Carousel
+			#interiorismCarousel{
+				.innerCarousel{
+					.carouselTitle{
+						width: 155px;
+					}
+				}
+			}
+
+			// Web Cover
+			#webCover{
+				.nameSection{
+					width: 650px;
+				}
+			}
+
+			// Lucky Carousel
+			#luckyCarousel{
+				.innerCarousel{
+					.carouselTitle{
+						width: 170px;
+					}
+				}
+			}
+
+			// Camila Carousel
+			#camilaCarousel{
+				.innerCarousel{
+					.carouselTitle{
+						width: 250px;
 					}
 				}
 			}

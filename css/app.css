@@ -75,32 +75,36 @@
       top: 0;
       bottom: 0; }
 
-#welcomeWrapper #receiverLetter .introTitle h1 {
-  width: 67.47%;
-  height: 100%;
-  margin-bottom: 3.4%;
-  color: #06111a; }
-#welcomeWrapper #receiverLetter .introParagraph p {
-  width: 100%;
-  margin-bottom: 2.8%; }
-#welcomeWrapper #receiverLetter .introQuotes h2 {
-  margin-bottom: 3.3%;
-  color: #06111a; }
-#welcomeWrapper #receiverLetter .introQuotes #welcomeQuote-1 {
-  width: 57.9%; }
-#welcomeWrapper #receiverLetter .introQuotes #welcomeQuote-2 {
-  width: 50%; }
+#welcomeWrapper #receiverLetter .introTitle {
+  width: 900px;
+  margin-bottom: 27px; }
+  #welcomeWrapper #receiverLetter .introTitle .maskTitle h1 {
+    width: 900px; }
+#welcomeWrapper #receiverLetter .introParagraph {
+  margin-bottom: 46px; }
+#welcomeWrapper #receiverLetter #welcomePara-1 {
+  height: 142px; }
+#welcomeWrapper #receiverLetter #welcomePara-2, #welcomeWrapper #receiverLetter #welcomePara-3 {
+  height: 53px; }
+#welcomeWrapper #receiverLetter .introQuotes {
+  margin-bottom: 40px; }
+#welcomeWrapper #receiverLetter #welcomeQuote-1 {
+  width: 760px; }
+  #welcomeWrapper #receiverLetter #welcomeQuote-1 .maskTitle h2 {
+    width: 760px; }
+#welcomeWrapper #receiverLetter #welcomeQuote-2 {
+  width: 660px; }
+  #welcomeWrapper #receiverLetter #welcomeQuote-2 .maskTitle h2 {
+    width: 660px; }
 
 #servicesWrapper #servicesLetter .introTitle h1 {
   width: 33.77%;
-  margin-bottom: 3.4%;
-  color: #06111a; }
+  margin-bottom: 3.4%; }
 #servicesWrapper #servicesLetter .introParagraph p {
   margin-bottom: 6.8%; }
 #servicesWrapper #servicesLetter .introQuotes h2 {
   width: 36%;
-  margin-bottom: 3.6%;
-  color: #06111a; }
+  margin-bottom: 3.6%; }
 #servicesWrapper #servicesLetter #servicesList {
   position: relative;
   width: 100%; }
@@ -124,68 +128,38 @@
     line-height: 2.13em;
     letter-spacing: 0.1em;
     text-transform: uppercase; }
-    @media screen and (max-width: 1720px) {
-      #servicesWrapper #servicesLetter #servicesList td {
-        font-size: 8px; } }
-    @media screen and (max-width: 1280px) {
-      #servicesWrapper #servicesLetter #servicesList td {
-        font-size: 7px; } }
 
 #brandingCover .nameSection {
   width: 335px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #brandingCover .nameSection {
-      width: 235px; } }
 
 #logosCarousel .innerCarousel .carouselTitle {
   width: 115px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #logosCarousel .innerCarousel .carouselTitle {
-      width: 85px; } }
 
 #stationeryCarousel .innerCarousel .carouselTitle {
   width: 200px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #stationeryCarousel .innerCarousel .carouselTitle {
-      width: 140px; } }
 
 #communicationCover .nameSection {
   width: 820px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #communicationCover .nameSection {
-      width: 540px; } }
 
 #packagingCarousel .innerCarousel .carouselTitle {
   width: 550px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #packagingCarousel .innerCarousel .carouselTitle {
-      width: 390px; } }
 
 #uniformsCarousel .innerCarousel .carouselTitle {
   width: 500px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #uniformsCarousel .innerCarousel .carouselTitle {
-      width: 330px; } }
 
 #POSCarousel .innerCarousel .carouselTitle {
   width: 235px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #POSCarousel .innerCarousel .carouselTitle {
-      width: 160px; } }
 
 #interiorismCarousel .innerCarousel .carouselTitle {
   width: 215px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #interiorismCarousel .innerCarousel .carouselTitle {
-      width: 155px; } }
 
 #advertisingCarousel .innerCarousel .carouselTitle {
   color: #06111a; }
@@ -193,23 +167,14 @@
 #webCover .nameSection {
   width: 980px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #webCover .nameSection {
-      width: 650px; } }
 
 #luckyCarousel .innerCarousel .carouselTitle {
   width: 250px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #luckyCarousel .innerCarousel .carouselTitle {
-      width: 170px; } }
 
 #camilaCarousel .innerCarousel .carouselTitle {
   width: 360px;
   color: #06111a; }
-  @media screen and (max-width: 1279px) {
-    #camilaCarousel .innerCarousel .carouselTitle {
-      width: 250px; } }
 
 #contactWrapper .contactLetter .contactTitle h1 {
   color: #06111a; }
@@ -220,11 +185,11 @@
 
 .testSquare {
   position: fixed;
-  width: 95px;
-  height: 20px;
+  width: 750px;
+  height: 50px;
   margin: auto;
-  top: 525px;
-  left: 623px;
+  top: 195px;
+  left: 316px;
   border: 1px solid red;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -383,10 +348,8 @@
       will-change: transform; }
     #fullWrapper #mbrtWrapper .introSection .introLetter {
       position: absolute;
-      width: 67.5%;
-      min-width: 760px;
-      height: 71.14%;
-      min-height: 393.2px;
+      width: 1290px;
+      height: 640px;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -404,21 +367,57 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        margin-top: 0; }
+        margin-top: 0;
+        margin-bottom: 0; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
+        height: 75px;
         line-height: 3.7em; }
-        #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
-          height: 3%;
+        #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .writtingAnimation {
           -webkit-animation: writingBar 0.8s ease infinite alternate;
           -moz-animation: writingBar 0.8s ease infinite alternate;
           -ms-animation: writingBar 0.8s ease infinite alternate;
           -o-animation: writingBar 0.8s ease infinite alternate;
-          animation: writingBar 0.8s ease infinite alternate;
-          padding-right: 1%;
-          padding-top: 0.5%;
-          padding-bottom: 0.5%; }
+          animation: writingBar 0.8s ease infinite alternate; }
+        #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+          position: absolute;
+          font-size: 69.6px;
+          padding-right: 22px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          color: #c9c9c9; }
+        #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .maskTitle {
+          position: relative;
+          width: 100%;
+          height: 75px;
+          overflow: hidden;
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+          #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .maskTitle h1 {
+            color: #06111a; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
+        width: 100%;
+        font-size: 25px;
         line-height: 1.2em; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
+        height: 55px; }
+        #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
+          position: absolute;
+          font-size: 38px; }
+        #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes .maskTitle {
+          position: relative;
+          width: 100%;
+          height: 55px;
+          overflow: hidden;
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+          #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes .maskTitle h2 {
+            color: #06111a; }
     #fullWrapper #mbrtWrapper .coverSection .nameSection {
       position: absolute;
       height: 80px;
@@ -1284,7 +1283,13 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
     height: 14%; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 33.2px; } }
+      font-size: 33.2px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+    font-size: 24px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+    font-size: 19.1px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+    font-size: 19.1px; } }
 @media screen and (max-width: 1750px) {
   #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
     font-size: 0.6em; }
@@ -1293,7 +1298,15 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
     height: 13.5%; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 31.4px; } }
+      font-size: 31.4px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+    font-size: 22.7px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+    font-size: 18.1px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+    font-size: 18.1px; }
+  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList td {
+    font-size: 8px; } }
 @media screen and (max-width: 1649px) {
   #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
     width: 93%;
@@ -1307,8 +1320,6 @@
       height: 6.9%;
       font-size: 17px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
-    height: 19.4%; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
     height: 15.4%; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
       font-size: 50px; }
@@ -1317,7 +1328,13 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
     height: 13.5%; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 29.6px; } }
+      font-size: 29.6px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+    font-size: 21.5px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+    font-size: 17.1px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+    font-size: 17.1px; } }
 @media screen and (max-width: 1400px) {
   #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
     font-size: 0.45em; }
@@ -1326,7 +1343,13 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
     height: 11%; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 25.1px; } }
+      font-size: 25.1px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+    font-size: 18.2px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+    font-size: 14.5px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+    font-size: 14.5px; } }
 @media screen and (max-width: 1279px) {
   #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
     font-size: 45px; }
@@ -1381,8 +1404,6 @@
     #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars .sixBarsList li {
       width: calc(16.66% - 6px); }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
-    height: 19.4%; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
     height: 11.5%; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
       font-size: 36px; }
@@ -1391,6 +1412,36 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
     height: 10%; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 23px; } }
+      font-size: 23px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+    font-size: 16.6px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+    font-size: 13.2px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+    font-size: 13.2px; }
+  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList td {
+    font-size: 7px; }
+  #fullWrapper #mbrtWrapper #brandingCover .nameSection {
+    width: 235px; }
+  #fullWrapper #mbrtWrapper #logosCarousel .innerCarousel .carouselTitle {
+    width: 85px; }
+  #fullWrapper #mbrtWrapper #stationeryCarousel .innerCarousel .carouselTitle {
+    width: 140px; }
+  #fullWrapper #mbrtWrapper #communicationCover .nameSection {
+    width: 540px; }
+  #fullWrapper #mbrtWrapper #packagingCarousel .innerCarousel .carouselTitle {
+    width: 390px; }
+  #fullWrapper #mbrtWrapper #uniformsCarousel .innerCarousel .carouselTitle {
+    width: 330px; }
+  #fullWrapper #mbrtWrapper #POSCarousel .innerCarousel .carouselTitle {
+    width: 160px; }
+  #fullWrapper #mbrtWrapper #interiorismCarousel .innerCarousel .carouselTitle {
+    width: 155px; }
+  #fullWrapper #mbrtWrapper #webCover .nameSection {
+    width: 650px; }
+  #fullWrapper #mbrtWrapper #luckyCarousel .innerCarousel .carouselTitle {
+    width: 170px; }
+  #fullWrapper #mbrtWrapper #camilaCarousel .innerCarousel .carouselTitle {
+    width: 250px; } }
 
 /*# sourceMappingURL=app.css.map */
