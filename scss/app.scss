@@ -20,11 +20,11 @@
 
 .testSquare{
 	position: fixed;
-	width: 750px;
-	height: 50px;
+	width: 208px;
+	height: 47px;
 	margin: auto;
-	top: 195px;
-	left: 316px;
+	top: 556px;
+	left: 216px;
 	border: 1px solid red;
 	@include boxSizeFit();
 	z-index: 1000;
@@ -184,11 +184,7 @@
 			.introSection{
 				.introLetter{
 					position: absolute;
-					// width: 67.5%;
 					width: 1290px;
-					// min-width: 760px;
-					height: 640px;
-					// min-height: 393.2px;
 					margin: auto;
 					top: 0; bottom: 0; left: 0; right: 0;
 
@@ -201,7 +197,7 @@
 
 					.introTitle{
 						height: 75px;
-						line-height: 3.7em;
+						line-height: 4em;
 
 						.writtingAnimation{
 							@include writingBar();
@@ -219,7 +215,7 @@
 						.maskTitle{
 							position: relative;
 							width: 100%;
-							height: 75px;
+							height: inherit;
 							overflow: hidden;
 							@include transitions(0.6s);
 
@@ -243,12 +239,13 @@
 						h2{
 							position: absolute;
 							font-size: 38px;
+							color: $light-gray;
 						}
 
 						.maskTitle{
 							position: relative;
 							width: 100%;
-							height: 55px;
+							height: inherit;
 							overflow: hidden;
 							@include transitions(0.6s);
 

@@ -11,15 +11,6 @@
 		}, transitionsTiming);
 	};
 
-	// FIT TEXT SCRIPT
-
-	jQuery("#servicesTitle").fitText(0.65);
-	jQuery("#servicesQuote").fitText(1.25);
-	jQuery("#column-1").fitText(1.15);
-	jQuery("#column-2").fitText(1.47);
-	jQuery("#column-3").fitText(1.49);
-	jQuery("#column-4").fitText(1.15);
-
 	// VARS LOAD CURRENT SECTION
 	var currentSectionId;
 	var currentSectionName = window.location.search;

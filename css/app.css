@@ -75,59 +75,69 @@
       top: 0;
       bottom: 0; }
 
-#welcomeWrapper #receiverLetter .introTitle {
-  width: 900px;
-  margin-bottom: 27px; }
-  #welcomeWrapper #receiverLetter .introTitle .maskTitle h1 {
-    width: 900px; }
-#welcomeWrapper #receiverLetter .introParagraph {
-  margin-bottom: 46px; }
-#welcomeWrapper #receiverLetter #welcomePara-1 {
-  height: 142px; }
-#welcomeWrapper #receiverLetter #welcomePara-2, #welcomeWrapper #receiverLetter #welcomePara-3 {
-  height: 53px; }
-#welcomeWrapper #receiverLetter .introQuotes {
-  margin-bottom: 40px; }
-#welcomeWrapper #receiverLetter #welcomeQuote-1 {
-  width: 760px; }
-  #welcomeWrapper #receiverLetter #welcomeQuote-1 .maskTitle h2 {
+#welcomeWrapper #receiverLetter {
+  height: 640px; }
+  #welcomeWrapper #receiverLetter .introTitle {
+    width: 900px;
+    margin-bottom: 27px; }
+    #welcomeWrapper #receiverLetter .introTitle .maskTitle h1 {
+      width: 900px; }
+  #welcomeWrapper #receiverLetter .introParagraph {
+    margin-bottom: 46px; }
+  #welcomeWrapper #receiverLetter #welcomePara-1 {
+    height: 142px; }
+  #welcomeWrapper #receiverLetter #welcomePara-2, #welcomeWrapper #receiverLetter #welcomePara-3 {
+    height: 53px; }
+  #welcomeWrapper #receiverLetter .introQuotes {
+    margin-bottom: 40px; }
+  #welcomeWrapper #receiverLetter #welcomeQuote-1 {
     width: 760px; }
-#welcomeWrapper #receiverLetter #welcomeQuote-2 {
-  width: 660px; }
-  #welcomeWrapper #receiverLetter #welcomeQuote-2 .maskTitle h2 {
+    #welcomeWrapper #receiverLetter #welcomeQuote-1 .maskTitle h2 {
+      width: 760px; }
+  #welcomeWrapper #receiverLetter #welcomeQuote-2 {
     width: 660px; }
+    #welcomeWrapper #receiverLetter #welcomeQuote-2 .maskTitle h2 {
+      width: 660px; }
 
-#servicesWrapper #servicesLetter .introTitle h1 {
-  width: 33.77%;
-  margin-bottom: 3.4%; }
-#servicesWrapper #servicesLetter .introParagraph p {
-  margin-bottom: 6.8%; }
-#servicesWrapper #servicesLetter .introQuotes h2 {
-  width: 36%;
-  margin-bottom: 3.6%; }
-#servicesWrapper #servicesLetter #servicesList {
-  position: relative;
-  width: 100%; }
-  #servicesWrapper #servicesLetter #servicesList #column-1 {
-    width: 21.9%; }
-  #servicesWrapper #servicesLetter #servicesList #column-2 {
-    width: 27.9%; }
-  #servicesWrapper #servicesLetter #servicesList #column-3 {
-    width: 28.3%; }
-  #servicesWrapper #servicesLetter #servicesList #column-4 {
-    width: 21.9%; }
-  #servicesWrapper #servicesLetter #servicesList th {
-    vertical-align: top;
-    text-align: left;
-    line-height: 1.4em;
-    padding-bottom: 2.3%;
-    font-weight: bolder;
-    color: #06111a; }
-  #servicesWrapper #servicesLetter #servicesList td {
-    font-size: 11.8px;
-    line-height: 2.13em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase; }
+#servicesWrapper #servicesLetter {
+  height: 690px; }
+  #servicesWrapper #servicesLetter .introTitle {
+    width: 465px;
+    margin-bottom: 30px; }
+    #servicesWrapper #servicesLetter .introTitle .maskTitle h1 {
+      width: 465px; }
+  #servicesWrapper #servicesLetter .introParagraph {
+    height: 90px;
+    margin-bottom: 87px; }
+  #servicesWrapper #servicesLetter .introQuotes {
+    width: 425px;
+    margin-bottom: 42px; }
+    #servicesWrapper #servicesLetter .introQuotes .maskTitle h2 {
+      width: 425px; }
+  #servicesWrapper #servicesLetter #servicesList {
+    position: relative;
+    width: 100%; }
+    #servicesWrapper #servicesLetter #servicesList #column-1 {
+      width: 21.9%; }
+    #servicesWrapper #servicesLetter #servicesList #column-2 {
+      width: 27.9%; }
+    #servicesWrapper #servicesLetter #servicesList #column-3 {
+      width: 28.3%; }
+    #servicesWrapper #servicesLetter #servicesList #column-4 {
+      width: 21.9%; }
+    #servicesWrapper #servicesLetter #servicesList th {
+      vertical-align: top;
+      text-align: left;
+      font-size: 25px;
+      line-height: 1.4em;
+      padding-bottom: 30px;
+      font-weight: bolder;
+      color: #06111a; }
+    #servicesWrapper #servicesLetter #servicesList td {
+      font-size: 11.8px;
+      line-height: 2.13em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase; }
 
 #brandingCover .nameSection {
   width: 335px;
@@ -185,11 +195,11 @@
 
 .testSquare {
   position: fixed;
-  width: 750px;
-  height: 50px;
+  width: 208px;
+  height: 47px;
   margin: auto;
-  top: 195px;
-  left: 316px;
+  top: 556px;
+  left: 216px;
   border: 1px solid red;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -349,7 +359,6 @@
     #fullWrapper #mbrtWrapper .introSection .introLetter {
       position: absolute;
       width: 1290px;
-      height: 640px;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -371,7 +380,7 @@
         margin-bottom: 0; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
         height: 75px;
-        line-height: 3.7em; }
+        line-height: 4em; }
         #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .writtingAnimation {
           -webkit-animation: writingBar 0.8s ease infinite alternate;
           -moz-animation: writingBar 0.8s ease infinite alternate;
@@ -388,7 +397,7 @@
         #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .maskTitle {
           position: relative;
           width: 100%;
-          height: 75px;
+          height: inherit;
           overflow: hidden;
           -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
           -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
@@ -405,11 +414,12 @@
         height: 55px; }
         #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
           position: absolute;
-          font-size: 38px; }
+          font-size: 38px;
+          color: #c9c9c9; }
         #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes .maskTitle {
           position: relative;
           width: 100%;
-          height: 55px;
+          height: inherit;
           overflow: hidden;
           -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
           -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
@@ -1289,7 +1299,50 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
     font-size: 19.1px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-    font-size: 19.1px; } }
+    font-size: 19.1px; }
+  #fullWrapper #mbrtWrapper .introSection .introLetter {
+    width: 1260px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+      font-size: 67px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
+      font-size: 24px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
+      height: 53px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
+        font-size: 36.6px; }
+  #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter {
+    height: 615px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle {
+      width: 860px;
+      margin-bottom: 26px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle .maskTitle h1 {
+        width: 860px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introParagraph {
+      margin-bottom: 44.3px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-1 {
+      height: 135px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introQuotes {
+      margin-bottom: 38.5px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 {
+      width: 740px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 .maskTitle h2 {
+        width: 740px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 {
+      width: 640px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 .maskTitle h2 {
+        width: 640px; }
+  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter {
+    height: 670px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introTitle {
+      margin-bottom: 28.9px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introParagraph {
+      height: 83px;
+      margin-bottom: 83.8px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introQuotes {
+      margin-bottom: 40.4px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList th {
+      font-size: 23.6px;
+      padding-bottom: 28.9px; } }
 @media screen and (max-width: 1750px) {
   #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
     font-size: 0.6em; }
@@ -1305,8 +1358,53 @@
     font-size: 18.1px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
     font-size: 18.1px; }
-  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList td {
-    font-size: 8px; } }
+  #fullWrapper #mbrtWrapper .introSection .introLetter {
+    width: 1190px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
+      height: 73px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+        font-size: 63.4px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
+      font-size: 22.7px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
+      height: 50px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
+        font-size: 34.6px; }
+  #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter {
+    height: 590px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle {
+      width: 820px;
+      margin-bottom: 24.8px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle .maskTitle h1 {
+        width: 820px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introParagraph {
+      margin-bottom: 41.9px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-1 {
+      height: 130px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introQuotes {
+      margin-bottom: 36.4px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 {
+      width: 700px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 .maskTitle h2 {
+        width: 700px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 {
+      width: 600px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 .maskTitle h2 {
+        width: 600px; }
+  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter {
+    height: 580px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introTitle {
+      margin-bottom: 27.3px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introParagraph {
+      height: 80px;
+      margin-bottom: 79.2px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introQuotes {
+      margin-bottom: 38.2px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList th {
+      font-size: 22.3px;
+      padding-bottom: 27.3px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList td {
+      font-size: 8px; } }
 @media screen and (max-width: 1649px) {
   #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
     width: 93%;
@@ -1334,7 +1432,54 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
     font-size: 17.1px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-    font-size: 17.1px; } }
+    font-size: 17.1px; }
+  #fullWrapper #mbrtWrapper .introSection .introLetter {
+    width: 1120px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
+      height: 70px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+        font-size: 59.8px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
+      font-size: 21.5px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
+      height: 48px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
+        font-size: 32.6px; }
+  #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter {
+    height: 560px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle {
+      width: 780px;
+      margin-bottom: 23.2px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle .maskTitle h1 {
+        width: 780px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introParagraph {
+      margin-bottom: 39.5px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-1 {
+      height: 122px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-2, #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-3 {
+      height: 52px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introQuotes {
+      margin-bottom: 34.3px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 {
+      width: 660px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 .maskTitle h2 {
+        width: 660px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 {
+      width: 570px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 .maskTitle h2 {
+        width: 570px; }
+  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter {
+    height: 550px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introTitle {
+      margin-bottom: 25.7px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introParagraph {
+      height: 75px;
+      margin-bottom: 74.7px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introQuotes {
+      margin-bottom: 36px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList th {
+      font-size: 18.9px;
+      padding-bottom: 25.7px; } }
 @media screen and (max-width: 1400px) {
   #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
     font-size: 0.45em; }
@@ -1349,7 +1494,52 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
     font-size: 14.5px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-    font-size: 14.5px; } }
+    font-size: 14.5px; }
+  #fullWrapper #mbrtWrapper .introSection .introLetter {
+    width: 950px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+      font-size: 50.7px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
+      font-size: 18.2px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
+      height: 42px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
+        font-size: 27.7px; }
+  #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter {
+    height: 490px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle {
+      width: 680px;
+      margin-bottom: 19.6px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle .maskTitle h1 {
+        width: 680px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introParagraph {
+      margin-bottom: 33.5px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-1 {
+      height: 105px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-2, #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-3 {
+      height: 45px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introQuotes {
+      margin-bottom: 29.1px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 {
+      width: 560px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 .maskTitle h2 {
+        width: 560px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 {
+      width: 480px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 .maskTitle h2 {
+        width: 480px; }
+  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter {
+    height: 510px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introTitle {
+      margin-bottom: 21.8px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introParagraph {
+      height: 65px;
+      margin-bottom: 63.4px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introQuotes {
+      margin-bottom: 30.6px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList th {
+      font-size: 17.3px;
+      padding-bottom: 21.8px; } }
 @media screen and (max-width: 1279px) {
   #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
     font-size: 45px; }
@@ -1419,8 +1609,53 @@
     font-size: 13.2px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
     font-size: 13.2px; }
-  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList td {
-    font-size: 7px; }
+  #fullWrapper #mbrtWrapper .introSection .introLetter {
+    width: 865px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+      font-size: 46.4px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
+      font-size: 16.6px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
+      height: 36px; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
+        font-size: 25.3px; }
+  #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter {
+    height: 450px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle {
+      width: 610px;
+      margin-bottom: 18px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introTitle .maskTitle h1 {
+        width: 610px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introParagraph {
+      margin-bottom: 30.6px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-1 {
+      height: 95px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-2, #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomePara-3 {
+      height: 40px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter .introQuotes {
+      margin-bottom: 26.6px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 {
+      width: 510px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-1 .maskTitle h2 {
+        width: 510px; }
+    #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 {
+      width: 440px; }
+      #fullWrapper #mbrtWrapper #welcomeWrapper #receiverLetter #welcomeQuote-2 .maskTitle h2 {
+        width: 440px; }
+  #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter {
+    height: 450px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introTitle {
+      margin-bottom: 20px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introParagraph {
+      height: 57px;
+      margin-bottom: 58px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter .introQuotes {
+      margin-bottom: 28px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList th {
+      font-size: 13.8px;
+      padding-bottom: 20px; }
+    #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList td {
+      font-size: 7px; }
   #fullWrapper #mbrtWrapper #brandingCover .nameSection {
     width: 235px; }
   #fullWrapper #mbrtWrapper #logosCarousel .innerCarousel .carouselTitle {

@@ -2,24 +2,32 @@
 // SERVICES INDEX SECTION
 	#servicesWrapper{
 		#servicesLetter{
+			height: 690px;
 
 			.introTitle{
-				h1{
-					width: 33.77%;
-					margin-bottom: 3.4%;
+				width: 465px;
+				margin-bottom: 30px;
+
+				.maskTitle{
+					h1{
+						width: 465px;
+					}
 				}
 			}
 			
 			.introParagraph{
-				p{
-					margin-bottom: 6.8%;
-				}
+				height: 90px;
+				margin-bottom: 87px;
 			}
 
 			.introQuotes{
-				h2{
-					width: 36%;
-					margin-bottom: 3.6%;
+				width: 425px;
+				margin-bottom: 42px;
+
+				.maskTitle{
+					h2{
+						width: 425px;
+					}
 				}
 			}
 
@@ -43,8 +51,9 @@
 				th{
 					vertical-align: top;
 					text-align: left;
+					font-size: 25px;
 					line-height: 1.4em;
-					padding-bottom: 2.3%;
+					padding-bottom: 30px;
 					font-weight: bolder;
 					color: $black;
 				}
