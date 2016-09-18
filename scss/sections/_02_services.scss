@@ -37,15 +37,47 @@
 
 				#column-1{
 					width: 21.9%;
+
+					.maskTitle{
+						width: 120px;
+
+						.maskedText{
+							width: 120px;
+						}
+					}
 				}
 				#column-2{
 					width: 27.9%;
+
+					.maskTitle{
+						width: 110px;
+
+						.maskedText{
+							width: 110px;
+						}
+					}
 				}
 				#column-3{
 					width: 28.3%;
+
+					.maskTitle{
+						width: 300px;
+
+						.maskedText{
+							width: 300px;
+						}
+					}
 				}
 				#column-4{
 					width: 21.9%;
+
+					.maskTitle{
+						width: 90px;
+
+						.maskedText{
+							width: 90px;
+						}
+					}
 				}
 
 				th{
@@ -55,7 +87,19 @@
 					line-height: 1.4em;
 					padding-bottom: 30px;
 					font-weight: bolder;
-					color: $black;
+
+					.subText{
+						@include transitions(0.6s);
+					}
+					
+
+					.maskTitle{
+						position: absolute;
+						top: 0;
+						overflow: hidden;
+						color: $black;
+						@include transitions(0.6s);
+					}
 				}
 
 				td{

@@ -2,6 +2,11 @@
 @media screen and (max-width: 1849px){
 	#fullWrapper{
 		#mbrtWrapper{
+			// Right Bars Navigator
+			#rightBarsNav{
+				height: 375px;
+			}
+
 			// Contact Section
 			.contactSection{
 				.contactLetter{
@@ -143,6 +148,43 @@
 							font-size: 23.6px;
 							padding-bottom: 28.9px;
 						}
+
+						#column-1{
+							.maskTitle{
+								width: 110px;
+
+								.maskedText{
+									width: 110px;
+								}
+							}
+						}
+						#column-2{
+							.maskTitle{
+								width: 100px;
+
+								.maskedText{
+									width: 100px;
+								}
+							}
+						}
+						#column-3{
+							.maskTitle{
+								width: 280px;
+
+								.maskedText{
+									width: 280px;
+								}
+							}
+						}
+						#column-4{
+							.maskTitle{
+								width: 85px;
+
+								.maskedText{
+									width: 85px;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -156,6 +198,8 @@
 		#mbrtWrapper{
 			// Global Right Navigator
 			#rightBarsNav{
+				height: 350px;
+
 				.barsWrapper{
 					.navBar{
 						.navName{
@@ -306,6 +350,18 @@
 							font-size: 22.3px;
 							padding-bottom: 27.3px;
 						}
+
+						
+						#column-3{
+							.maskTitle{
+								width: 260px;
+
+								.maskedText{
+									width: 260px;
+								}
+							}
+						}
+
 						td{
 							font-size: 8px;
 						}
@@ -320,6 +376,11 @@
 @media screen and (max-width: 1649px){
 	#fullWrapper{
 		#mbrtWrapper{
+			// Right Bars Navigator
+			#rightBarsNav{
+				height: 305px;
+			}
+
 			// Vertical Carousel Section
 			.carouselVertSection{
 				.innerCarousel{
@@ -502,6 +563,43 @@
 							font-size: 18.9px;
 							padding-bottom: 25.7px;
 						}
+
+						#column-1{
+							.maskTitle{
+								width: 95px;
+
+								.maskedText{
+									width: 95px;
+								}
+							}
+						}
+						#column-2{
+							.maskTitle{
+								width: 85px;
+
+								.maskedText{
+									width: 85px;
+								}
+							}
+						}
+						#column-3{
+							.maskTitle{
+								width: 225px;
+
+								.maskedText{
+									width: 225px;
+								}
+							}
+						}
+						#column-4{
+							.maskTitle{
+								width: 70px;
+
+								.maskedText{
+									width: 70px;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -515,6 +613,8 @@
 		#mbrtWrapper{
 			// Global Right Navigator
 			#rightBarsNav{
+				height: 280px;
+
 				.barsWrapper{
 					.navBar{
 						.navName{
@@ -667,6 +767,17 @@
 							font-size: 17.3px;
 							padding-bottom: 21.8px;
 						}
+
+						#column-3{
+							.maskTitle{
+								width: 205px;
+
+								.maskedText{
+									width: 205px;
+								}
+							}
+						}
+						
 					}
 				}
 			}
@@ -678,6 +789,7 @@
 @media screen and (max-width: 1279px){
 	#fullWrapper{
 		#mbrtWrapper{
+
 			// Cover Section
 			.coverSection{
 				.nameSection{
@@ -971,6 +1083,43 @@
 						th{
 							font-size: 13.8px;
 							padding-bottom: 20px;
+						}
+
+						#column-1{
+							.maskTitle{
+								width: 70px;
+
+								.maskedText{
+									width: 70px;
+								}
+							}
+						}
+						#column-2{
+							.maskTitle{
+								width: 65px;
+
+								.maskedText{
+									width: 65px;
+								}
+							}
+						}
+						#column-3{
+							.maskTitle{
+								width: 165px;
+
+								.maskedText{
+									width: 165px;
+								}
+							}
+						}
+						#column-4{
+							.maskTitle{
+								width: 50px;
+
+								.maskedText{
+									width: 50px;
+								}
+							}
 						}
 
 						td{
