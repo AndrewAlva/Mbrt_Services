@@ -151,11 +151,59 @@
 			// Get the current section id name
 			setCurrentSectionId = $('.is-active').attr('id');
 
-			// Clean the current section name, erase the words 'wrapper', 'cover' and 'carousel', then, convert the name to lowercase
-			setCurrentSectionName = setCurrentSectionId.replace('Wrapper', '');
-			setCurrentSectionName = setCurrentSectionName.replace('Cover', '');
-			setCurrentSectionName = setCurrentSectionName.replace('Carousel', '');
-			setCurrentSectionName = setCurrentSectionName.toLowerCase();
+			// Clean the current section name, erase the words 'section-' to get the ID number, then, convert the ID to the correct name
+			setCurrentSectionName = setCurrentSectionId.replace('section-', '');
+			switch (setCurrentSectionName){
+				case '0':
+					setCurrentSectionName = 'index';
+					break;
+				case '1':
+					setCurrentSectionName = 'welcome';
+					break;
+				case '2':
+					setCurrentSectionName = 'services';
+					break;
+				case '3':
+					setCurrentSectionName = 'branding';
+					break;
+				case '4':
+					setCurrentSectionName = 'logos';
+					break;
+				case '5':
+					setCurrentSectionName = 'stationery';
+					break;
+				case '6':
+					setCurrentSectionName = 'communication';
+					break;
+				case '7':
+					setCurrentSectionName = 'packaging';
+					break;
+				case '8':
+					setCurrentSectionName = 'uniforms';
+					break;
+				case '9':
+					setCurrentSectionName = 'pos';
+					break;
+				case '10':
+					setCurrentSectionName = 'interiorism';
+					break;
+				case '11':
+					setCurrentSectionName = 'advertising';
+					break;
+				case '12':
+					setCurrentSectionName = 'web';
+					break;
+				case '13':
+					setCurrentSectionName = 'lucky';
+					break;
+				case '14':
+					setCurrentSectionName = 'camila';
+					break;
+				case '15':
+					setCurrentSectionName = 'contact';
+					break;
+
+			}
 
 			// Set the full name with '?' for the query
 			initURL = "?";
