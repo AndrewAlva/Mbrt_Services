@@ -10,8 +10,9 @@
 			// Contact Section
 			.contactSection{
 				.contactLetter{
+					height: 390px;
 					.topBox{
-						height: 19.4%;
+						height: 22.4%;
 
 						.contactTitle{
 							h1{
@@ -188,6 +189,25 @@
 					}
 				}
 			}
+
+			// Carousel Sections
+			.carouselSection{
+				.innerCarousel{
+					height: 810px;
+					
+					.carouselImages{
+						.projectsWrapper{
+							.projectPhoto{
+								.projectData{
+									.innerCenteredBox{
+										left: 13%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -212,6 +232,7 @@
 			// Contact Section
 			.contactSection{
 				.contactLetter{
+					height: 360px;
 					.topBox{
 						.contactTitle{
 							h1{
@@ -368,6 +389,26 @@
 					}
 				}
 			}
+
+			// Carousel Sections
+			.carouselSection{
+				.innerCarousel{
+					height: 770px;
+
+					.carouselImages{
+						.projectsWrapper{
+							.projectPhoto{
+								.projectData{
+									.innerCenteredBox{
+										height: 34.5%;
+										left: 11%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -387,7 +428,7 @@
 					.carouselTitle{
 						h3{
 							width: 93%;
-							height: 31px;
+							height: 48px;
 							font-size: 29.6px;
 						}
 					}
@@ -414,8 +455,10 @@
 			// Contact Section
 			.contactSection{
 				.contactLetter{
+					height: 320px;
 					.topBox{
-						height: 15.4%;
+						height: 22.2%;
+						
 						.contactTitle{
 							h1{
 								font-size: 50px;
@@ -603,6 +646,25 @@
 					}
 				}
 			}
+
+			// Carousel Sections
+			.carouselSection{
+				.innerCarousel{
+					height: 730px;
+					
+					.carouselImages{
+						.projectsWrapper{
+							.projectPhoto{
+								.projectData{
+									.innerCenteredBox{
+										left: 9%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -627,6 +689,7 @@
 			// Contact Section
 			.contactSection{
 				.contactLetter{
+					height: 285px;
 					.topBox{
 						.contactTitle{
 							h1{
@@ -781,6 +844,26 @@
 					}
 				}
 			}
+
+			// Carousel Sections
+			.carouselSection{
+				.innerCarousel{
+					height: 620px;
+					
+					.carouselImages{
+						.projectsWrapper{
+							.projectPhoto{
+								.projectData{
+									.innerCenteredBox{
+										height: 38.5%;
+										left: 7%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -793,6 +876,8 @@
 			// Cover Section
 			.coverSection{
 				.nameSection{
+					height: 65px;
+					line-height: 4em;
 					h1{
 						font-size: 45px;
 					}
@@ -802,6 +887,8 @@
 			// Carousel Section
 			.carouselSection{
 				.innerCarousel{
+					height: 570px;
+
 					.carouselTitle{
 						font-size: 23.8px;
 					}
@@ -811,7 +898,8 @@
 							.projectPhoto{
 								.projectData{
 									.innerCenteredBox{
-										height: 21.8%;
+										height: 31.8%;
+										left: 5%;
 
 										h5{
 											font-size: 16.9px;
@@ -827,6 +915,7 @@
 										width: 86px;
 										height: 23px;
 										line-height: 1.4em;
+										bottom: 15%;
 
 										a{
 											font-size: 10.5px;
@@ -892,7 +981,7 @@
 					.carouselTitle{
 						h3{
 							width: 100%;
-							height: 24px;
+							height: 34px;
 							font-size: 22px;
 						}
 					}
@@ -936,8 +1025,9 @@
 			// Contact Section
 			.contactSection{
 				.contactLetter{
+					height: 240px;
 					.topBox{
-						height: 11.5%;
+						height: 20.5%;
 
 						.contactTitle{
 							h1{

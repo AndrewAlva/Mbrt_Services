@@ -23,6 +23,12 @@
     border-right: 4px solid #97979b; }
   100% {
     border-right: 4px solid rgba(151, 151, 155, 0); } }
+.activeTitle:before {
+  max-width: 100% !important; }
+
+.activeTitle {
+  color: #fff !important; }
+
 #indexWrapper #mainLogo {
   position: absolute;
   width: 662px;
@@ -147,23 +153,26 @@
       font-size: 25px;
       line-height: 1.4em;
       padding-bottom: 30px;
-      font-weight: bolder; }
-      #servicesWrapper #servicesLetter #servicesList th .subText {
-        -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
-      #servicesWrapper #servicesLetter #servicesList th .maskTitle {
-        position: absolute;
-        top: 0;
-        overflow: hidden;
-        color: #06111a;
-        -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+      font-weight: bolder;
+      color: #c9c9c9;
+      -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+      -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+      -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+      -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+      transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+    #servicesWrapper #servicesLetter #servicesList th:before {
+      position: absolute;
+      overflow: hidden;
+      max-width: 0;
+      color: #06111a;
+      cursor: text;
+      content: attr(data-hover);
+      white-space: nowrap;
+      -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+      -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+      -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+      -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+      transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
     #servicesWrapper #servicesLetter #servicesList td {
       font-size: 11.8px;
       line-height: 2.13em;
@@ -218,11 +227,62 @@
   color: #06111a; }
 
 #contactWrapper .contactLetter .contactTitle h1 {
-  color: #06111a; }
+  color: #c9c9c9; }
 #contactWrapper .contactLetter .indexRow h5 {
-  color: #06111a; }
+  color: #c9c9c9;
+  -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+  -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+  -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+  -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+  transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+#contactWrapper .contactLetter .indexRow h5:before {
+  position: absolute;
+  overflow: hidden;
+  max-width: 0;
+  color: #06111a;
+  cursor: text;
+  content: attr(data-hover);
+  white-space: nowrap;
+  -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
 #contactWrapper .contactLetter .firstRow .innerHeadRow {
-  color: #06111a; }
+  color: #c9c9c9;
+  -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+  -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+  -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+  -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+  transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+#contactWrapper .contactLetter .firstRow .innerHeadRow:before {
+  position: absolute;
+  overflow: hidden;
+  max-width: 0;
+  color: #06111a;
+  cursor: text;
+  content: attr(data-hover);
+  white-space: nowrap;
+  -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+#contactWrapper .contactLetter .bottomBox a:before {
+  position: absolute;
+  overflow: hidden;
+  max-width: 0;
+  color: #06111a;
+  cursor: pointer;
+  content: attr(data-hover);
+  white-space: nowrap;
+  -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+  transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+#contactWrapper .contactLetter .bottomBox a:hover:before {
+  max-width: 100%; }
 
 .testSquare {
   position: fixed;
@@ -424,19 +484,25 @@
           padding-right: 22px;
           padding-top: 5px;
           padding-bottom: 5px;
-          color: #c9c9c9; }
-        #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .maskTitle {
-          position: relative;
-          width: 100%;
-          height: inherit;
+          color: #c9c9c9;
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+        #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1:before {
+          position: absolute;
           overflow: hidden;
-          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
-          #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .maskTitle h1 {
-            color: #06111a; }
+          max-width: 0;
+          color: #06111a;
+          cursor: text;
+          content: attr(data-hover);
+          white-space: nowrap;
+          -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
         width: 100%;
         font-size: 25px;
@@ -446,23 +512,29 @@
         #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
           position: absolute;
           font-size: 38px;
-          color: #c9c9c9; }
-        #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes .maskTitle {
-          position: relative;
-          width: 100%;
-          height: inherit;
+          color: #c9c9c9;
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+        #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2:before {
+          position: absolute;
           overflow: hidden;
-          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
-          #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes .maskTitle h2 {
-            color: #06111a; }
+          max-width: 0;
+          color: #06111a;
+          cursor: text;
+          content: attr(data-hover);
+          white-space: nowrap;
+          -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
     #fullWrapper #mbrtWrapper .coverSection .nameSection {
       position: absolute;
-      height: 80px;
-      line-height: 5em;
+      height: 100px;
+      line-height: 6em;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -474,6 +546,11 @@
       -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
       transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
       #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
+        margin: 0;
+        padding-right: 20px;
+        font-size: 70px;
+        text-align: center;
+        color: #c9c9c9;
         position: relative;
         float: left;
         display: inline-block;
@@ -482,36 +559,45 @@
         /* Fix for IE7 */
         *display: inline;
         /* Fix for IE7 */
-        margin: 0;
-        padding-right: 20px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        font-size: 70px;
-        text-align: center;
         -webkit-animation: writingBar 0.8s ease infinite alternate;
         -moz-animation: writingBar 0.8s ease infinite alternate;
         -ms-animation: writingBar 0.8s ease infinite alternate;
         -o-animation: writingBar 0.8s ease infinite alternate;
         animation: writingBar 0.8s ease infinite alternate;
-        -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-        transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+        -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+        -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+        -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+        -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+        transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+      #fullWrapper #mbrtWrapper .coverSection .nameSection h1:before {
+        position: absolute;
+        overflow: hidden;
+        max-width: 0;
+        color: #06111a;
+        cursor: text;
+        content: attr(data-hover);
+        white-space: nowrap;
+        -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+        transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
     #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
       position: absolute;
       width: 100%;
-      height: 89%;
+      height: 840px;
       margin: auto;
       top: 0;
       bottom: 0; }
       #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
         position: relative;
-        height: 50px;
-        line-height: 1.1em;
+        height: 70px;
+        line-height: 2em;
         margin: auto;
-        margin-bottom: 29px;
+        margin-bottom: 9px;
         left: 0;
         right: 0;
         font-size: 34px;
@@ -523,15 +609,25 @@
         -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
         transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle h3 {
-          margin: 0; }
-        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle .maskedTitle {
+          margin: 0;
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle h3:before {
           position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
+          overflow: hidden;
+          max-width: 0;
           color: #06111a;
-          overflow: hidden; }
+          cursor: text;
+          content: attr(data-hover);
+          white-space: nowrap;
+          -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
       #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages {
         position: relative;
         width: 100%;
@@ -593,7 +689,7 @@
               #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
                 position: absolute;
                 width: 36.3%;
-                height: 30.8%;
+                height: 33.5%;
                 margin: auto;
                 top: 0;
                 bottom: 0;
@@ -849,30 +945,33 @@
           box-sizing: border-box;
           text-align: right;
           width: 87.3%;
-          height: 37px;
-          line-height: 0.9em;
+          height: 58px;
+          line-height: 1.5em;
           font-size: 37.2px;
           padding-right: 50px;
           margin: auto;
           top: 0;
           bottom: 0;
           right: 0;
-          color: #c9c9c9; }
-        #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle .maskTitle {
+          color: #c9c9c9;
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+        #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3:before {
           position: absolute;
-          top: 0;
-          right: 0;
-          width: 380px;
-          height: 100%;
           overflow: hidden;
-          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
-          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle .maskTitle h3 {
-            color: #06111a;
-            width: 380px; }
+          max-width: 0;
+          color: #06111a;
+          cursor: text;
+          content: attr(data-hover);
+          white-space: nowrap;
+          -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
       #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .arrow {
         position: relative;
         float: left;
@@ -1163,7 +1262,7 @@
       #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
         position: relative;
         width: 100%;
-        height: 22.5%;
+        height: 21.5%;
         margin-bottom: 12.7%; }
         #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle {
           position: relative;
@@ -1185,7 +1284,25 @@
             -ms-animation: writingBar 0.8s ease infinite alternate;
             -o-animation: writingBar 0.8s ease infinite alternate;
             animation: writingBar 0.8s ease infinite alternate;
-            padding-right: 2.1%; }
+            padding-right: 2.1%;
+            -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+            -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+            -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+            -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s;
+            transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1), color 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.6s; }
+          #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1:before {
+            position: absolute;
+            overflow: hidden;
+            max-width: 0;
+            color: #06111a;
+            cursor: text;
+            content: attr(data-hover);
+            white-space: nowrap;
+            -webkit-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -moz-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -ms-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -o-transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            transition: max-width 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
         #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton {
           position: relative;
           float: left;
@@ -1319,20 +1436,22 @@
 @media screen and (max-width: 1849px) {
   #fullWrapper #mbrtWrapper #rightBarsNav {
     height: 375px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
-    height: 19.4%; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-      font-size: 62px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
-    height: 14%; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 33.2px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
-    font-size: 24px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
-    font-size: 19.1px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-    font-size: 19.1px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter {
+    height: 390px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
+      height: 22.4%; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+        font-size: 62px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+      height: 14%; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+        font-size: 33.2px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+      font-size: 24px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+      font-size: 19.1px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+      font-size: 19.1px; }
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 1260px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
@@ -1391,24 +1510,30 @@
     #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList #column-4 .maskTitle {
       width: 85px; }
       #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList #column-4 .maskTitle .maskedText {
-        width: 85px; } }
+        width: 85px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
+    height: 810px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
+      left: 13%; } }
 @media screen and (max-width: 1750px) {
   #fullWrapper #mbrtWrapper #rightBarsNav {
     height: 350px; }
     #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
       font-size: 0.6em; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-    font-size: 58px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
-    height: 13.5%; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 31.4px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
-    font-size: 22.7px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
-    font-size: 18.1px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-    font-size: 18.1px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter {
+    height: 360px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+      font-size: 58px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+      height: 13.5%; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+        font-size: 31.4px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+      font-size: 22.7px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+      font-size: 18.1px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+      font-size: 18.1px; }
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 1190px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
@@ -1459,13 +1584,18 @@
       #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList #column-3 .maskTitle .maskedText {
         width: 260px; }
     #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList td {
-      font-size: 8px; } }
+      font-size: 8px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
+    height: 770px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
+      height: 34.5%;
+      left: 11%; } }
 @media screen and (max-width: 1649px) {
   #fullWrapper #mbrtWrapper #rightBarsNav {
     height: 305px; }
   #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
     width: 93%;
-    height: 31px;
+    height: 48px;
     font-size: 29.6px; }
   #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox {
     height: 18%; }
@@ -1474,22 +1604,24 @@
     #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData {
       height: 6.9%;
       font-size: 17px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
-    height: 15.4%; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-      font-size: 50px; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
-      font-size: 18px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
-    height: 13.5%; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 29.6px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
-    font-size: 21.5px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
-    font-size: 17.1px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-    font-size: 17.1px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter {
+    height: 320px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
+      height: 22.2%; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+        font-size: 50px; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
+        font-size: 18px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+      height: 13.5%; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+        font-size: 29.6px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+      font-size: 21.5px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+      font-size: 17.1px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+      font-size: 17.1px; }
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 1120px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
@@ -1552,24 +1684,30 @@
     #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList #column-4 .maskTitle {
       width: 70px; }
       #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList #column-4 .maskTitle .maskedText {
-        width: 70px; } }
+        width: 70px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
+    height: 730px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
+      left: 9%; } }
 @media screen and (max-width: 1400px) {
   #fullWrapper #mbrtWrapper #rightBarsNav {
     height: 280px; }
     #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
       font-size: 0.45em; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-    font-size: 45px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
-    height: 11%; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 25.1px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
-    font-size: 18.2px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
-    font-size: 14.5px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-    font-size: 14.5px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter {
+    height: 285px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+      font-size: 45px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+      height: 11%; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+        font-size: 25.1px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+      font-size: 18.2px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+      font-size: 14.5px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+      font-size: 14.5px; }
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 950px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
@@ -1618,45 +1756,57 @@
     #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList #column-3 .maskTitle {
       width: 205px; }
       #fullWrapper #mbrtWrapper #servicesWrapper #servicesLetter #servicesList #column-3 .maskTitle .maskedText {
-        width: 205px; } }
+        width: 205px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
+    height: 620px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
+      height: 38.5%;
+      left: 7%; } }
 @media screen and (max-width: 1279px) {
-  #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
-    font-size: 45px; }
-  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
-    font-size: 23.8px; }
-  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
-    height: 21.8%; }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox h5 {
-      font-size: 16.9px; }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox p {
-      height: 6.5%;
-      font-size: 14px; }
-  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite {
-    width: 86px;
-    height: 23px;
-    line-height: 1.4em; }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite a {
-      font-size: 10.5px; }
-  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars {
-    height: 2px; }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar {
-      margin-left: 3px;
-      margin-right: 3px; }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList li {
-      width: calc(20% - 6px); }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList li {
-      width: calc(50% - 6px); }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .sixBarsList li {
-      width: calc(16.66% - 6px); }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .threeBarsList li {
-      width: calc(33.33% - 6px); }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .eightBarsList li {
-      width: calc(12.5% - 6px); }
-    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fourBarsList li {
-      width: calc(25% - 6px); }
+  #fullWrapper #mbrtWrapper .coverSection .nameSection {
+    height: 65px;
+    line-height: 4em; }
+    #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
+      font-size: 45px; }
+  #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
+    height: 570px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselTitle {
+      font-size: 23.8px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox {
+      height: 31.8%;
+      left: 5%; }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox h5 {
+        font-size: 16.9px; }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .innerCenteredBox p {
+        height: 6.5%;
+        font-size: 14px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite {
+      width: 86px;
+      height: 23px;
+      line-height: 1.4em;
+      bottom: 15%; }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite a {
+        font-size: 10.5px; }
+    #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars {
+      height: 2px; }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar {
+        margin-left: 3px;
+        margin-right: 3px; }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fiveBarsList li {
+        width: calc(20% - 6px); }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .twoBarsList li {
+        width: calc(50% - 6px); }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .sixBarsList li {
+        width: calc(16.66% - 6px); }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .threeBarsList li {
+        width: calc(33.33% - 6px); }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .eightBarsList li {
+        width: calc(12.5% - 6px); }
+      #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars .fourBarsList li {
+        width: calc(25% - 6px); }
   #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselTitle h3 {
     width: 100%;
-    height: 24px;
+    height: 34px;
     font-size: 22px; }
   #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox {
     height: 12.5%; }
@@ -1672,22 +1822,24 @@
       margin-right: 3px; }
     #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars .sixBarsList li {
       width: calc(16.66% - 6px); }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
-    height: 11.5%; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
-      font-size: 36px; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
-      font-size: 13px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
-    height: 10%; }
-    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
-      font-size: 23px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
-    font-size: 16.6px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
-    font-size: 13.2px; }
-  #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
-    font-size: 13.2px; }
+  #fullWrapper #mbrtWrapper .contactSection .contactLetter {
+    height: 240px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
+      height: 20.5%; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+        font-size: 36px; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
+        font-size: 13px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
+      height: 10%; }
+      #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow h5 {
+        font-size: 23px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerHeadRow {
+      font-size: 16.6px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .firstRow .innerFootRow {
+      font-size: 13.2px; }
+    #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow {
+      font-size: 13.2px; }
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 865px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {

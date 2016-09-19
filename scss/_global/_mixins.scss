@@ -38,6 +38,33 @@
 	        transition: all $timing cubic-bezier(.65,0,.25,1) $delay;
 }
 
+@mixin trans_before_title($timing){
+	-webkit-transition: max-width $timing cubic-bezier(.65,0,.25,1);
+	   -moz-transition: max-width $timing cubic-bezier(.65,0,.25,1);
+	    -ms-transition: max-width $timing cubic-bezier(.65,0,.25,1);
+	     -o-transition: max-width $timing cubic-bezier(.65,0,.25,1);
+	        transition: max-width $timing cubic-bezier(.65,0,.25,1);
+}
+
+@mixin trans_title($timing){
+	-webkit-transition: all $timing cubic-bezier(.65,0,.25,1), color $timing cubic-bezier(.65,0,.25,1) $timing;
+	   -moz-transition: all $timing cubic-bezier(.65,0,.25,1), color $timing cubic-bezier(.65,0,.25,1) $timing;
+	    -ms-transition: all $timing cubic-bezier(.65,0,.25,1), color $timing cubic-bezier(.65,0,.25,1) $timing;
+	     -o-transition: all $timing cubic-bezier(.65,0,.25,1), color $timing cubic-bezier(.65,0,.25,1) $timing;
+	        transition: all $timing cubic-bezier(.65,0,.25,1), color $timing cubic-bezier(.65,0,.25,1) $timing;
+}
+
+@mixin blackHover(){
+	position: absolute;
+	overflow: hidden;
+	max-width: 0;
+	color: $black;
+	cursor: text;
+	content: attr(data-hover);
+	white-space: nowrap;
+	@include trans_before_title(0.6s);
+}
+
 @mixin opacity($val){
 	opacity: $val;
 	filter: alpha(opacity=($val * 100));

@@ -87,19 +87,12 @@
 					line-height: 1.4em;
 					padding-bottom: 30px;
 					font-weight: bolder;
+					color: $light-gray;
+					@include trans_title(0.6s);
+				}
 
-					.subText{
-						@include transitions(0.6s);
-					}
-					
-
-					.maskTitle{
-						position: absolute;
-						top: 0;
-						overflow: hidden;
-						color: $black;
-						@include transitions(0.6s);
-					}
+				th:before{
+					@include blackHover();
 				}
 
 				td{
