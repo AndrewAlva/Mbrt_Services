@@ -9,9 +9,9 @@
 
 		// INTERACTION BY ARROWS CLICK
 		// Next Project Interaction | Arrows Nav Click
-		$('#camilaCarousel').on('click', '.rightArrow a', function(event) {
+		$('#section-14').on('click', '.rightArrow a', function(event) {
 			event.preventDefault();
-			rightMovementNavigation(currentDisplayCamilaScreen, totalCamilaWebScreens, $('#camilaCarousel'), currentSectionId + 1, 'contact');
+			rightMovementNavigation(currentDisplayCamilaScreen, totalCamilaWebScreens, $('#section-14'), currentSectionId + 1, 'contact');
 
 			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 			// Update the 'current loaded project' var
@@ -21,9 +21,9 @@
 		});
 
 		// Previous Project Interaction | Arrows Nav Click
-		$('#camilaCarousel').on('click', '.leftArrow a', function(event) {
+		$('#section-14').on('click', '.leftArrow a', function(event) {
 			event.preventDefault();
-			leftMovementNavigation(currentDisplayCamilaScreen, $('#camilaCarousel'));
+			leftMovementNavigation(currentDisplayCamilaScreen, $('#section-14'));
 
 			// THE LAST MOVE
 			// Update the 'current loaded project' var
@@ -34,12 +34,12 @@
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-		$('#camilaCarousel').on('click', '.singleBar', function(event) {
+		$('#section-14').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
 			projectsToSkip = Math.abs(projectToLoad - currentDisplayCamilaScreen);
 			
-			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayCamilaScreen, $('#camilaCarousel'), totalCamilaWebScreens);
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayCamilaScreen, $('#section-14'), totalCamilaWebScreens);
 
 			// THE LAST MOVE
 			// Update the 'current loaded stationery id' var
@@ -55,7 +55,7 @@
 
 					// Fix to each(loop) inside bottomNavBarClick() function, it doesn't update the 'current display project' var
 					if (currentDisplayCamilaScreen == 1) {
-						$('#camilaCarousel').find('.leftArrow').addClass('firstArrow');
+						$('#section-14').find('.leftArrow').addClass('firstArrow');
 					};
 				};
 				console.log('New currentDisplayCamilaScreen value: '+ currentDisplayCamilaScreen);
@@ -73,7 +73,7 @@
 
 				// Trigger the functions of the Camila Web Carousel
 				if (currentSectionId == 14) {
-					rightMovementNavigation(currentDisplayCamilaScreen, totalCamilaWebScreens, $('#camilaCarousel'), currentSectionId + 1, 'contact');
+					rightMovementNavigation(currentDisplayCamilaScreen, totalCamilaWebScreens, $('#section-14'), currentSectionId + 1, 'contact');
 
 					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 					// Update the 'current loaded project' var
@@ -89,7 +89,7 @@
 
 				// Trigger the functions of the Camila Web Carousel
 				if (currentSectionId == 14 && currentDisplayCamilaScreen > 1) {
-					leftMovementNavigation(currentDisplayCamilaScreen, $('#camilaCarousel'));
+					leftMovementNavigation(currentDisplayCamilaScreen, $('#section-14'));
 
 					// THE LAST MOVE
 					// Update the 'current loaded project' var
@@ -109,7 +109,7 @@
 				event.preventDefault();
 
 				if (currentSectionId == 14) {
-					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayCamilaScreen, totalCamilaWebScreens, $('#camilaCarousel'), currentSectionId + 1, 'contact');
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayCamilaScreen, totalCamilaWebScreens, $('#section-14'), currentSectionId + 1, 'contact');
 
 					// Detect if user is scrolling right
 					if (event.deltaX > 0) {

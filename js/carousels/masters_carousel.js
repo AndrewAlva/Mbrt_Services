@@ -9,9 +9,9 @@
 
 		// INTERACTION BY ARROWS CLICK
 		// Next Project Interaction | Arrows Nav Click
-		$('#advertisingCarousel').on('click', '.rightArrow a', function(event) {
+		$('#section-11').on('click', '.rightArrow a', function(event) {
 			event.preventDefault();
-			rightMovementNavigation(currentDisplayAd, totalAds, $('#advertisingCarousel'), currentSectionId + 1, 'web');
+			rightMovementNavigation(currentDisplayAd, totalAds, $('#section-11'), currentSectionId + 1, 'web');
 
 			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 			// Update the 'current loaded project' var
@@ -21,9 +21,9 @@
 		});
 
 		// Previous Project Interaction | Arrows Nav Click
-		$('#advertisingCarousel').on('click', '.leftArrow a', function(event) {
+		$('#section-11').on('click', '.leftArrow a', function(event) {
 			event.preventDefault();
-			leftMovementNavigation(currentDisplayAd, $('#advertisingCarousel'));
+			leftMovementNavigation(currentDisplayAd, $('#section-11'));
 
 			// THE LAST MOVE
 			// Update the 'current loaded project' var
@@ -34,12 +34,12 @@
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-		$('#advertisingCarousel').on('click', '.singleBar', function(event) {
+		$('#section-11').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
 			projectsToSkip = Math.abs(projectToLoad - currentDisplayAd);
 			
-			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayAd, $('#advertisingCarousel'), totalAds);
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayAd, $('#section-11'), totalAds);
 
 			// THE LAST MOVE
 			// Update the 'current loaded stationery id' var
@@ -55,7 +55,7 @@
 
 					// Fix to each(loop) inside bottomNavBarClick() function, it doesn't update the 'current display project' var
 					if (currentDisplayAd == 1) {
-						$('#advertisingCarousel').find('.leftArrow').addClass('firstArrow');
+						$('#section-11').find('.leftArrow').addClass('firstArrow');
 					};
 				};
 				console.log('New currentDisplayAd value: '+ currentDisplayAd);
@@ -73,7 +73,7 @@
 
 				// Trigger the functions of the Advertising Carousel
 				if (currentSectionId == 11) {
-					rightMovementNavigation(currentDisplayAd, totalAds, $('#advertisingCarousel'), currentSectionId + 1, 'web');
+					rightMovementNavigation(currentDisplayAd, totalAds, $('#section-11'), currentSectionId + 1, 'web');
 
 					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 					// Update the 'current loaded project' var
@@ -89,7 +89,7 @@
 
 				// Trigger the functions of the Advertising Carousel
 				if (currentSectionId == 11 && currentDisplayAd > 1) {
-					leftMovementNavigation(currentDisplayAd, $('#advertisingCarousel'));
+					leftMovementNavigation(currentDisplayAd, $('#section-11'));
 
 					// THE LAST MOVE
 					// Update the 'current loaded project' var
@@ -109,7 +109,7 @@
 				event.preventDefault();
 
 				if (currentSectionId == 11) {
-					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayAd, totalAds, $('#advertisingCarousel'), currentSectionId + 1, 'web');
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayAd, totalAds, $('#section-11'), currentSectionId + 1, 'web');
 
 					// Detect if user is scrolling right
 					if (event.deltaX > 0) {

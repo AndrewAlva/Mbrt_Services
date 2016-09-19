@@ -30,8 +30,8 @@
 	}
 
 
-	// SCROLL TO WELCOME SECTION ON CLICK AT '#START EXPLORING' ELEMENT
-	$('#indexWrapper').on('click', '#startExploring', function(event) {
+	// SCROLL TO WELCOME SECTION ON CLICK AT '#START EXPLORING' ELEMENT IN INDEX SECTION
+	$('#section-0').on('click', '#startExploring', function(event) {
 		event.preventDefault();
 		// Set the delay to enable scrolling again after next section has totally updated its position
 		delayBetweenSections();

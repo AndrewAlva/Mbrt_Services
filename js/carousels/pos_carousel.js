@@ -10,9 +10,9 @@
 
 		// INTERACTION BY ARROWS CLICK
 		// Next Project Interaction | Arrows Nav Click
-		$('#POSCarousel').on('click', '.rightArrow a', function(event) {
+		$('#section-9').on('click', '.rightArrow a', function(event) {
 			event.preventDefault();
-			rightMovementNavigation(currentDisplayPOS, totalPOS, $('#POSCarousel'), currentSectionId + 1, 'interiorism');
+			rightMovementNavigation(currentDisplayPOS, totalPOS, $('#section-9'), currentSectionId + 1, 'interiorism');
 
 			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 			// Update the 'current loaded project' var
@@ -22,9 +22,9 @@
 		});
 
 		// Previous Project Interaction | Arrows Nav Click
-		$('#POSCarousel').on('click', '.leftArrow a', function(event) {
+		$('#section-9').on('click', '.leftArrow a', function(event) {
 			event.preventDefault();
-			leftMovementNavigation(currentDisplayPOS, $('#POSCarousel'));
+			leftMovementNavigation(currentDisplayPOS, $('#section-9'));
 
 			// THE LAST MOVE
 			// Update the 'current loaded project' var
@@ -35,12 +35,12 @@
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-		$('#POSCarousel').on('click', '.singleBar', function(event) {
+		$('#section-9').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
 			projectsToSkip = Math.abs(projectToLoad - currentDisplayPOS);
 			
-			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayPOS, $('#POSCarousel'), totalPOS);
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayPOS, $('#section-9'), totalPOS);
 
 			// THE LAST MOVE
 			// Update the 'current loaded stationery id' var
@@ -56,7 +56,7 @@
 
 					// Fix to each(loop) inside bottomNavBarClick() function, it doesn't update the 'current display project' var
 					if (currentDisplayPOS == 1) {
-						$('#POSCarousel').find('.leftArrow').addClass('firstArrow');
+						$('#section-9').find('.leftArrow').addClass('firstArrow');
 					};
 				};
 				console.log('New currentDisplayPOS value: '+ currentDisplayPOS);
@@ -74,7 +74,7 @@
 
 				// Trigger the functions of the POS Carousel
 				if (currentSectionId == 9) {
-					rightMovementNavigation(currentDisplayPOS, totalPOS, $('#POSCarousel'), currentSectionId + 1, 'interiorism');
+					rightMovementNavigation(currentDisplayPOS, totalPOS, $('#section-9'), currentSectionId + 1, 'interiorism');
 
 					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 					// Update the 'current loaded project' var
@@ -90,7 +90,7 @@
 
 				// Trigger the functions of the POS Carousel
 				if (currentSectionId == 9 && currentDisplayPOS > 1) {
-					leftMovementNavigation(currentDisplayPOS, $('#POSCarousel'));
+					leftMovementNavigation(currentDisplayPOS, $('#section-9'));
 
 					// THE LAST MOVE
 					// Update the 'current loaded project' var
@@ -110,7 +110,7 @@
 				event.preventDefault();
 
 				if (currentSectionId == 9) {
-					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayPOS, totalPOS, $('#POSCarousel'), currentSectionId + 1, 'interiorism');
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayPOS, totalPOS, $('#section-9'), currentSectionId + 1, 'interiorism');
 
 					// Detect if user is scrolling right
 					if (event.deltaX > 0) {

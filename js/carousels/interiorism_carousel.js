@@ -9,9 +9,9 @@
 
 		// INTERACTION BY ARROWS CLICK
 		// Next Project Interaction | Arrows Nav Click
-		$('#interiorismCarousel').on('click', '.rightArrow a', function(event) {
+		$('#section-10').on('click', '.rightArrow a', function(event) {
 			event.preventDefault();
-			rightMovementNavigation(currentDisplayInteriorism, totalInteriorisms, $('#interiorismCarousel'), currentSectionId + 1, 'advertising');
+			rightMovementNavigation(currentDisplayInteriorism, totalInteriorisms, $('#section-10'), currentSectionId + 1, 'advertising');
 
 			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 			// Update the 'current loaded project' var
@@ -21,9 +21,9 @@
 		});
 
 		// Previous Project Interaction | Arrows Nav Click
-		$('#interiorismCarousel').on('click', '.leftArrow a', function(event) {
+		$('#section-10').on('click', '.leftArrow a', function(event) {
 			event.preventDefault();
-			leftMovementNavigation(currentDisplayInteriorism, $('#interiorismCarousel'));
+			leftMovementNavigation(currentDisplayInteriorism, $('#section-10'));
 
 			// THE LAST MOVE
 			// Update the 'current loaded project' var
@@ -34,12 +34,12 @@
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-		$('#interiorismCarousel').on('click', '.singleBar', function(event) {
+		$('#section-10').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
 			projectsToSkip = Math.abs(projectToLoad - currentDisplayInteriorism);
 			
-			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayInteriorism, $('#interiorismCarousel'), totalInteriorisms);
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayInteriorism, $('#section-10'), totalInteriorisms);
 
 			// THE LAST MOVE
 			// Update the 'current loaded stationery id' var
@@ -55,7 +55,7 @@
 
 					// Fix to each(loop) inside bottomNavBarClick() function, it doesn't update the 'current display project' var
 					if (currentDisplayInteriorism == 1) {
-						$('#interiorismCarousel').find('.leftArrow').addClass('firstArrow');
+						$('#section-10').find('.leftArrow').addClass('firstArrow');
 					};
 				};
 				console.log('New currentDisplayInteriorism value: '+ currentDisplayInteriorism);
@@ -73,7 +73,7 @@
 
 				// Trigger the functions of the Interiorism Carousel
 				if (currentSectionId == 10) {
-					rightMovementNavigation(currentDisplayInteriorism, totalInteriorisms, $('#interiorismCarousel'), currentSectionId + 1, 'advertising');
+					rightMovementNavigation(currentDisplayInteriorism, totalInteriorisms, $('#section-10'), currentSectionId + 1, 'advertising');
 
 					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 					// Update the 'current loaded project' var
@@ -89,7 +89,7 @@
 
 				// Trigger the functions of the Interiorism Carousel
 				if (currentSectionId == 10 && currentDisplayInteriorism > 1) {
-					leftMovementNavigation(currentDisplayInteriorism, $('#interiorismCarousel'));
+					leftMovementNavigation(currentDisplayInteriorism, $('#section-10'));
 
 					// THE LAST MOVE
 					// Update the 'current loaded project' var
@@ -109,7 +109,7 @@
 				event.preventDefault();
 
 				if (currentSectionId == 10) {
-					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayInteriorism, totalInteriorisms, $('#interiorismCarousel'), currentSectionId + 1, 'advertising');
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayInteriorism, totalInteriorisms, $('#section-10'), currentSectionId + 1, 'advertising');
 
 					// Detect if user is scrolling right
 					if (event.deltaX > 0) {

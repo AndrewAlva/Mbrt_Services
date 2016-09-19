@@ -9,9 +9,9 @@
 
 		// INTERACTION BY ARROWS CLICK
 		// Next Project Interaction | Arrows Nav Click
-		$('#stationeryCarousel').on('click', '.rightArrow a', function(event) {
+		$('#section-5').on('click', '.rightArrow a', function(event) {
 			event.preventDefault();
-			rightMovementNavigation(currentDisplayStationery, totalStationery, $('#stationeryCarousel'), currentSectionId + 1, 'communication');
+			rightMovementNavigation(currentDisplayStationery, totalStationery, $('#section-5'), currentSectionId + 1, 'communication');
 
 			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 			// Update the 'current loaded project' var
@@ -21,9 +21,9 @@
 		});
 
 		// Previous Project Interaction | Arrows Nav Click
-		$('#stationeryCarousel').on('click', '.leftArrow a', function(event) {
+		$('#section-5').on('click', '.leftArrow a', function(event) {
 			event.preventDefault();
-			leftMovementNavigation(currentDisplayStationery, $('#stationeryCarousel'));
+			leftMovementNavigation(currentDisplayStationery, $('#section-5'));
 
 			// THE LAST MOVE
 			// Update the 'current loaded project' var
@@ -34,12 +34,12 @@
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-		$('#stationeryCarousel').on('click', '.singleBar', function(event) {
+		$('#section-5').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
 			projectsToSkip = Math.abs(projectToLoad - currentDisplayStationery);
 			
-			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayStationery, $('#stationeryCarousel'), totalStationery);
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayStationery, $('#section-5'), totalStationery);
 
 			// THE LAST MOVE
 			// Update the 'current loaded stationery id' var
@@ -61,7 +61,7 @@
 
 				// Trigger the functions of the Stationery Carousel
 				if (currentSectionId == 5) {
-					rightMovementNavigation(currentDisplayStationery, totalStationery, $('#stationeryCarousel'), currentSectionId + 1, 'communication');
+					rightMovementNavigation(currentDisplayStationery, totalStationery, $('#section-5'), currentSectionId + 1, 'communication');
 
 					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 					// Update the 'current loaded project' var
@@ -77,7 +77,7 @@
 
 				// Trigger the functions of the Stationery Carousel
 				if (currentSectionId == 5 && currentDisplayStationery > 1) {
-					leftMovementNavigation(currentDisplayStationery, $('#stationeryCarousel'));
+					leftMovementNavigation(currentDisplayStationery, $('#section-5'));
 
 					// THE LAST MOVE
 					// Update the 'current loaded project' var
@@ -97,7 +97,7 @@
 				event.preventDefault();
 
 				if (currentSectionId == 5) {
-					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayStationery, totalStationery, $('#stationeryCarousel'), currentSectionId + 1, 'communication');
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayStationery, totalStationery, $('#section-5'), currentSectionId + 1, 'communication');
 
 					// Detect if user is scrolling right
 					if (event.deltaX > 0) {

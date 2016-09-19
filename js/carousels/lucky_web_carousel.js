@@ -9,9 +9,9 @@
 
 		// INTERACTION BY ARROWS CLICK
 		// Next Project Interaction | Arrows Nav Click
-		$('#luckyCarousel').on('click', '.rightArrow a', function(event) {
+		$('#section-13').on('click', '.rightArrow a', function(event) {
 			event.preventDefault();
-			rightMovementNavigation(currentDisplayLuckyScreen, totalLuckyWebScreens, $('#luckyCarousel'), currentSectionId + 1, 'camila');
+			rightMovementNavigation(currentDisplayLuckyScreen, totalLuckyWebScreens, $('#section-13'), currentSectionId + 1, 'camila');
 
 			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 			// Update the 'current loaded project' var
@@ -21,9 +21,9 @@
 		});
 
 		// Previous Project Interaction | Arrows Nav Click
-		$('#luckyCarousel').on('click', '.leftArrow a', function(event) {
+		$('#section-13').on('click', '.leftArrow a', function(event) {
 			event.preventDefault();
-			leftMovementNavigation(currentDisplayLuckyScreen, $('#luckyCarousel'));
+			leftMovementNavigation(currentDisplayLuckyScreen, $('#section-13'));
 
 			// THE LAST MOVE
 			// Update the 'current loaded project' var
@@ -34,12 +34,12 @@
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-		$('#luckyCarousel').on('click', '.singleBar', function(event) {
+		$('#section-13').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
 			projectsToSkip = Math.abs(projectToLoad - currentDisplayLuckyScreen);
 			
-			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayLuckyScreen, $('#luckyCarousel'), totalLuckyWebScreens);
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayLuckyScreen, $('#section-13'), totalLuckyWebScreens);
 
 			// THE LAST MOVE
 			// Update the 'current loaded stationery id' var
@@ -55,7 +55,7 @@
 
 					// Fix to each(loop) inside bottomNavBarClick() function, it doesn't update the 'current display project' var
 					if (currentDisplayLuckyScreen == 1) {
-						$('#luckyCarousel').find('.leftArrow').addClass('firstArrow');
+						$('#section-13').find('.leftArrow').addClass('firstArrow');
 					};
 				};
 				console.log('New currentDisplayLuckyScreen value: '+ currentDisplayLuckyScreen);
@@ -73,7 +73,7 @@
 
 				// Trigger the functions of the Lucky Website Carousel
 				if (currentSectionId == 13) {
-					rightMovementNavigation(currentDisplayLuckyScreen, totalLuckyWebScreens, $('#luckyCarousel'), currentSectionId + 1, 'camila');
+					rightMovementNavigation(currentDisplayLuckyScreen, totalLuckyWebScreens, $('#section-13'), currentSectionId + 1, 'camila');
 
 					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 					// Update the 'current loaded project' var
@@ -89,7 +89,7 @@
 
 				// Trigger the functions of the Lucky Website Carousel
 				if (currentSectionId == 13 && currentDisplayLuckyScreen > 1) {
-					leftMovementNavigation(currentDisplayLuckyScreen, $('#luckyCarousel'));
+					leftMovementNavigation(currentDisplayLuckyScreen, $('#section-13'));
 
 					// THE LAST MOVE
 					// Update the 'current loaded project' var
@@ -109,7 +109,7 @@
 				event.preventDefault();
 
 				if (currentSectionId == 13) {
-					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayLuckyScreen, totalLuckyWebScreens, $('#luckyCarousel'), currentSectionId + 1, 'camila');
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayLuckyScreen, totalLuckyWebScreens, $('#section-13'), currentSectionId + 1, 'camila');
 
 					// Detect if user is scrolling right
 					if (event.deltaX > 0) {

@@ -9,9 +9,9 @@
 
 		// INTERACTION BY ARROWS CLICK
 		// Next Project Interaction | Arrows Nav Click
-		$('#logosCarousel').on('click', '.rightArrow a', function(event) {
+		$('#section-4').on('click', '.rightArrow a', function(event) {
 			event.preventDefault();
-			rightMovementNavigation(currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
+			rightMovementNavigation(currentDisplayLogo, totalLogos, $('#section-4'), currentSectionId + 1, 'stationery');
 
 			// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 			// Update the 'current loaded project' var
@@ -21,9 +21,9 @@
 		});
 
 		//  Previous Project Interaction | Arrows Nav Click
-		$('#logosCarousel').on('click', '.leftArrow a', function(event) {
+		$('#section-4').on('click', '.leftArrow a', function(event) {
 			event.preventDefault();
-			leftMovementNavigation(currentDisplayLogo, $('#logosCarousel'));
+			leftMovementNavigation(currentDisplayLogo, $('#section-4'));
 
 			// THE LAST MOVE
 			// Update the 'current loaded project' var
@@ -34,13 +34,13 @@
 
 
 		// INTERACTION BY BOTTOM NAV BARS
-		$('#logosCarousel').on('click', '.singleBar', function(event) {
+		$('#section-4').on('click', '.singleBar', function(event) {
 			event.preventDefault();
 			projectToLoad = $(this).data("loadprojectid");
 			projectsToSkip = Math.abs(projectToLoad - currentDisplayLogo);
 			console.log('loadprojectid data attribute value: ' + projectToLoad);
 			
-			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayLogo, $('#logosCarousel'), totalLogos);
+			bottomNavBarClick(projectToLoad, projectsToSkip, currentDisplayLogo, $('#section-4'), totalLogos);
 
 			// THE LAST MOVE
 			// Update the 'current loaded stationery id' var
@@ -56,7 +56,7 @@
 
 					// Fix to each(loop) inside bottomNavBarClick() function, it doesn't update the 'current display project' var
 					if (currentDisplayLogo == 1) {
-						$('#logosCarousel').find('.leftArrow').addClass('firstArrow');
+						$('#section-4').find('.leftArrow').addClass('firstArrow');
 					};
 				};
 				console.log('New currentDisplayLogo value: '+ currentDisplayLogo);
@@ -73,7 +73,7 @@
 
 				// Trigger the functions of the Logos Carousel
 				if (currentSectionId == 4) {
-					rightMovementNavigation(currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
+					rightMovementNavigation(currentDisplayLogo, totalLogos, $('#section-4'), currentSectionId + 1, 'stationery');
 
 					// THE LAST MOVE | Tried to integrate it to the general function, but it doesn't change the global vars value
 					// Update the 'current loaded project' var
@@ -89,7 +89,7 @@
 
 				// Trigger the functions of the Logos Carousel
 				if (currentSectionId == 4 && currentDisplayLogo > 1) {
-					leftMovementNavigation(currentDisplayLogo, $('#logosCarousel'));
+					leftMovementNavigation(currentDisplayLogo, $('#section-4'));
 
 					// THE LAST MOVE
 					// Update the 'current loaded project' var
@@ -109,7 +109,7 @@
 				event.preventDefault();
 
 				if (currentSectionId == 4) {
-					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayLogo, totalLogos, $('#logosCarousel'), currentSectionId + 1, 'stationery');
+					scrollHorizontalCarousel(event.deltaX, event.deltaY, event.deltaFactor, currentDisplayLogo, totalLogos, $('#section-4'), currentSectionId + 1, 'stationery');
 
 					// Detect if user is scrolling right
 					if (event.deltaX > 0) {
