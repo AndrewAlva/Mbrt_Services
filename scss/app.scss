@@ -116,6 +116,12 @@
 						margin-bottom: 36.3%;
 						cursor: pointer;
 						@include transitions(0.6s);
+						width: 100%;
+						background-color: $nav-light-gray-active;
+
+						&:hover{
+							background-color: $nav-light-gray-deactive;
+						}
 
 						.navName{
 							position: absolute;
@@ -127,18 +133,7 @@
 							color: $nav-black-deactive;
 							@include trans-delayed(0.6s, 0.2s);
 							font-size: 0.85em;
-						}
-					}
-
-					.deactiveNavBar{
-						width: 100%;
-						background-color: $nav-light-gray-active;
-
-						&:hover{
-							background-color: $nav-light-gray-deactive;
-						}
-
-						.navName{
+							
 							&:hover{
 								color: $nav-black-active;
 								padding-right: 30%;
@@ -180,6 +175,7 @@
 				height: 100%;
 				@include transitions(0.9s);
 				will-change: transform;
+				display: none;
 			}
 
 			.introSection{
@@ -1061,8 +1057,17 @@
 				}
 			}
 
-
-			.coming-up{
+			
+			.active{
+				display: block;
+				@include opacity(1);
+				-webkit-transform: translateY(0);
+				   -moz-transform: translateY(0);
+				    -ms-transform: translateY(0);
+				     -o-transform: translateY(0);
+				        transform: translateY(0);
+		    }
+			.down{
 				@include opacity(0);
 				-webkit-transform: translateY(100%);
 				   -moz-transform: translateY(100%);
@@ -1070,14 +1075,7 @@
 				     -o-transform: translateY(100%);
 				        transform: translateY(100%);
 		    }
-			.is-active{
-				-webkit-transform: none;
-				   -moz-transform: none;
-				    -ms-transform: none;
-				     -o-transform: none;
-				        transform: none;
-		    }
-			.passed-up{
+			.up{
 				@include opacity(0);
 				-webkit-transform: translateY(-100%);
 				   -moz-transform: translateY(-100%);

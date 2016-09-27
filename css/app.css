@@ -375,7 +375,11 @@
           -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
           -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
           -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
-          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          width: 100%;
+          background-color: #c9c9c9; }
+          #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar:hover {
+            background-color: rgba(201, 201, 201, 0); }
           #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
             position: absolute;
             width: 305%;
@@ -392,14 +396,9 @@
             -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
             transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
             font-size: 0.85em; }
-        #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .deactiveNavBar {
-          width: 100%;
-          background-color: #c9c9c9; }
-          #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .deactiveNavBar:hover {
-            background-color: rgba(201, 201, 201, 0); }
-          #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .deactiveNavBar .navName:hover {
-            color: #06111a;
-            padding-right: 30%; }
+            #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName:hover {
+              color: #06111a;
+              padding-right: 30%; }
         #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .activeNavBar {
           width: 166.2%;
           background-color: #06111a; }
@@ -432,7 +431,8 @@
       -ms-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
       -o-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
       transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
-      will-change: transform; }
+      will-change: transform;
+      display: none; }
     #fullWrapper #mbrtWrapper .introSection .introLetter {
       position: absolute;
       width: 1290px;
@@ -1394,7 +1394,18 @@
               color: #97979b; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow .innerHeadRow {
               margin-bottom: 3%; }
-    #fullWrapper #mbrtWrapper .coming-up {
+    #fullWrapper #mbrtWrapper .active {
+      display: block;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+      -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0); }
+    #fullWrapper #mbrtWrapper .down {
       opacity: 0;
       filter: alpha(opacity=0);
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
@@ -1404,13 +1415,7 @@
       -ms-transform: translateY(100%);
       -o-transform: translateY(100%);
       transform: translateY(100%); }
-    #fullWrapper #mbrtWrapper .is-active {
-      -webkit-transform: none;
-      -moz-transform: none;
-      -ms-transform: none;
-      -o-transform: none;
-      transform: none; }
-    #fullWrapper #mbrtWrapper .passed-up {
+    #fullWrapper #mbrtWrapper .up {
       opacity: 0;
       filter: alpha(opacity=0);
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
