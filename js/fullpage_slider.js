@@ -69,7 +69,7 @@
 		// Navigation function
 		goTo: function(index){
 			// Change of section only after any transition ends
-			if (Slider.canScroll) {
+			if (Slider.canScroll && Slider.sectionActive != index) {
 				// Turn on the flag to prevent overlapping section transitions
 				Slider.canScroll = false;
 
