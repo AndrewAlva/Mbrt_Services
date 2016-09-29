@@ -37,7 +37,7 @@
 			};
 
 			// Display the current active section
-			$('#section-' + Slider.sectionActive).addClass('active');
+			$('#section-' + Slider.sectionActive).addClass('activeSlide');
 
 			// If the user arrived to any section except index section show the main navs, else hide them
 			if(Slider.sectionActive >= 1) Slider.showMainNavs();
@@ -95,7 +95,7 @@
 
 				// Set the new section in position to enter
 				$('#section-' + index).addClass(newSectionMove);
-				$('#section-' + index).addClass('active');
+				$('#section-' + index).addClass('activeSlide');
 
 				// Update active right nav bar
 				Slider.setMainNavs(index);
@@ -108,7 +108,7 @@
 
 					// Wait untill the new section is in position, then disappear the old current section, update the sectionActive var and turn on the 'canScroll' flag again
 					setTimeout(function(){
-						$('#section-' + Slider.sectionActive).removeClass('active');
+						$('#section-' + Slider.sectionActive).removeClass('activeSlide');
 						$('#section-' + Slider.sectionActive).removeClass(currentSectionMove);
 						Slider.setStates(index);
 						Slider.canScroll = true;

@@ -12,6 +12,10 @@ Mandelbrot Services Letter to introduce them with potential clients.
 ## FAQ'S of this project
 * What other function is more compatible between browsers than indexOf(), it's purpose is to get the position of an element in arrays
 
+* How to normalize the sensibility of eventY on mousewheel?
+
+* Which performance is better and why? The old carousel functionality or the new one
+
 
 
 ## Answered FAQ'S of this project

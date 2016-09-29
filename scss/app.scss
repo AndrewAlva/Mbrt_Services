@@ -316,6 +316,7 @@
 								position: absolute;
 								width: 100%;
 								height: 100%;
+								display: none;
 								@include boxSizeFit();
 								margin: auto;
 								left: 0; right: 0;
@@ -401,6 +402,37 @@
 										}
 									}
 								}
+							}
+							
+							.active{
+								// background-color: blue;
+								display: block;
+								z-index: 1;
+								@include trans-delayed(1.3s, 0.1s);
+								-webkit-transform: none;
+								   -moz-transform: none;
+								    -ms-transform: none;
+								     -o-transform: none;
+								        transform: none;
+
+							}
+							.left{
+								// background-color: red;
+								-webkit-transform: translate(-102%, 0);
+								   -moz-transform: translate(-102%, 0);
+								    -ms-transform: translate(-102%, 0);
+								     -o-transform: translate(-102%, 0);
+								        transform: translate(-102%, 0);
+
+							}
+							.right{
+								// background-color: green;
+								-webkit-transform: translate(102%, 0);
+								   -moz-transform: translate(102%, 0);
+								    -ms-transform: translate(102%, 0);
+								     -o-transform: translate(102%, 0);
+								        transform: translate(102%, 0);
+
 							}
 
 							.holdingBackPhoto{
@@ -529,13 +561,15 @@
 									position: absolute;
 									width: 100%;
 									height: 100%;
+									display: none;
 									background-color: $black;
 									@include transitions(1s);
 									-webkit-transform-origin: left;
 									transform-origin: left;
 								}
 
-								.currentBar{
+								.active{
+									display: block;
 									@include trans-delayed(1s, 0.1s);
 									-webkit-transform: none;
 									   -moz-transform: none;
@@ -544,7 +578,7 @@
 									        transform: none;
 								}
 
-								.nextBar{
+								.left{
 									-webkit-transform: translateX(-102%);
 									   -moz-transform: translateX(-102%);
 									    -ms-transform: translateX(-102%);
@@ -552,7 +586,7 @@
 									        transform: translateX(-102%);
 								}
 
-								.previousBar{
+								.right{
 									-webkit-transform: translateX(102%);
 									   -moz-transform: translateX(102%);
 									    -ms-transform: translateX(102%);
@@ -1058,7 +1092,7 @@
 			}
 
 			
-			.active{
+			.activeSlide{
 				display: block;
 				@include opacity(1);
 				-webkit-transform: translateY(0);

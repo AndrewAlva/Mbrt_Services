@@ -630,6 +630,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
+            display: none;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -726,6 +727,31 @@
                   #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite a:hover {
                     color: #fff;
                     background-color: #97979b; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .active {
+            display: block;
+            z-index: 1;
+            -webkit-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            -moz-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            -ms-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            -o-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none; }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .left {
+            -webkit-transform: translate(-102%, 0);
+            -moz-transform: translate(-102%, 0);
+            -ms-transform: translate(-102%, 0);
+            -o-transform: translate(-102%, 0);
+            transform: translate(-102%, 0); }
+          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .right {
+            -webkit-transform: translate(102%, 0);
+            -moz-transform: translate(102%, 0);
+            -ms-transform: translate(102%, 0);
+            -o-transform: translate(102%, 0);
+            transform: translate(102%, 0); }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingBackPhoto {
             -webkit-transform: translate(-200%, 0);
             -moz-transform: translate(-200%, 0);
@@ -850,6 +876,7 @@
               position: absolute;
               width: 100%;
               height: 100%;
+              display: none;
               background-color: #06111a;
               -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
               -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
@@ -858,7 +885,8 @@
               transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
               -webkit-transform-origin: left;
               transform-origin: left; }
-            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .currentBar {
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .active {
+              display: block;
               -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
               -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
               -ms-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
@@ -869,13 +897,13 @@
               -ms-transform: none;
               -o-transform: none;
               transform: none; }
-            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .nextBar {
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .left {
               -webkit-transform: translateX(-102%);
               -moz-transform: translateX(-102%);
               -ms-transform: translateX(-102%);
               -o-transform: translateX(-102%);
               transform: translateX(-102%); }
-            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .previousBar {
+            #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar .right {
               -webkit-transform: translateX(102%);
               -moz-transform: translateX(102%);
               -ms-transform: translateX(102%);
@@ -1394,7 +1422,7 @@
               color: #97979b; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .secondRow .innerHeadRow {
               margin-bottom: 3%; }
-    #fullWrapper #mbrtWrapper .active {
+    #fullWrapper #mbrtWrapper .activeSlide {
       display: block;
       opacity: 1;
       filter: alpha(opacity=100);
