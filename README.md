@@ -16,6 +16,12 @@ Mandelbrot Services Letter to introduce them with potential clients.
 
 * Which performance is better and why? The old carousel functionality or the new one
 
+* On the Carousel objects constructor I had to use "this", but it depends of the context, so I used ".bind()" function to refer to the Carousel object. Is it a good practice? Should I declare a variable of "this" instead? Here are some references of the answer:
+http://stackoverflow.com/questions/20279484/how-to-access-the-correct-this-context-inside-a-callback
+http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-in-javascript/
+
+* Is it OK to use so many setTimeouts()? Or there is another way to make callbacks with custom classes? What should I give priority: less setTimeouts() or readable functions?
+
 
 
 ## Answered FAQ'S of this project

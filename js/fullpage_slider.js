@@ -15,7 +15,7 @@
 		sectionActive: 0,
 
 		// Duration of transition animations
-		duration: 600,
+		duration: 900,
 
 		// Initiate function
 		init: function(){

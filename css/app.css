@@ -752,40 +752,6 @@
             -ms-transform: translate(102%, 0);
             -o-transform: translate(102%, 0);
             transform: translate(102%, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingBackPhoto {
-            -webkit-transform: translate(-200%, 0);
-            -moz-transform: translate(-200%, 0);
-            -ms-transform: translate(-200%, 0);
-            -o-transform: translate(-200%, 0);
-            transform: translate(-200%, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .previousPhoto {
-            -webkit-transform: translate(-100%, 0);
-            -moz-transform: translate(-100%, 0);
-            -ms-transform: translate(-100%, 0);
-            -o-transform: translate(-100%, 0);
-            transform: translate(-100%, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .currentPhoto {
-            z-index: 1;
-            -webkit-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
-            -moz-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
-            -ms-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
-            -o-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
-            transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s; }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .nextPhoto {
-            -webkit-transform: translate(100%, 0);
-            -moz-transform: translate(100%, 0);
-            -ms-transform: translate(100%, 0);
-            -o-transform: translate(100%, 0);
-            transform: translate(100%, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .holdingFrontPhoto {
-            -webkit-transform: translate(200%, 0);
-            -moz-transform: translate(200%, 0);
-            -ms-transform: translate(200%, 0);
-            -o-transform: translate(200%, 0);
-            transform: translate(200%, 0); }
-          #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .justInsertedPhoto {
-            z-index: -1;
-            display: none; }
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .arrow {
           position: absolute;
           width: 5.21%;
@@ -824,12 +790,6 @@
         #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .rightArrow {
           left: 67.7%;
           right: 0; }
-        #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .firstArrow {
-          display: none;
-          opacity: 0;
-          filter: alpha(opacity=0);
-          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-          -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
       #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars {
         position: relative;
         width: 47.92%;
@@ -1019,12 +979,6 @@
             bottom: 0;
             left: 0;
             right: 0; }
-      #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .firstArrow a {
-        display: none;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
       #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages {
         position: relative;
         float: left;
@@ -1044,6 +998,7 @@
             position: absolute;
             width: 82.4%;
             height: 100%;
+            display: none;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -1067,37 +1022,31 @@
               bottom: 0;
               left: 0;
               right: 0; }
-          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages .projectsWrapper .holdingBackPhoto {
-            -webkit-transform: translate(-260%, 0);
-            -moz-transform: translate(-260%, 0);
-            -ms-transform: translate(-260%, 0);
-            -o-transform: translate(-260%, 0);
-            transform: translate(-260%, 0); }
-          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages .projectsWrapper .previousPhoto {
-            -webkit-transform: translate(-130%, 0);
-            -moz-transform: translate(-130%, 0);
-            -ms-transform: translate(-130%, 0);
-            -o-transform: translate(-130%, 0);
-            transform: translate(-130%, 0); }
-          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages .projectsWrapper .currentPhoto {
+          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages .projectsWrapper .active {
+            display: block;
             z-index: 1;
             -webkit-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
             -moz-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
             -ms-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
             -o-transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
-            transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s; }
-          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages .projectsWrapper .nextPhoto {
-            -webkit-transform: translate(130%, 0);
-            -moz-transform: translate(130%, 0);
-            -ms-transform: translate(130%, 0);
-            -o-transform: translate(130%, 0);
-            transform: translate(130%, 0); }
-          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages .projectsWrapper .holdingFrontPhoto {
-            -webkit-transform: translate(260%, 0);
-            -moz-transform: translate(260%, 0);
-            -ms-transform: translate(260%, 0);
-            -o-transform: translate(260%, 0);
-            transform: translate(260%, 0); }
+            transition: all 1.3s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none; }
+          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages .projectsWrapper .left {
+            -webkit-transform: translate(-120%, 0);
+            -moz-transform: translate(-120%, 0);
+            -ms-transform: translate(-120%, 0);
+            -o-transform: translate(-120%, 0);
+            transform: translate(-120%, 0); }
+          #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .carouselImages .projectsWrapper .right {
+            -webkit-transform: translate(120%, 0);
+            -moz-transform: translate(120%, 0);
+            -ms-transform: translate(120%, 0);
+            -o-transform: translate(120%, 0);
+            transform: translate(120%, 0); }
       #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper {
         position: relative;
         float: left;
@@ -1162,24 +1111,17 @@
               #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData p {
                 position: absolute;
                 margin: 0;
-                -webkit-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1);
-                -moz-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1);
-                -ms-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1);
-                -o-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1);
-                transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1); }
-              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .currentBrand {
-                -webkit-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.7s;
-                -moz-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.7s;
-                -ms-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.7s;
-                -o-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.7s;
-                transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.7s; }
-              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .currentClient {
-                -webkit-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.8s;
-                -moz-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.8s;
-                -ms-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.8s;
-                -o-transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.8s;
-                transition: all 0.7s cubic-bezier(0.65, 0, 0.25, 1) 0.8s; }
-              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .currentBrand, #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .currentClient {
+                z-index: -1;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+                -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+                -webkit-transform: translateY(0.4em);
+                -moz-transform: translateY(0.4em);
+                -ms-transform: translateY(0.4em);
+                -o-transform: translateY(0.4em);
+                transform: translateY(0.4em); }
+              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .active {
                 z-index: 1;
                 opacity: 1;
                 filter: alpha(opacity=100);
@@ -1190,17 +1132,36 @@
                 -ms-transform: none;
                 -o-transform: none;
                 transform: none; }
-              #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .nextBrand, #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .nextClient, #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .previousBrand, #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftData .previousClient {
-                z-index: -1;
-                opacity: 0;
-                filter: alpha(opacity=0);
-                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-                -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
-                -webkit-transform: translateY(0.5em);
-                -moz-transform: translateY(0.5em);
-                -ms-transform: translateY(0.5em);
-                -o-transform: translateY(0.5em);
-                transform: translateY(0.5em); }
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftBrand p {
+              -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+              -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+              -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+              -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+              transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s; }
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftBrand .active {
+              -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s;
+              -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s;
+              -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s;
+              -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s;
+              transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s; }
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftBrief p {
+              -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
+              transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.1s; }
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftClient p {
+              -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s;
+              -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s;
+              -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s;
+              -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s;
+              transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0s; }
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .dataWrapper .projectData .innerCenteredBox .shiftClient .active {
+              -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+              -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+              -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+              -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s;
+              transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1) 0.2s; }
       #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars {
         position: absolute;
         width: 53.9%;
@@ -1247,6 +1208,7 @@
               position: absolute;
               width: 100%;
               height: 100%;
+              display: none;
               background-color: #06111a;
               -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
               -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
@@ -1255,7 +1217,8 @@
               transition: all 1s cubic-bezier(0.65, 0, 0.25, 1);
               -webkit-transform-origin: left;
               transform-origin: left; }
-            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar .currentBar {
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar .active {
+              display: block;
               -webkit-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
               -moz-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
               -ms-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.1s;
@@ -1266,13 +1229,13 @@
               -ms-transform: none;
               -o-transform: none;
               transform: none; }
-            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar .nextBar {
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar .left {
               -webkit-transform: translateX(-102%);
               -moz-transform: translateX(-102%);
               -ms-transform: translateX(-102%);
               -o-transform: translateX(-102%);
               transform: translateX(-102%); }
-            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar .previousBar {
+            #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar .right {
               -webkit-transform: translateX(102%);
               -moz-transform: translateX(102%);
               -ms-transform: translateX(102%);

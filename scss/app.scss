@@ -434,54 +434,6 @@
 								        transform: translate(102%, 0);
 
 							}
-
-							.holdingBackPhoto{
-								// background-color: aqua;
-								-webkit-transform: translate(-200%, 0);
-								   -moz-transform: translate(-200%, 0);
-								    -ms-transform: translate(-200%, 0);
-								     -o-transform: translate(-200%, 0);
-								        transform: translate(-200%, 0);
-
-							}
-							.previousPhoto{
-								// background-color: red;
-								-webkit-transform: translate(-100%, 0);
-								   -moz-transform: translate(-100%, 0);
-								    -ms-transform: translate(-100%, 0);
-								     -o-transform: translate(-100%, 0);
-								        transform: translate(-100%, 0);
-
-							}
-							.currentPhoto{
-								// background-color: blue;
-								z-index: 1;
-								@include trans-delayed(1.3s, 0.1s);
-
-							}
-							.nextPhoto{
-								// background-color: green;
-								-webkit-transform: translate(100%, 0);
-								   -moz-transform: translate(100%, 0);
-								    -ms-transform: translate(100%, 0);
-								     -o-transform: translate(100%, 0);
-								        transform: translate(100%, 0);
-
-							}
-							.holdingFrontPhoto{
-								// background-color: purple;
-								-webkit-transform: translate(200%, 0);
-								   -moz-transform: translate(200%, 0);
-								    -ms-transform: translate(200%, 0);
-								     -o-transform: translate(200%, 0);
-								        transform: translate(200%, 0);
-
-							}
-
-							.justInsertedPhoto{
-								z-index: -1;
-								display: none;
-							}
 						}
 
 						.arrow{
@@ -518,11 +470,6 @@
 						.rightArrow{
 							left: 67.7%;
 							right: 0;
-						}
-
-						.firstArrow{
-							display: none;
-							@include opacity(0);
 						}
 					}
 
@@ -712,13 +659,6 @@
 						}
 					}
 
-					.firstArrow{
-						a{
-							display: none;
-							@include opacity(0);
-						}
-					}
-
 					.carouselImages{
 						position: relative;
 						float: left;
@@ -738,6 +678,7 @@
 								position: absolute;
 								width: 82.4%;
 								height: 100%;
+								display: none;
 								@include boxSizeFit();
 								margin: auto;
 								left: 0; right: 0;
@@ -754,46 +695,34 @@
 								}
 							}
 
-							.holdingBackPhoto{
-								// background-color: aqua;
-								-webkit-transform: translate(-260%, 0);
-								   -moz-transform: translate(-260%, 0);
-								    -ms-transform: translate(-260%, 0);
-								     -o-transform: translate(-260%, 0);
-								        transform: translate(-260%, 0);
-
-							}
-							.previousPhoto{
-								// background-color: red;
-								-webkit-transform: translate(-130%, 0);
-								   -moz-transform: translate(-130%, 0);
-								    -ms-transform: translate(-130%, 0);
-								     -o-transform: translate(-130%, 0);
-								        transform: translate(-130%, 0);
-
-							}
-							.currentPhoto{
+							.active{
 								// background-color: blue;
+								display: block;
 								z-index: 1;
 								@include trans-delayed(1.3s, 0.1s);
+								-webkit-transform: none;
+								   -moz-transform: none;
+								    -ms-transform: none;
+								     -o-transform: none;
+								        transform: none;
 
 							}
-							.nextPhoto{
+							.left{
+								// background-color: red;
+								-webkit-transform: translate(-120%, 0);
+								   -moz-transform: translate(-120%, 0);
+								    -ms-transform: translate(-120%, 0);
+								     -o-transform: translate(-120%, 0);
+								        transform: translate(-120%, 0);
+
+							}
+							.right{
 								// background-color: green;
-								-webkit-transform: translate(130%, 0);
-								   -moz-transform: translate(130%, 0);
-								    -ms-transform: translate(130%, 0);
-								     -o-transform: translate(130%, 0);
-								        transform: translate(130%, 0);
-
-							}
-							.holdingFrontPhoto{
-								// background-color: purple;
-								-webkit-transform: translate(260%, 0);
-								   -moz-transform: translate(260%, 0);
-								    -ms-transform: translate(260%, 0);
-								     -o-transform: translate(260%, 0);
-								        transform: translate(260%, 0);
+								-webkit-transform: translate(120%, 0);
+								   -moz-transform: translate(120%, 0);
+								    -ms-transform: translate(120%, 0);
+								     -o-transform: translate(120%, 0);
+								        transform: translate(120%, 0);
 
 							}
 						}
@@ -848,17 +777,16 @@
 									p{
 										position: absolute;
 										margin: 0;
-										@include transitions(0.7s);
+										z-index: -1;
+										@include opacity(0);
+										-webkit-transform: translateY(0.4em);
+										   -moz-transform: translateY(0.4em);
+										    -ms-transform: translateY(0.4em);
+										     -o-transform: translateY(0.4em);
+										        transform: translateY(0.4em);
 									}
 
-									.currentBrand{
-										@include trans-delayed(0.7s, 0.7s);
-									}
-									.currentClient{
-										@include trans-delayed(0.7s, 0.8s);
-									}
-
-									.currentBrand, .currentClient {
+									.active {
 										z-index: 1;
 										@include opacity(1);
 										-webkit-transform: none;
@@ -867,14 +795,29 @@
 										     -o-transform: none;
 										        transform: none;
 									}
-									.nextBrand, .nextClient, .previousBrand, .previousClient {
-										z-index: -1;
-										@include opacity(0);
-										-webkit-transform: translateY(0.5em);
-										   -moz-transform: translateY(0.5em);
-										    -ms-transform: translateY(0.5em);
-										     -o-transform: translateY(0.5em);
-										        transform: translateY(0.5em);
+								}
+
+								.shiftBrand{
+									p{
+										@include trans-delayed(0.6s, 0.2s)
+									}
+
+									.active{
+										@include trans-delayed(0.6s, 0s);
+									}
+								}
+								.shiftBrief{
+									p{
+										@include trans-delayed(0.6s, 0.1s)
+									}
+								}
+								.shiftClient{
+									p{
+										@include trans-delayed(0.6s, 0s)
+									}
+
+									.active{
+										@include trans-delayed(0.6s, 0.2s);
 									}
 								}
 							}
@@ -916,13 +859,15 @@
 									position: absolute;
 									width: 100%;
 									height: 100%;
+									display: none;
 									background-color: $black;
 									@include transitions(1s);
 									-webkit-transform-origin: left;
 									transform-origin: left;
 								}
 
-								.currentBar{
+								.active{
+									display: block;
 									@include trans-delayed(1s, 0.1s);
 									-webkit-transform: none;
 									   -moz-transform: none;
@@ -931,7 +876,7 @@
 									        transform: none;
 								}
 
-								.nextBar{
+								.left{
 									-webkit-transform: translateX(-102%);
 									   -moz-transform: translateX(-102%);
 									    -ms-transform: translateX(-102%);
@@ -939,7 +884,7 @@
 									        transform: translateX(-102%);
 								}
 
-								.previousBar{
+								.right{
 									-webkit-transform: translateX(102%);
 									   -moz-transform: translateX(102%);
 									    -ms-transform: translateX(102%);
