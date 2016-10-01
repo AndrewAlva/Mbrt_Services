@@ -22,6 +22,8 @@ http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-i
 
 * Is it OK to use so many setTimeouts()? Or there is another way to make callbacks with custom classes? What should I give priority: less setTimeouts() or readable functions?
 
+* Contact title doesn't match with BG text, how to make it match? The problem is in the form the text is written.
+
 
 
 ## Answered FAQ'S of this project

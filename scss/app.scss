@@ -207,7 +207,7 @@
 							padding-top: 5px;
 							padding-bottom: 5px;
 							color: $light-gray;
-							@include trans_title(0.6s);
+							@include trans_title(0.9s);
 						}
 
 						h1:before{
@@ -231,12 +231,33 @@
 							position: absolute;
 							font-size: 38px;
 							color: $light-gray;
-							@include trans_title(0.6s);
+							@include trans_title(0.9s);
 						}
 
 						h2:before{
 							@include blackHover();
 						}
+					}
+
+					.animatedLine{
+						z-index: -1;
+						@include opacity(0);
+						-webkit-transform: translateY(0.4em);
+						   -moz-transform: translateY(0.4em);
+						    -ms-transform: translateY(0.4em);
+						     -o-transform: translateY(0.4em);
+						        transform: translateY(0.4em);
+				        @include transitions(0.6s);
+					}
+
+					.active{
+						z-index: 1;
+						@include opacity(1);
+						-webkit-transform: none;
+						   -moz-transform: none;
+						    -ms-transform: none;
+						     -o-transform: none;
+						        transform: none;
 					}
 				}
 			}
@@ -260,7 +281,7 @@
 						@include displayLeft();
 						@include boxSizeFit();
 						@include writingBar();
-						@include trans_title(0.6s);
+						@include trans_title(0.9s);
 					}
 
 					h1:before{
@@ -291,7 +312,7 @@
 
 						h3{
 							margin: 0;
-							@include trans_title(0.6s);
+							@include trans_title(0.9s);
 						}
 
 						h3:before{
@@ -624,7 +645,7 @@
 							top: 0; bottom: 0;
 							right: 0;
 							color: $light-gray;
-							@include trans_title(0.6s);
+							@include trans_title(0.9s);
 						}
 
 						h3:before{
@@ -759,7 +780,7 @@
 									margin: 0;
 									margin-bottom: 2.3%;
 									color: $light-gray;
-									@include trans_title(0.6s);
+									@include trans_title(0.9s);
 								}
 
 								h5:before{
@@ -931,7 +952,7 @@
 								font-size: 65px;
 								@include writingBar();
 								padding-right: 2.1%;
-								@include trans_title(0.6s);
+								@include trans_title(0.9s);
 							}
 
 							h1:before{

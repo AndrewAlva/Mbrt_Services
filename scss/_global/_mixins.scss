@@ -62,7 +62,7 @@
 	cursor: text;
 	content: attr(data-hover);
 	white-space: nowrap;
-	@include trans_before_title(0.6s);
+	@include trans_before_title(1.2s);
 }
 
 @mixin opacity($val){
