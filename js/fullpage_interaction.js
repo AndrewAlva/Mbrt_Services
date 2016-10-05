@@ -13,6 +13,19 @@
 		};
 	});
 
+	// INTERACTION BY KEYBOARD ARROWS
+	$(document).on('keydown', function(event) {
+		// UP ARROW INTERACTION (KEYCODE = 38)
+		if (event.keyCode == 38){
+			Slider.prev();
+		}
+
+		// DOWN ARROW INTERACTION (KEYCODE = 40)
+		if (event.keyCode == 40){
+			Slider.next();
+		}
+	});
+
 	// SCROLL TO WELCOME SECTION ON CLICK AT '#START EXPLORING' ELEMENT IN INDEX SECTION
 	$('#section-0').on('click', '#startExploring', function(event) {
 		event.preventDefault();

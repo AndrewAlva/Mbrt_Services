@@ -66,7 +66,7 @@
 			});
 			
 			// INTERACTION BY KEYBOARD ARROWS
-			$(document).keyup(function(event) {
+			$(document).on('keydown', function(event) {
 				// RIGHT ARROW INTERACTION (KEYCODE = 39)
 				if (event.keyCode == 39){
 					carouselNextProject();
@@ -74,17 +74,8 @@
 
 				// LEFT ARROW INTERACTION (KEYCODE = 37)
 				if (event.keyCode == 37){
-					carouselPrevProject()
-				}
-			});
-			
-			// INTERACTION BY HORIZONTAL SCROLLING
-			$('#mbrtWrapper').on('mousewheel', function(event) {
-				if (event.deltaX > 30) {
-					carouselNextProject();
-				} else if (event.deltaX < -30) {
 					carouselPrevProject();
-				};
+				}
 			});
 
 			function carouselNextProject(){
