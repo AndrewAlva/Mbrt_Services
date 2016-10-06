@@ -24,6 +24,12 @@ http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-i
 
 * Contact title doesn't match with BG text, how to make it match? The problem is in the form the text is written.
 
+* Safari v10.0 is not displaying a few GIFS, three from Lucky Carousel and Northway Logo
+
+* Safari v10.0 @writingBar keyframe css animation not working, also on Firefox v31.0
+
+* <!--[if !IE]> which are the conditional detectors for other browsers versions like Chrome or Safari
+
 
 
 ## Answered FAQ'S of this project

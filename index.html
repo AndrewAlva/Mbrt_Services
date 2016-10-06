@@ -41,14 +41,67 @@
     <body>
         <!-- PLACE_HERE_YOUR_FBASYNCINIT()_FUNCTION_FOR_THE_APP -->
 
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lt IE 9]>
+            <div id="updateWrapper" style="position: fixed; width: 100%; height: 100%; z-index: 1000000000; background-color: #fff; overflow: hidden;">
+                <div class="centeredBox" style="position: absolute; display: table; width: 650px; height: 300px; margin-top: -150px; margin-left: -325px; top: 50%; left: 50%; text-align: center; border: 1px solid #ccc; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 30px 30px;">
+                    <p class="browserupgrade" style="display: table-cell; vertical-align: middle; background-color: #fff; color: #97979b;">
+                        We are commited to bring you the best experiences but on some cases (like this one) we can't because you are using an outdated browser. <br><br>
+                        Please <a target="_blank" href="http://browsehappy.com/" style="color:#000;">upgrade your browser here</a> to improve your experience and come back so we can keep pushing the web forward and enjoying delightful experiences. <br><br><br>
+                        Thank you. <br>
+                        <a href="https://www.facebook.com/mandelbrotstudio/" target="_blank" style="color:#000;"><strong>Mandelbrot Studio</strong></a>
+                    </p>
+                </div>
+
+                <script>
+                    // Shut down site
+                    window.addEventListener("DOMContentLoaded", function() {
+                        var fullDocument = document.getElementById("fullWrapper");
+                        fullDocument.parentNode.removeChild(fullDocument);
+                    }, false);
+                </script>
+            </div>
         <![endif]-->
 
         <!-- Add your site or application content here -->
         <div id="fullWrapper">
             <div id="mbrtLoader">
-                <h1>Loading...</h1>
+                <div class="centeredWrapper">
+                    <div class="innerLoaderBoxes quotesBox smoothIntro">
+                        <p id="loadingQuote" class="active"></p>
+                    </div>
+
+                    <div class="innerLoaderBoxes loadingBox smoothIntro">
+                        <h1>Loading<span id="loadingDots"></span></h1>
+                    </div>
+
+                    <div class="innerLoaderBoxes instructionsBox">
+                        <div class="icons">
+                            <div class="mouse smoothIntro">
+                                <i class="sprite sprite-mouse sliderControl active"></i>
+                            </div>
+
+                            <div class="arrowKeys smoothIntro">
+                                <div class="keys upKey">
+                                    <i class="sprite sprite-upKey sliderControl active"></i>
+                                </div>
+                                <div class="keys downKey">
+                                    <i class="sprite sprite-downKey sliderControl active"></i>
+                                </div>
+                                <div class="keys leftKey">
+                                    <i class="sprite sprite-leftKey carouselControl"></i>
+                                </div>
+                                <div class="keys rightKey">
+                                    <i class="sprite sprite-rightKey carouselControl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description smoothIntro">
+                            <p id="loadingDescription" class="active">
+                                Scroll / Keyboard UP & DOWN to change of section.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="mbrtWrapper">
@@ -1343,7 +1396,7 @@
                                 <h1 id="sectionTitle-15" class="activeTitle" data-hover="Then, We Work Together?">Then, We Work Together?</h1>
                             </div>
                             <div class="contactButton">
-                                <a href="mailto:studio@mandelbrot.mx">
+                                <a href="mailto:studio@mandelbrot.mx?subject=IA wants to work with you&body=Hello Mandelbrot Studio, we want to meet you in person...">
                                     <p>Let's Talk</p>
                                 </a>
                             </div>
@@ -1361,7 +1414,7 @@
                                     <div class="innerFootRow">CBO & Partner</div>
                                 </div>
                                 <div class="secondRow">
-                                    <div class="innerHeadRow"><a data-hover="andrew@mandelbrot.mx" href="mailto:andrew@mandelbrot.mx">andrew@mandelbrot.mx</a></div>
+                                    <div class="innerHeadRow"><a data-hover="andrew@mandelbrot.mx" href="mailto:andrew@mandelbrot.mx?subject=Hello Andrew&body=Hello there, we are IA Interactive and we want to talk with you about...">andrew@mandelbrot.mx</a></div>
                                     <div class="innerFootRow"><a data-hover="(33) 17 · 17 · 29 · 06" href="tel:+52(33)17172906">(33) 17 · 17 · 29 · 06</a></div>
                                 </div>
                             </div>
@@ -1371,7 +1424,7 @@
                                     <div class="innerFootRow">CBO & Partner</div>
                                 </div>
                                 <div class="secondRow">
-                                    <div class="innerHeadRow"><a data-hover="zero@mandelbrot.mx" href="mailto:zero@mandelbrot.mx">zero@mandelbrot.mx</a></div>
+                                    <div class="innerHeadRow"><a data-hover="zero@mandelbrot.mx" href="mailto:zero@mandelbrot.mx?subject=Hi Zero&body=Hey, how are you? we are IA Interactive and we want to talk with you about...">zero@mandelbrot.mx</a></div>
                                     <div class="innerFootRow"><a data-hover="(55) 45 · 22 · 65 · 29" href="tel:+52(55)45226529">(55) 45 · 22 · 65 · 29</a></div>
                                 </div>
                             </div>
@@ -1388,6 +1441,27 @@
                         </div>
                     </div>
                 </section>
+            </div>
+        </div>
+
+        <div id="mobileWrapper">
+            <div class="centeredBox">
+                <div class="adviceBox innerRows">
+                    <p>To Enjoy this Experience, Please use a Larger Screen Device.</p>
+                </div>
+                <div class="iconsBox innerRows">
+                    <ul class="devicesBox">
+                        <i class="sprite sprite-DeviceDesk"></i>
+                        <i class="sprite sprite-DeviceLap"></i>
+                        <i class="sprite sprite-DeviceTab"></i>
+                    </ul>
+                </div>
+                <div class="thanksBox innerRows">
+                    <p>Thank you</p>
+                </div>
+                <div class="signatureBox innerRows">
+                    <a href="https://www.facebook.com/mandelbrotstudio/" target="_blank"><img src="img/brand/top_logo.png" alt="Mandelbrot Brands Studio" title="Mandelbrot Brands Studio"></a>
+                </div>
             </div>
         </div>
 

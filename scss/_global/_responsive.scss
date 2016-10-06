@@ -680,7 +680,7 @@
 				.barsWrapper{
 					.navBar{
 						.navName{
-							font-size: 0.45em;
+							font-size: 7px;
 						}
 					}
 				}
@@ -1083,7 +1083,7 @@
 
 					.introParagraph{
 						p{
-							font-size: 16.6px;
+							font-size: 15px;
 						}
 					}
 
@@ -1312,5 +1312,12 @@
 				}
 			}
 		}
+	}
+}
+
+// Lower than Tablet Size
+@media screen and (max-width: 1023px){
+	#mobileWrapper{
+		display: block;
 	}
 }

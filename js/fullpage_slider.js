@@ -2,6 +2,18 @@
 		// Flag to prevent overlapping transitions between sections
 		canScroll: true,
 
+		// Flag to stop loading function
+		isLoading: true,
+
+		// Loading instructions array
+		instructions: ["Scroll / Keyboard UP & DOWN to change of section.", "Use keyboard LEFT & RIGHT keys to switch projects."],
+
+		// Loading instructions timing between switching
+		instructionsTiming: 4000,
+
+		// Loading portfolio quotes, in this case are the studio quotes
+		mbrtQuotes: ["Calling for the craftsmen, engineers, gurus and everyone on the studio, wait.", "We are crafting the last details, almost there.", "Good things come to those who know when to wait."],
+
 		// Set the array with all the screens to manipulate
 		screens: [],
 
@@ -17,11 +29,155 @@
 		// Declare current active section variable
 		sectionActive: 0,
 
-		// Duration of transition animations
+		// Duration of transition timing animations
 		duration: 900,
 
 		// Pause to color screen titles
 		pauseColorTitle: 500,
+
+		// Loading screen function
+		loading: function(){
+			// Smooth intro of loading elements
+			var smoothElements = $('#mbrtLoader').find('.smoothIntro');
+			smoothElements.each(function(index, el) {
+				setTimeout(function(){
+					$(el).removeClass('smoothIntro');
+				}, (index * 100));
+			});
+
+			// Write loading dots
+			dotting(0);
+
+			// SWITCH quotes text
+			shuffle(Slider.mbrtQuotes);
+			$('#loadingQuote').append(Slider.mbrtQuotes[0]);
+			switchQuotes(1);
+
+			// SWITCH navigation instructions
+			switchInstructions(0);
+
+			// HELPER FUNCTIONS
+			// Writting Loading dots "...."
+			function dotting(index){
+				var dots = '....';
+				var interval = 500;
+				// Check if slider is still loading
+				if (Slider.isLoading) {
+					// WRITTING Loading dots "..."
+					// Check if there are more dots to add
+					if (index < dots.length) {
+						// Write the next letter
+						$('#loadingDots').append(dots[index++]);
+						// Set the interval to write the next letter
+						setTimeout(function(){
+							dotting(index);
+						}, interval);
+
+						// When function is about to add the last dot => empty dots, then => start again 
+						if (index == (dots.length)) {
+							setTimeout(function(){
+								$('#loadingDots').empty();
+								
+								setTimeout(function(){dotting(0);}, interval);
+							}, interval );
+						};
+					};
+				};
+			}
+
+			// Switching quotes
+			function switchQuotes(index){
+				if (Slider.isLoading) {
+					setTimeout(function(){
+						$('#loadingQuote').removeClass('active');
+
+						setTimeout(function(){
+							if (index < Slider.mbrtQuotes.length) {
+								$('#loadingQuote').empty();
+								$('#loadingQuote').append(Slider.mbrtQuotes[index++]);
+								$('#loadingQuote').addClass('active');
+								if (index == (Slider.mbrtQuotes.length)) {
+									switchQuotes(0);
+								} else {
+									switchQuotes(index);
+								};
+							};
+							
+						}, 600);
+					}, Slider.instructionsTiming);
+				};
+			}
+
+			// Switching navigation instructions
+			function switchInstructions(){
+				if (Slider.isLoading) {
+					setTimeout(function(){
+						$('#loadingDescription').removeClass('active');
+						$('#mbrtLoader').find('.sliderControl').removeClass('active');
+						setTimeout(function(){
+							$('#loadingDescription').empty();
+							$('#loadingDescription').append(Slider.instructions[1]);
+							$('#loadingDescription').addClass('active');
+							$('#mbrtLoader').find('.carouselControl').addClass('active');
+
+							setTimeout(function(){
+								$('#loadingDescription').removeClass('active');
+								$('#mbrtLoader').find('.carouselControl').removeClass('active');
+
+								setTimeout(function(){
+									$('#loadingDescription').empty();
+									$('#loadingDescription').append(Slider.instructions[0]);
+									$('#loadingDescription').addClass('active');
+									$('#mbrtLoader').find('.sliderControl').addClass('active');
+
+									switchInstructions();
+								}, 600);
+
+							}, Slider.instructionsTiming);
+
+						}, 600);
+
+					}, Slider.instructionsTiming);
+				};
+			}
+
+			// Shuffle Fisher Yates algorithm
+			function shuffle(array){
+				var currentIndex = array.length, temporaryValue, randomIndex;
+
+				// While there remain elements to shuffle...
+				while (0 !== currentIndex) {
+
+					// Pick a remaining element...
+					randomIndex = Math.floor(Math.random() * currentIndex);
+					currentIndex -= 1;
+
+					// And swap it with the current element.
+					temporaryValue = array[currentIndex];
+					array[currentIndex] = array[randomIndex];
+					array[randomIndex] = temporaryValue;
+				}
+
+				return array;
+			}
+		},
+
+		// Hide the loading screen
+		loaded: function(){
+			setTimeout(function(){
+				// Active flag to prevent loading function
+				Slider.isLoading = false;
+
+				// Fade out loader
+				$('#mbrtLoader').addClass('crystalLoader');
+				
+				// Restart Intro gif animation
+				$('#mbrtGIF').attr('src', 'img/brand/main_logo.gif?' + Math.random() + ' alt="Mandelbrot Brands Studio">');
+
+				// Remove loader after fadeout is complete
+				setTimeout(function(){$('#mbrtLoader').remove();},1600);
+			}, Slider.duration);
+		},
 
 		// Initiate function
 		init: function(){

@@ -29,6 +29,66 @@
 .activeTitle {
   color: #fff !important; }
 
+.sprite {
+  background-image: url(../img/icons/sprite_nav.png);
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite-mouse {
+  width: 40px;
+  height: 65px;
+  background-position: -5px -90px; }
+
+.sprite-upKey {
+  width: 32px;
+  height: 32px;
+  background-position: -55px -5px; }
+
+.sprite-downKey {
+  width: 32px;
+  height: 32px;
+  background-position: -55px -42px; }
+
+.sprite-leftKey {
+  width: 32px;
+  height: 32px;
+  background-position: -55px -79px; }
+
+.sprite-rightKey {
+  width: 32px;
+  height: 32px;
+  background-position: -55px -116px; }
+
+.sprite-leftArrow {
+  width: 20px;
+  height: 35px;
+  background-position: -5px -5px; }
+
+.sprite-rightArrow {
+  width: 20px;
+  height: 35px;
+  background-position: -30px -5px; }
+
+.sprite-downArrow {
+  width: 40px;
+  height: 40px;
+  background-position: -5px -45px; }
+
+.sprite-DeviceDesk {
+  width: 100px;
+  height: 90px;
+  background-position: -92px -5px; }
+
+.sprite-DeviceLap {
+  width: 95px;
+  height: 68px;
+  background-position: -92px -100px; }
+
+.sprite-DeviceTab {
+  width: 50px;
+  height: 70px;
+  background-position: -197px -5px; }
+
 #section-0 #mainLogo {
   position: absolute;
   width: 662px;
@@ -50,14 +110,18 @@
   right: 0;
   bottom: 50px;
   cursor: pointer;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
   -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
   -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
   -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
   -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
   transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
   #section-0 #startExploring:hover {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    opacity: 1;
+    filter: alpha(opacity=100);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
     -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
   #section-0 #startExploring .startText {
@@ -68,7 +132,8 @@
     font-size: 11.5pt;
     letter-spacing: 2px;
     text-align: center;
-    margin-bottom: 17px; }
+    margin-bottom: 17px;
+    color: #06111a; }
   #section-0 #startExploring .startGo {
     position: relative;
     width: 100%;
@@ -289,7 +354,8 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   #fullWrapper #mbrtLoader {
     position: absolute;
     width: 100%;
@@ -302,17 +368,201 @@
     -ms-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.4s;
     -o-transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.4s;
     transition: all 1s cubic-bezier(0.65, 0, 0.25, 1) 0.4s; }
-    #fullWrapper #mbrtLoader h1 {
+    #fullWrapper #mbrtLoader .centeredWrapper {
       position: absolute;
       text-align: center;
-      width: 200px;
-      height: 50px;
+      width: 1024px;
+      height: 472px;
       line-height: 50px;
       margin: auto;
       top: 0;
-      bottom: 0;
+      bottom: 5%;
       left: 0;
       right: 0; }
+      #fullWrapper #mbrtLoader .centeredWrapper .innerLoaderBoxes {
+        position: relative;
+        display: table;
+        width: 100%;
+        -webkit-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+        -moz-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+        -ms-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+        -o-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+        transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16); }
+      #fullWrapper #mbrtLoader .centeredWrapper .quotesBox {
+        height: 107px; }
+        #fullWrapper #mbrtLoader .centeredWrapper .quotesBox p {
+          position: absolute;
+          width: auto;
+          height: 35px;
+          line-height: 35px;
+          margin: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          color: #97979b;
+          font-size: 24px;
+          -webkit-font-smoothing: antialiased !important;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+          opacity: 0;
+          filter: alpha(opacity=0);
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+          -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+          -webkit-transform: translateY(15px);
+          -moz-transform: translateY(15px);
+          -ms-transform: translateY(15px);
+          -o-transform: translateY(15px);
+          transform: translateY(15px);
+          -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+          transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+        #fullWrapper #mbrtLoader .centeredWrapper .quotesBox .active {
+          opacity: 1;
+          filter: alpha(opacity=100);
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+          -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+          -webkit-transform: none;
+          -moz-transform: none;
+          -ms-transform: none;
+          -o-transform: none;
+          transform: none; }
+      #fullWrapper #mbrtLoader .centeredWrapper .loadingBox {
+        height: 170px;
+        -webkit-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+        -moz-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+        -ms-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+        -o-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+        transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16); }
+        #fullWrapper #mbrtLoader .centeredWrapper .loadingBox h1 {
+          position: absolute;
+          width: 150px;
+          height: 47px;
+          margin: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          vertical-align: middle;
+          font-size: 39px; }
+      #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox {
+        height: 195px; }
+        #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons {
+          position: relative;
+          width: 172px;
+          height: 118px;
+          margin: auto;
+          margin-top: 29px;
+          left: 0;
+          right: 0; }
+          #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons i {
+            opacity: 0.3;
+            filter: alpha(opacity=30);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+            -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+            -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+          #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .active {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+            -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+          #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .mouse {
+            position: absolute;
+            left: 0;
+            width: 42px;
+            height: 63px;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+            -moz-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+            -ms-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+            -o-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+            transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16); }
+            #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .mouse i {
+              position: absolute;
+              margin: auto;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0; }
+          #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .arrowKeys {
+            position: absolute;
+            right: 0;
+            width: 94px;
+            height: 63px;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+            -moz-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+            -ms-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+            -o-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+            transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16); }
+            #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .arrowKeys .keys {
+              position: absolute;
+              width: 32px;
+              height: 32px;
+              margin: auto; }
+            #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .arrowKeys .upKey {
+              left: 0;
+              right: 0;
+              top: 0; }
+            #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .arrowKeys .downKey {
+              left: 0;
+              right: 0;
+              bottom: 0; }
+            #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .arrowKeys .leftKey {
+              left: 0;
+              bottom: 0; }
+            #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .icons .arrowKeys .rightKey {
+              right: 0;
+              bottom: 0; }
+        #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .description {
+          position: relative;
+          display: table;
+          width: 100%;
+          height: 48px;
+          -webkit-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+          -moz-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+          -ms-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+          -o-transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16);
+          transition: all 0.5s cubic-bezier(0.44, 0.01, 0.47, 1.16); }
+          #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .description p {
+            display: table-cell;
+            color: #97979b;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased !important;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+            opacity: 0;
+            filter: alpha(opacity=0);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+            -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+            -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
+          #fullWrapper #mbrtLoader .centeredWrapper .instructionsBox .description .active {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+            -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+      #fullWrapper #mbrtLoader .centeredWrapper .smoothIntro {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+        transform: translateY(30px); }
   #fullWrapper .crystalLoader {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -798,10 +1048,14 @@
             -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
             -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
             -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-            transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
+            transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+            opacity: 0.3;
+            filter: alpha(opacity=30);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+            -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
             #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .arrow a:hover {
-              opacity: 0.6;
-              filter: alpha(opacity=60);
+              opacity: 1;
+              filter: alpha(opacity=100);
               filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
               -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
             #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .arrow a i {
@@ -993,10 +1247,14 @@
           -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
           -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
           -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-          transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
+          transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+          opacity: 0.3;
+          filter: alpha(opacity=30);
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+          -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
           #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .arrow a:hover {
-            opacity: 0.6;
-            filter: alpha(opacity=60);
+            opacity: 1;
+            filter: alpha(opacity=100);
             filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
             -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
           #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .arrow a i {
@@ -1443,22 +1701,85 @@
       -ms-transform: translateY(-100%);
       -o-transform: translateY(-100%);
       transform: translateY(-100%); }
-    #fullWrapper #mbrtWrapper .sprite {
-      background-image: url(../img/icons/sprite_nav.png);
-      background-repeat: no-repeat;
-      display: block; }
-    #fullWrapper #mbrtWrapper .sprite-leftArrow {
-      width: 20px;
-      height: 35px;
-      background-position: -5px -5px; }
-    #fullWrapper #mbrtWrapper .sprite-rightArrow {
-      width: 20px;
-      height: 35px;
-      background-position: -30px -5px; }
-    #fullWrapper #mbrtWrapper .sprite-downArrow {
-      width: 40px;
-      height: 40px;
-      background-position: -5px -45px; }
+
+#mobileWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1000;
+  display: none;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  color: #97979b; }
+  #mobileWrapper .centeredBox {
+    position: absolute;
+    width: 60%;
+    min-width: 320px;
+    height: 40%;
+    min-height: 360px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    #mobileWrapper .centeredBox .innerRows {
+      position: relative;
+      display: table;
+      float: left;
+      width: 100%; }
+    #mobileWrapper .centeredBox .adviceBox {
+      height: 35%;
+      padding: 20px 15px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      #mobileWrapper .centeredBox .adviceBox p {
+        display: table-cell;
+        vertical-align: middle; }
+    #mobileWrapper .centeredBox .iconsBox {
+      height: 25%; }
+      #mobileWrapper .centeredBox .iconsBox .devicesBox {
+        position: absolute;
+        width: 320px;
+        height: 110px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0; }
+        #mobileWrapper .centeredBox .iconsBox .devicesBox i {
+          position: absolute;
+          margin: auto;
+          bottom: 0; }
+        #mobileWrapper .centeredBox .iconsBox .devicesBox .sprite-DeviceDesk {
+          left: 5px; }
+        #mobileWrapper .centeredBox .iconsBox .devicesBox .sprite-DeviceLap {
+          left: 40px;
+          right: 0; }
+        #mobileWrapper .centeredBox .iconsBox .devicesBox .sprite-DeviceTab {
+          right: 10px; }
+    #mobileWrapper .centeredBox .thanksBox {
+      height: 30%; }
+      #mobileWrapper .centeredBox .thanksBox p {
+        display: table-cell;
+        vertical-align: middle; }
+    #mobileWrapper .centeredBox .signatureBox {
+      height: 10%; }
+      #mobileWrapper .centeredBox .signatureBox img {
+        position: absolute;
+        width: 180px;
+        height: auto;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
 
 @media screen and (max-width: 1849px) {
   #fullWrapper #mbrtWrapper #rightBarsNav {
@@ -1720,7 +2041,7 @@
   #fullWrapper #mbrtWrapper #rightBarsNav {
     height: 280px; }
     #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
-      font-size: 0.45em; }
+      font-size: 7px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter {
     height: 285px; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
@@ -1872,7 +2193,7 @@
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
       font-size: 46.4px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
-      font-size: 16.6px; }
+      font-size: 15px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
       height: 36px; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
@@ -1952,5 +2273,8 @@
     width: 170px; }
   #fullWrapper #mbrtWrapper #section-14 .innerCarousel .carouselTitle {
     width: 250px; } }
+@media screen and (max-width: 1023px) {
+  #mobileWrapper {
+    display: block; } }
 
 /*# sourceMappingURL=app.css.map */

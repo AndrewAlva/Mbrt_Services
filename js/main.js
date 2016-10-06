@@ -3,19 +3,13 @@
 
 	window.onload = function(){
 		setTimeout(function(){
-			// Fade out loader
-			$('#mbrtLoader').addClass('crystalLoader');
-			
-			// Restart Intro gif animation
-			$('#mbrtGIF').attr('src', 'img/brand/main_logo.gif?' + Math.random() + ' alt="Mandelbrot Brands Studio">');
-
-			// Remove loader after fadeout is complete
-			setTimeout(function(){$('#mbrtLoader').remove();},1600);
-		}, 900);
+			Slider.loaded();
+		},(Slider.instructionsTiming * 2 - 1000));
 	};
 
 	$(document).ready(function(){
 		Slider.init();
+		Slider.loading();
 
 		// Set and Initialize all carousels
 			var Logos = new Carousel('#section-4', '#logos-', '#logosBar-');
@@ -50,16 +44,17 @@
 			// INTERACTION BY ARROWS CLICK
 			// Next Project Interaction | Arrows Nav Click
 			$('#mbrtWrapper').on('click', '.rightArrow a', function(event) {
-				carouselNextProject();
+				carouselNextProject(event);
 			});
 
 			// Previous Project Interaction | Arrows Nav Click
 			$('#mbrtWrapper').on('click', '.leftArrow a', function(event) {
-				carouselPrevProject();
+				carouselPrevProject(event);
 			});
 
 			// INTERACTION BY BOTTOM NAV BARS
 			$('#mbrtWrapper').on('click', '.singleBar', function(event) {
+				event.preventDefault();
 				var projectId = $(this).data('loadprojectid');
 
 				carouselGoToProject(projectId);
@@ -69,16 +64,16 @@
 			$(document).on('keydown', function(event) {
 				// RIGHT ARROW INTERACTION (KEYCODE = 39)
 				if (event.keyCode == 39){
-					carouselNextProject();
+					carouselNextProject(event);
 				}
 
 				// LEFT ARROW INTERACTION (KEYCODE = 37)
 				if (event.keyCode == 37){
-					carouselPrevProject();
+					carouselPrevProject(event);
 				}
 			});
 
-			function carouselNextProject(){
+			function carouselNextProject(event){
 				event.preventDefault();
 				switch (Slider.sectionActive){
 					case 4:
@@ -119,7 +114,7 @@
 				}
 			}
 
-			function carouselPrevProject(){
+			function carouselPrevProject(event){
 				event.preventDefault();
 				switch (Slider.sectionActive){
 					case 4:
@@ -161,7 +156,7 @@
 			}
 
 			function carouselGoToProject(index){
-				event.preventDefault();
+				
 				switch (Slider.sectionActive){
 					case 4:
 						Logos.goTo(index);
