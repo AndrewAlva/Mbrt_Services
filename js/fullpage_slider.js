@@ -12,7 +12,7 @@
 		instructionsTiming: 4000,
 
 		// Loading portfolio quotes, in this case are the studio quotes
-		mbrtQuotes: ["Calling for the craftsmen, engineers, gurus and everyone on the studio, wait.", "We are crafting the last details, almost there.", "Good things come to those who know when to wait."],
+		mbrtQuotes: ["Calling for the craftsmen, engineers, gurus and everyone on the studio, wait.", "We are crafting the last details, almost there.", "Good things come to those who know when to wait.", "Welcome, we were expecting you. Sit down, it will take just a moment."],
 
 		// Set the array with all the screens to manipulate
 		screens: [],
@@ -176,6 +176,11 @@
 
 				// Remove loader after fadeout is complete
 				setTimeout(function(){$('#mbrtLoader').remove();},1600);
+
+				// Color the new section title
+				Slider.colorTitle('.animatedTitle-' + Slider.sectionActive);
+
+				
 			}, Slider.duration);
 		},
 
@@ -260,6 +265,9 @@
 				// Update active right nav bar
 				Slider.setMainNavs(index);
 
+				// Decolor title of actual section
+				Slider.decolorTitle('.animatedTitle-' + Slider.sectionActive);
+
 				// Make a tiny pause(100ms) until the new section is in position
 				setTimeout(function(){
 					// Move the new section to show it
@@ -271,6 +279,10 @@
 					setTimeout(function(){
 						$('#section-' + Slider.sectionActive).removeClass('activeSlide');
 						$('#section-' + Slider.sectionActive).removeClass(currentSectionMove);
+						
+						// Color the new section title
+						Slider.colorTitle('.animatedTitle-' + index);
+
 						Slider.setStates(index);
 						Slider.canScroll = true;
 
@@ -371,9 +383,15 @@
 		},
 
 		// Give color (from gray to black) to every title
-		colorTitle: function(target, callback){
+		colorTitle: function(target){
 			$(target).addClass('activeTitle');
-			callback();
+			
+		},
+
+		// Take color (from black to gray) to every title
+		decolorTitle: function(target){
+			$(target).removeClass('activeTitle');
+			
 		},
 
 		// Display all the text lines in order, 

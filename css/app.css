@@ -1002,8 +1002,7 @@
                   -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
                   transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
                   #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .projectPhoto .projectData .visitWebsite a:hover {
-                    color: #fff;
-                    background-color: #97979b; }
+                    color: #06111a; }
           #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .carouselImages .projectsWrapper .active {
             display: block;
             z-index: 1;
@@ -1616,8 +1615,8 @@
             -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a:hover {
-              background-color: #c9c9c9;
-              color: #fff; }
+              border: 1px solid #06111a;
+              color: #06111a; }
             #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a p {
               display: table-cell;
               vertical-align: middle; }
@@ -1718,8 +1717,8 @@
   color: #97979b; }
   #mobileWrapper .centeredBox {
     position: absolute;
-    width: 60%;
-    min-width: 320px;
+    width: 80%;
+    min-width: 300px;
     height: 40%;
     min-height: 360px;
     margin: auto;
@@ -1746,7 +1745,7 @@
       height: 25%; }
       #mobileWrapper .centeredBox .iconsBox .devicesBox {
         position: absolute;
-        width: 320px;
+        width: 300px;
         height: 110px;
         margin: auto;
         left: 0;
