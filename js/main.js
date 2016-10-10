@@ -2,9 +2,7 @@
 	var currentSectionId;
 
 	window.onload = function(){
-		setTimeout(function(){
-			Slider.loaded();
-		},(Slider.instructionsTiming * 2 - 1000));
+		Slider.loaded();
 	};
 
 	$(document).ready(function(){

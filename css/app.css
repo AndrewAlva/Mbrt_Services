@@ -85,9 +85,9 @@
   background-position: -92px -100px; }
 
 .sprite-DeviceTab {
-  width: 50px;
-  height: 70px;
-  background-position: -197px -5px; }
+  width: 70px;
+  height: 50px;
+  background-position: -5px -160px; }
 
 #section-0 #mainLogo {
   position: absolute;
@@ -636,6 +636,7 @@
             line-height: 1.2em;
             top: -0.62em;
             right: 0;
+            padding-right: 0;
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -709,6 +710,7 @@
         height: 75px;
         line-height: 4em; }
         #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .writtingAnimation {
+          border-right: 4px solid #97979b;
           -webkit-animation: writingBar 0.8s ease infinite alternate;
           -moz-animation: writingBar 0.8s ease infinite alternate;
           -ms-animation: writingBar 0.8s ease infinite alternate;
@@ -825,6 +827,7 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        border-right: 4px solid #97979b;
         -webkit-animation: writingBar 0.8s ease infinite alternate;
         -moz-animation: writingBar 0.8s ease infinite alternate;
         -ms-animation: writingBar 0.8s ease infinite alternate;
@@ -995,7 +998,6 @@
                   text-align: center;
                   font-size: 15px;
                   color: #97979b;
-                  background-color: rgba(151, 151, 155, 0);
                   -webkit-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
                   -moz-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
                   -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
@@ -1106,6 +1108,10 @@
             -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            opacity: 1;
+            filter: alpha(opacity=100);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+            -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
             overflow: hidden; }
             #fullWrapper #mbrtWrapper .carouselSection .innerCarousel .projectsBars ul .singleBar:hover {
               opacity: 0.4;
@@ -1482,6 +1488,10 @@
             -ms-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
             transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
+            opacity: 1;
+            filter: alpha(opacity=100);
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+            -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
             overflow: hidden; }
             #fullWrapper #mbrtWrapper .carouselVertSection .innerCarousel .projectsBars ul .singleBar:hover {
               opacity: 0.4;
@@ -1558,6 +1568,7 @@
             position: absolute;
             margin: 0;
             font-size: 65px;
+            border-right: 4px solid #97979b;
             -webkit-animation: writingBar 0.8s ease infinite alternate;
             -moz-animation: writingBar 0.8s ease infinite alternate;
             -ms-animation: writingBar 0.8s ease infinite alternate;
@@ -1715,6 +1726,8 @@
   -webkit-font-smoothing: antialiased !important;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   color: #97979b; }
+  #mobileWrapper .vertical {
+    display: none; }
   #mobileWrapper .centeredBox {
     position: absolute;
     width: 80%;
@@ -1759,7 +1772,7 @@
         #mobileWrapper .centeredBox .iconsBox .devicesBox .sprite-DeviceDesk {
           left: 5px; }
         #mobileWrapper .centeredBox .iconsBox .devicesBox .sprite-DeviceLap {
-          left: 40px;
+          left: 25px;
           right: 0; }
         #mobileWrapper .centeredBox .iconsBox .devicesBox .sprite-DeviceTab {
           right: 10px; }
@@ -2038,9 +2051,11 @@
       left: 9%; } }
 @media screen and (max-width: 1400px) {
   #fullWrapper #mbrtWrapper #rightBarsNav {
-    height: 280px; }
-    #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
-      font-size: 7px; }
+    height: 370px; }
+    #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar {
+      margin-bottom: 50%; }
+      #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar .navName {
+        font-size: 7px; }
   #fullWrapper #mbrtWrapper .contactSection .contactLetter {
     height: 285px; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
@@ -2110,6 +2125,10 @@
       height: 38.5%;
       left: 7%; } }
 @media screen and (max-width: 1279px) {
+  #fullWrapper #mbrtWrapper #rightBarsNav {
+    height: 320px; }
+    #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper .navBar {
+      margin-bottom: 58%; }
   #fullWrapper #mbrtWrapper .coverSection .nameSection {
     height: 65px;
     line-height: 4em; }
@@ -2274,6 +2293,9 @@
     width: 250px; } }
 @media screen and (max-width: 1023px) {
   #mobileWrapper {
+    display: block; } }
+@media screen and (orientation: portrait) and (min-width: 768px) {
+  #mobileWrapper .vertical {
     display: block; } }
 
 /*# sourceMappingURL=app.css.map */

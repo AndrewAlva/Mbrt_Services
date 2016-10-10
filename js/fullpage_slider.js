@@ -1,4 +1,7 @@
 	var Slider = {
+		// Variable user is using an iOS or a Windows device
+		is_Mac: undefined,
+
 		// Flag to prevent overlapping transitions between sections
 		canScroll: true,
 
@@ -34,6 +37,9 @@
 
 		// Pause to color screen titles
 		pauseColorTitle: 500,
+
+		// Determine the scroll sensibility according to the operative system used
+		sensibility: 0,
 
 		// Loading screen function
 		loading: function(){
@@ -164,6 +170,9 @@
 
 		// Hide the loading screen
 		loaded: function(){
+			// Restart Intro gif animation
+			$('#mbrtGIF').attr('src', 'img/brand/main_logo.gif?' + Math.random() + ' alt="Mandelbrot Brands Studio">');
+
 			setTimeout(function(){
 				// Active flag to prevent loading function
 				Slider.isLoading = false;
@@ -171,9 +180,6 @@
 				// Fade out loader
 				$('#mbrtLoader').addClass('crystalLoader');
 				
-				// Restart Intro gif animation
-				$('#mbrtGIF').attr('src', 'img/brand/main_logo.gif?' + Math.random() + ' alt="Mandelbrot Brands Studio">');
-
 				// Remove loader after fadeout is complete
 				setTimeout(function(){$('#mbrtLoader').remove();},1600);
 
@@ -209,6 +215,12 @@
 			// If the user arrived to any section except index section show the main navs, else hide them
 			if(Slider.sectionActive >= 1) Slider.showMainNavs();
 			else Slider.hideMainNavs();
+
+			// Determine the OS of the device and adjust sensibility according to it
+			Slider.is_Mac = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i) ? true : false;
+			if (Slider.is_Mac) {
+				Slider.sensibility = 10;
+			};
 		},
 
 		// Go prev section, only if there is a prev section to go

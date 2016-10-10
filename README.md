@@ -12,8 +12,6 @@ Mandelbrot Services Letter to introduce them with potential clients.
 ## FAQ'S of this project
 * What other function is more compatible between browsers than indexOf(), it's purpose is to get the position of an element in arrays
 
-* How to normalize the sensibility of eventY on mousewheel?
-
 * Which performance is better and why? The old carousel functionality or the new one
 
 * On the Carousel objects constructor I had to use "this", but it depends of the context, so I used ".bind()" function to refer to the Carousel object. Is it a good practice? Should I declare a variable of "this" instead? Here are some references of the answer:
@@ -25,8 +23,6 @@ http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-i
 * Contact title doesn't match with BG text, how to make it match? The problem is in the form the text is written.
 
 * Safari v10.0 is not displaying a few GIFS, three from Lucky Carousel and Northway Logo
-
-* Safari v10.0 @writingBar keyframe css animation not working, also on Firefox v31.0
 
 * <!--[if !IE]> which are the conditional detectors for other browsers versions like Chrome or Safari
 
@@ -62,3 +58,7 @@ http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-i
 
 * How to put passwords or another resource to block the access to an specific user
 => Don't, horrible UX
+
+* Safari v10.0 @writingBar keyframe css animation not working, also on Firefox v31.0 => You need to declare the default state of the class before the animation can run
+
+* How to normalize the sensibility of eventY on mousewheel? => Apparently there isn't a way yet, but you can set different sensibilities according to the operative system used and you can detect it using navigator.platform javascript native object, here is a snippet to do that: http://stackoverflow.com/questions/10527983/best-way-to-detect-mac-os-x-or-windows-computers-with-javascript-or-jquery
