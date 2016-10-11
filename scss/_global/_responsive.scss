@@ -208,6 +208,13 @@
 					}
 				}
 			}
+
+			// Vertical Carousel
+			.carouselVertSection{
+				.innerCarousel{
+					height: 93%;
+				}
+			}
 		}
 	}
 }
@@ -407,6 +414,13 @@
 							}
 						}
 					}
+				}
+			}
+
+			// Vertical Carousel
+			.carouselVertSection{
+				.innerCarousel{
+					height: 89%;
 				}
 			}
 		}
@@ -665,6 +679,13 @@
 					}
 				}
 			}
+
+			// Vertical Carousel
+			.carouselVertSection{
+				.innerCarousel{
+					height: 86%;
+				}
+			}
 		}
 	}
 }
@@ -866,6 +887,13 @@
 					}
 				}
 			}
+
+			// Vertical Carousel
+			.carouselVertSection{
+				.innerCarousel{
+					height: 79%;
+				}
+			}
 		}
 	}
 }
@@ -990,6 +1018,9 @@
 			// Vertical Carousel Section
 			.carouselVertSection{
 				.innerCarousel{
+					height: 77%;
+					min-height: 590px;
+
 					.carouselTitle{
 						h3{
 							width: 100%;
