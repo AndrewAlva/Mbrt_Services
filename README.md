@@ -62,3 +62,5 @@ http://thecodeship.com/web-development/methods-within-constructor-vs-prototype-i
 * Safari v10.0 @writingBar keyframe css animation not working, also on Firefox v31.0 => You need to declare the default state of the class before the animation can run
 
 * How to normalize the sensibility of eventY on mousewheel? => Apparently there isn't a way yet, but you can set different sensibilities according to the operative system used and you can detect it using navigator.platform javascript native object, here is a snippet to do that: http://stackoverflow.com/questions/10527983/best-way-to-detect-mac-os-x-or-windows-computers-with-javascript-or-jquery
+
+* How to detect the touch swipes events without a full library => Here is a snippet to detect this event, it's custom made: http://stackoverflow.com/questions/17567344/detect-left-right-swipe-on-touch-devices-but-allow-up-down-scrolling It's independent of the scroll or mousewheel events.

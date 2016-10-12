@@ -26,6 +26,9 @@
 		// Set the titles of all the screens
 		screenTitles: ['', 'Hello there IA Interactive!', 'What We Do', 'Branding', '', '', 'Brand Communications', '', '', '', '', '', 'Web Design & Development', '', '', 'Then, We Work Together?' ],
 
+		// Set the screen covers id's
+		screenCovers: [3, 6, 12],
+
 		// Set the slider main navigators objects
 		mainNavs: [],
 
@@ -297,6 +300,18 @@
 
 						Slider.setStates(index);
 						Slider.canScroll = true;
+
+						
+						// Detect if it is a cover section, if it is go to next section
+						if (Slider.screenCovers.indexOf(Slider.sectionActive) != -1 ) {
+							// Make a tiny pause to color the title
+							setTimeout(function(){
+								// Check again if user hasn't changed of section
+								// If he hasn't, scroll next section
+								if (Slider.screenCovers.indexOf(Slider.sectionActive) != -1 ) Slider.next();
+							},(Slider.duration * 2.5));
+						};
+						
 
 					}, (Slider.duration));
 

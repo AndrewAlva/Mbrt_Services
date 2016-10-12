@@ -38,6 +38,17 @@
 			Camila.init();
 		// END Set and Initialize all carousels
 
+		// SWIPE DETECTION
+			(function(d){var ce=function(e,n){var a=document.createEvent("CustomEvent"); a.initCustomEvent(n,true,true,e.target); e.target.dispatchEvent(a); a=null; return false }, nm=true, sp={x:0,y:0}, ep={x:0,y:0}, touch={touchstart:function(e){sp={x:e.touches[0].pageX,y:e.touches[0].pageY} }, touchmove:function(e){nm=false; ep={x:e.touches[0].pageX,y:e.touches[0].pageY} }, touchend:function(e){if(nm){ce(e,'fc') }else{var x=ep.x-sp.x,xr=Math.abs(x), y=ep.y-sp.y,yr=Math.abs(y); if(Math.max(xr,yr)>20){ce(e,(xr>yr?(x<0?'swl':'swr'):(y<0?'swu':'swd'))) } }; nm=true }, touchcancel:function(e){nm=false } }; for(var a in touch){d.addEventListener(a,touch[a],false); } })(document);
+			// Swipe Left
+			document.body.addEventListener('swl',function(){carouselNextProject(event);},false);
+			// Swipe Right
+			document.body.addEventListener('swr',function(){carouselPrevProject(event);},false);
+			// Swipe Up
+			document.body.addEventListener('swu',function(){Slider.next();},false);
+			// Swipe Down
+			document.body.addEventListener('swd',function(){Slider.prev();},false);
+
 		//// CAROUSELS INTERACTION
 			// INTERACTION BY ARROWS CLICK
 			// Next Project Interaction | Arrows Nav Click
@@ -193,6 +204,8 @@
 						break;
 				}
 			}
+
+			
 
 	});
 	

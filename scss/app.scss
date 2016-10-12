@@ -34,7 +34,7 @@
 
 // GENERAL
 	#fullWrapper{
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		height: 100%;
 		margin: 0;
@@ -229,7 +229,7 @@
 		}
 
 		#mbrtWrapper{
-			position: absolute;
+			position: fixed;
 			width: 100%;
 			height: 100%;
 			font-family: 'Raleway', sans-serif;
@@ -331,7 +331,7 @@
 
 
 			.mainSection{
-				position: absolute;
+				position: fixed;
 				width: 100%;
 				height: 100%;
 				@include transitions(0.9s);
