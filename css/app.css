@@ -89,68 +89,70 @@
   height: 50px;
   background-position: -5px -160px; }
 
-#section-0 #mainLogo {
-  position: absolute;
-  width: 662px;
-  height: 384px;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 232px; }
-  #section-0 #mainLogo img {
+#section-0 {
+  background-color: #fff; }
+  #section-0 #mainLogo {
     position: absolute;
-    width: 100%; }
-#section-0 #startExploring {
-  position: absolute;
-  width: 50px;
-  height: 80px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 50px;
-  cursor: pointer;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
-  -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-  -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-  -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-  -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
-  transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
-  #section-0 #startExploring:hover {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
-  #section-0 #startExploring .startText {
-    position: relative;
-    width: 100%;
-    height: 25px;
-    line-height: 25px;
-    font-size: 11.5pt;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-bottom: 17px;
-    color: #06111a; }
-  #section-0 #startExploring .startGo {
-    position: relative;
-    width: 100%;
-    height: 40px; }
-    #section-0 #startExploring .startGo i {
+    width: 662px;
+    height: 384px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 232px; }
+    #section-0 #mainLogo img {
       position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0; }
+      width: 100%; }
+  #section-0 #startExploring {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    cursor: pointer;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+    -webkit-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+    -ms-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+    -o-transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.65, 0, 0.25, 1); }
+    #section-0 #startExploring:hover {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+      -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+    #section-0 #startExploring .startText {
+      position: relative;
+      width: 100%;
+      height: 25px;
+      line-height: 25px;
+      font-size: 11.5pt;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-bottom: 17px;
+      color: #06111a; }
+    #section-0 #startExploring .startGo {
+      position: relative;
+      width: 100%;
+      height: 40px; }
+      #section-0 #startExploring .startGo i {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
 
 #section-1 #receiverLetter {
   height: 640px; }
   #section-1 #receiverLetter .introTitle {
     width: 900px;
-    margin-bottom: 27px; }
+    margin-bottom: 7px; }
     #section-1 #receiverLetter .introTitle .maskTitle h1 {
       width: 900px; }
   #section-1 #receiverLetter .introParagraph {
@@ -171,7 +173,7 @@
       width: 660px; }
 
 #section-2 #servicesLetter {
-  height: 690px; }
+  height: 660px; }
   #section-2 #servicesLetter .introTitle {
     width: 465px;
     margin-bottom: 30px; }
@@ -179,7 +181,7 @@
       width: 465px; }
   #section-2 #servicesLetter .introParagraph {
     height: 90px;
-    margin-bottom: 87px; }
+    margin-bottom: 50px; }
   #section-2 #servicesLetter .introQuotes {
     width: 425px;
     margin-bottom: 42px; }
@@ -601,7 +603,7 @@
       top: 0;
       bottom: 0;
       right: 0;
-      z-index: 1000; }
+      z-index: 1000000; }
       #fullWrapper #mbrtWrapper #rightBarsNav .barsWrapper {
         position: absolute;
         width: 100%;
@@ -683,7 +685,8 @@
       -o-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
       transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1);
       will-change: transform;
-      display: none; }
+      display: none;
+      z-index: 1000; }
     #fullWrapper #mbrtWrapper .introSection .introLetter {
       position: absolute;
       width: 1290px;
@@ -707,8 +710,8 @@
         margin-top: 0;
         margin-bottom: 0; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
-        height: 75px;
-        line-height: 4em; }
+        height: 95px;
+        line-height: 5em; }
         #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle .writtingAnimation {
           border-right: 4px solid #97979b;
           -webkit-animation: writingBar 0.8s ease infinite alternate;
@@ -1712,6 +1715,268 @@
       -o-transform: translateY(-100%);
       transform: translateY(-100%); }
 
+#setBG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+  z-index: 1; }
+
+#setBG #firstInnerSet {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  border: 1px solid #cccdd2;
+  opacity: .9;
+  /*background-color: rgba(255,255,0,.2);*/
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+  -moz-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+  -ms-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+  -o-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+  transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+  -webkit-animation: fraktal 30s linear infinite normal;
+  -moz-animation: fraktal 30s linear infinite normal;
+  -ms-animation: fraktal 30s linear infinite normal;
+  -o-animation: fraktal 30s linear infinite normal;
+  animation: fraktal 30s linear infinite normal; }
+
+/*/// KEYFRAMES FRAKTAL ///*/
+@-webkit-keyframes fraktal {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1, 1); }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -moz-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -ms-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -o-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(360deg) scale(1, 1); } }
+@-moz-keyframes fraktal {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1, 1); }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -moz-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -ms-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -o-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(360deg) scale(1, 1); } }
+@-ms-keyframes fraktal {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1, 1); }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -moz-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -ms-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -o-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(360deg) scale(1, 1); } }
+@-o-keyframes fraktal {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1, 1); }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -moz-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -ms-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -o-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(360deg) scale(1, 1); } }
+@keyframes fraktal {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(0deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1, 1); }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -moz-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -ms-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    -o-transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5);
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.5, 1.5); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    -o-transform: translate(-50%, -50%) rotate(360deg) scale(1, 1);
+    transform: translate(-50%, -50%) rotate(360deg) scale(1, 1); } }
+/*/// END KEYFRAMES FRAKTAL ///*/
+#setBG .setStyle {
+  position: absolute;
+  width: 61.8%;
+  height: 61.8%;
+  border: 1px solid #cccdd2;
+  opacity: .9;
+  /*background-color: rgba(255,255,0,.2);*/
+  border-radius: 0%;
+  -webkit-animation: setRotate 60s linear infinite normal;
+  -moz-animation: setRotate 60s linear infinite normal;
+  -ms-animation: setRotate 60s linear infinite normal;
+  -o-animation: setRotate 60s linear infinite normal;
+  animation: setRotate 60s linear infinite normal; }
+
+/*/// KEYFRAMES SET ROTATION ///*/
+@-webkit-keyframes setRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-radius: 0%; }
+  50% {
+    border-radius: 50%; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-radius: 0%; } }
+@-moz-keyframes setRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-radius: 0%; }
+  50% {
+    border-radius: 50%; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-radius: 0%; } }
+@-ms-keyframes setRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-radius: 0%; }
+  50% {
+    border-radius: 50%; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-radius: 0%; } }
+@-o-keyframes setRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-radius: 0%; }
+  50% {
+    border-radius: 50%; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-radius: 0%; } }
+@keyframes setRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-radius: 0%; }
+  50% {
+    border-radius: 50%; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-radius: 0%; } }
+/*/// END KEYFRAMES SET ROTATION ///*/
+#setBG #firstInnerSet .topSet {
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+#setBG #firstInnerSet .rightSet {
+  margin: auto;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+#setBG #firstInnerSet .bottomSet {
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#setBG #firstInnerSet .leftSet {
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0; }
+
+#setBG #firstInnerSet .centerSet {
+  width: 66.666% !important;
+  height: 66.666% !important;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
 #mobileWrapper {
   position: absolute;
   width: 100%;
@@ -1844,12 +2109,12 @@
       #fullWrapper #mbrtWrapper #section-1 #receiverLetter #welcomeQuote-2 .maskTitle h2 {
         width: 640px; }
   #fullWrapper #mbrtWrapper #section-2 #servicesLetter {
-    height: 670px; }
+    height: 650px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introTitle {
       margin-bottom: 28.9px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introParagraph {
       height: 83px;
-      margin-bottom: 83.8px; }
+      margin-bottom: 50px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introQuotes {
       margin-bottom: 40.4px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter #servicesList th {
@@ -1899,7 +2164,7 @@
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 1190px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
-      height: 73px; }
+      height: 93px; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
         font-size: 63.4px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
@@ -1909,7 +2174,7 @@
       #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
         font-size: 34.6px; }
   #fullWrapper #mbrtWrapper #section-1 #receiverLetter {
-    height: 590px; }
+    height: 610px; }
     #fullWrapper #mbrtWrapper #section-1 #receiverLetter .introTitle {
       width: 820px;
       margin-bottom: 24.8px; }
@@ -1930,12 +2195,12 @@
       #fullWrapper #mbrtWrapper #section-1 #receiverLetter #welcomeQuote-2 .maskTitle h2 {
         width: 600px; }
   #fullWrapper #mbrtWrapper #section-2 #servicesLetter {
-    height: 580px; }
+    height: 560px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introTitle {
       margin-bottom: 27.3px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introParagraph {
       height: 80px;
-      margin-bottom: 79.2px; }
+      margin-bottom: 50px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introQuotes {
       margin-bottom: 38.2px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter #servicesList th {
@@ -1989,7 +2254,7 @@
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 1120px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
-      height: 70px; }
+      height: 90px; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
         font-size: 59.8px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
@@ -1999,7 +2264,7 @@
       #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
         font-size: 32.6px; }
   #fullWrapper #mbrtWrapper #section-1 #receiverLetter {
-    height: 560px; }
+    height: 580px; }
     #fullWrapper #mbrtWrapper #section-1 #receiverLetter .introTitle {
       width: 780px;
       margin-bottom: 23.2px; }
@@ -2022,12 +2287,12 @@
       #fullWrapper #mbrtWrapper #section-1 #receiverLetter #welcomeQuote-2 .maskTitle h2 {
         width: 570px; }
   #fullWrapper #mbrtWrapper #section-2 #servicesLetter {
-    height: 550px; }
+    height: 540px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introTitle {
       margin-bottom: 25.7px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introParagraph {
       height: 75px;
-      margin-bottom: 74.7px; }
+      margin-bottom: 45px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introQuotes {
       margin-bottom: 36px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter #servicesList th {
@@ -2087,7 +2352,7 @@
       #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
         font-size: 27.7px; }
   #fullWrapper #mbrtWrapper #section-1 #receiverLetter {
-    height: 490px; }
+    height: 510px; }
     #fullWrapper #mbrtWrapper #section-1 #receiverLetter .introTitle {
       width: 680px;
       margin-bottom: 19.6px; }
@@ -2110,12 +2375,12 @@
       #fullWrapper #mbrtWrapper #section-1 #receiverLetter #welcomeQuote-2 .maskTitle h2 {
         width: 480px; }
   #fullWrapper #mbrtWrapper #section-2 #servicesLetter {
-    height: 510px; }
+    height: 500px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introTitle {
       margin-bottom: 21.8px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introParagraph {
       height: 65px;
-      margin-bottom: 63.4px; }
+      margin-bottom: 40px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introQuotes {
       margin-bottom: 30.6px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter #servicesList th {
@@ -2228,7 +2493,7 @@
       #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes h2 {
         font-size: 25.3px; }
   #fullWrapper #mbrtWrapper #section-1 #receiverLetter {
-    height: 450px; }
+    height: 470px; }
     #fullWrapper #mbrtWrapper #section-1 #receiverLetter .introTitle {
       width: 610px;
       margin-bottom: 18px; }
@@ -2251,12 +2516,12 @@
       #fullWrapper #mbrtWrapper #section-1 #receiverLetter #welcomeQuote-2 .maskTitle h2 {
         width: 440px; }
   #fullWrapper #mbrtWrapper #section-2 #servicesLetter {
-    height: 450px; }
+    height: 440px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introTitle {
       margin-bottom: 20px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introParagraph {
       height: 57px;
-      margin-bottom: 58px; }
+      margin-bottom: 30px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter .introQuotes {
       margin-bottom: 28px; }
     #fullWrapper #mbrtWrapper #section-2 #servicesLetter #servicesList th {
