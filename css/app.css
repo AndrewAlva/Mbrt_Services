@@ -721,10 +721,9 @@
           animation: writingBar 0.8s ease infinite alternate; }
         #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
           position: absolute;
+          height: 75px;
           font-size: 69.6px;
           padding-right: 22px;
-          padding-top: 5px;
-          padding-bottom: 5px;
           color: #c9c9c9;
           -webkit-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1), color 0.9s cubic-bezier(0.65, 0, 0.25, 1) 0.9s;
           -moz-transition: all 0.9s cubic-bezier(0.65, 0, 0.25, 1), color 0.9s cubic-bezier(0.65, 0, 0.25, 1) 0.9s;
@@ -802,7 +801,7 @@
     #fullWrapper #mbrtWrapper .coverSection .nameSection {
       position: absolute;
       height: 100px;
-      line-height: 6em;
+      line-height: 5.2em;
       margin: auto;
       top: 0;
       bottom: 0;
@@ -814,6 +813,7 @@
       -o-transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1);
       transition: all 0.6s cubic-bezier(0.65, 0, 0.25, 1); }
       #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
+        height: 75px;
         margin: 0;
         padding-right: 20px;
         font-size: 70px;
@@ -1569,6 +1569,7 @@
           height: 100%; }
           #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
             position: absolute;
+            height: 75px;
             margin: 0;
             font-size: 65px;
             border-right: 4px solid #97979b;
@@ -2066,6 +2067,7 @@
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
       height: 22.4%; }
       #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+        height: 70px;
         font-size: 62px; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
       height: 14%; }
@@ -2150,6 +2152,7 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter {
     height: 360px; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+      height: 67px;
       font-size: 58px; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
       height: 13.5%; }
@@ -2166,7 +2169,8 @@
     #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
       height: 93px; }
       #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
-        font-size: 63.4px; }
+        font-size: 63.4px;
+        height: 70px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
       font-size: 22.7px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
@@ -2238,6 +2242,7 @@
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
       height: 22.2%; }
       #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+        height: 57px;
         font-size: 50px; }
       #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
         font-size: 18px; }
@@ -2330,6 +2335,7 @@
   #fullWrapper #mbrtWrapper .contactSection .contactLetter {
     height: 285px; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+      height: 52px;
       font-size: 45px; }
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .bottomBox .contactColumns .indexRow {
       height: 11%; }
@@ -2343,8 +2349,12 @@
       font-size: 14.5px; }
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 950px; }
-    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
-      font-size: 50.7px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
+      height: 70px;
+      line-height: 4.5em; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+        font-size: 50.7px;
+        height: 62px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
       font-size: 18.2px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
@@ -2404,8 +2414,9 @@
       margin-bottom: 58%; }
   #fullWrapper #mbrtWrapper .coverSection .nameSection {
     height: 65px;
-    line-height: 4em; }
+    line-height: 3.5em; }
     #fullWrapper #mbrtWrapper .coverSection .nameSection h1 {
+      height: 50px;
       font-size: 45px; }
   #fullWrapper #mbrtWrapper .carouselSection .innerCarousel {
     height: 570px; }
@@ -2469,6 +2480,7 @@
     #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox {
       height: 20.5%; }
       #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactTitle h1 {
+        height: 43px;
         font-size: 36px; }
       #fullWrapper #mbrtWrapper .contactSection .contactLetter .topBox .contactButton a {
         font-size: 13px; }
@@ -2484,8 +2496,12 @@
       font-size: 13.2px; }
   #fullWrapper #mbrtWrapper .introSection .introLetter {
     width: 865px; }
-    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
-      font-size: 46.4px; }
+    #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle {
+      height: 60px;
+      line-height: 4em; }
+      #fullWrapper #mbrtWrapper .introSection .introLetter .introTitle h1 {
+        font-size: 46.4px;
+        height: 54px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introParagraph p {
       font-size: 15px; }
     #fullWrapper #mbrtWrapper .introSection .introLetter .introQuotes {
